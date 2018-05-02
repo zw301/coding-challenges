@@ -8,7 +8,7 @@ class Array
     # self.map{|el| el.to_i.hash}
     result = 0
     self.each_with_index do |el, index|
-      result += (el.ord.hash + index.ord.hash).hash
+      result += (el.hash + index.ord.hash).hash
     end
 
     result

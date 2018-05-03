@@ -2,8 +2,8 @@ class BinaryMinHeap
   attr_reader :store, :prc
 
   def initialize(&prc)
-    @prc = prc
-    @store = Array.new()
+    @prc = prc || Proc.new {|el, el2| el <=> el2 }
+    @store = []
   end
 
   def count

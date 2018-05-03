@@ -2,7 +2,7 @@ require_relative "heap"
 
 class Array
   def heap_sort!
-    @heap = BinaryMinHeap.new(&prc)
+    @heap = BinaryMinHeap.new
 
     self.each do |el|
       @heap.push(el)

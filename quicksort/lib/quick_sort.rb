@@ -32,16 +32,18 @@ class QuickSort
   end
 
   # def self.partition(array, start, length, &prc)
+  #   prc ||= Proc.new { |x, y| x <=> y }
+  #
   #   pivot = array[start]
   #
-  #   lo = 0
+  #   lo = start
   #   hi = start + length - 1
   #   lt = lo
   #   gt = hi
   #
   #   # return if lo >= hi
   #
-  #   i = lo
+  #   i = lo + 1
   #
   #   while i <= gt
   #     if pivot > array[i]
@@ -62,18 +64,49 @@ class QuickSort
   def self.partition(array, start, length, &prc)
     prc ||= Proc.new { |x, y| x <=> y }
 
-    pivot_idx = start
-    pivot_el = array[start]
+    i = start
+    pivot = array[start]
     range = (start + 1...start + length)
 
-    range.each do |idx|
-      if prc.call(pivot_el, array[idx]) > 0
-        array[pivot_idx + 1], array[idx] = array[idx], array[pivot_idx + 1]
-        pivot_idx += 1
+    range.each do |j|
+      if prc.call(pivot, array[j]) > 0
+        array[i + 1], array[j] = array[j], array[i + 1]
+        i += 1
       end
     end
 
-    array[pivot_idx], array[start] = array[start], array[pivot_idx]
-    pivot_idx
+    array[i], array[start] = array[start], array[i]
+    i
+
   end
+
+
+  # def self.partition(array, start, length, &prc)
+  #   prc ||= Proc.new { |x, y| x <=> y }
+  #   pivot = array[start]
+  #
+  #   i = start + 1
+  #   j = start + length - 1
+  #
+  #   #everything the left to i is less than partitioning element
+  #   #nothing to the left of i is greater than the partitioning element
+  #   #nothing to the right of j is less than the partitioning element
+
+  #   while (i <= j)
+  #     if prc.call(array[i], pivot) < 0
+  #       i += 1
+  #       break if i == start + length
+  #     elsif prc.call(array[j], pivot) >= 0
+  #       j -= 1
+  #       break if j == start
+  #     else
+  #       array[i], array[j] = array[j], array[i]
+  #       i += 1
+  #       j -= 1
+  #     end
+  #   end
+  #
+  #   array[j], array[start] = array[start], array[j]
+  #   j
+  # end
 end

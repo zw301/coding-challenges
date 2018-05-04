@@ -1,4 +1,4 @@
-class BinaryMinHeap
+  class BinaryMinHeap
   attr_reader :store, :prc
 
   def initialize(&prc)

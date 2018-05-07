@@ -7,7 +7,6 @@ describe 'BST Practical Question' do
     [5, 3, 7, 1, 4, 9, 0, 2, 1.5, 10].each do |el|
       bst.insert(el)
     end
-
     bst
   end
 
@@ -28,7 +27,7 @@ describe 'BST Practical Question' do
     expect(kth_largest(prefilled_bst.root, k)).to be(k_node)
 
 
-    n = 2 
+    n = 2
     n_node = balanced_bst.root.right
     # the above node is pointing to the node with value 16
 

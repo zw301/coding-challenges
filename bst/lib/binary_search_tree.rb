@@ -157,6 +157,7 @@ class BinarySearchTree
   end
 
 
+
   private
   # optional helper methods go here:
   def insert_recursive(tree_node, value)

@@ -8,6 +8,11 @@ class BSTNode
     @right = nil
   end
 
+  def is_leaf?
+    @left == nil && @right == nil
+  end
+
+  
   # def delete(child)
   #   @left = nil if @left == child
   #   @right = nil if @right == child
@@ -17,10 +22,6 @@ class BSTNode
   #   @left = child if @left == nil && value <= child.value
   #   @right = child if @right == nil && value > child.value
   # end
-
-  def is_leaf?
-    @left == nil && @right == nil
-  end
 
   # def initialize(value)
   #   @value = value

@@ -11,19 +11,15 @@ require_relative 'topological_sort'
 require_relative 'graph'
 
 def install_order(arr)
-  vertices = (1..arr.flatten.max).to_a.map { |id| Vertex.new(id) }
+
+  vertices = (1..arr.flatten.max).to_a.map { |val| Vertex.new(val) }
 
   arr.each do |tuple|
-    v1_idx, v2_idx = find_vertex_idx(vertices, tuple[0]), find_vertex_idx(vertices, tuple[1])
-    v1, v2 = vertices[v1_idx], vertices[v2_idx]
-    Edge.new(v2, v1)
+    to = vertices.find {|v| v.value == tuple[0]}
+    from = vertices.find {|v| v.value == tuple[1]}
+    Edge.new(from, to)
   end
 
   sorted = topological_sort(vertices)
-
-  sorted.map { |v| v.value }
-end
-
-def find_vertex_idx(arr, id)
-  arr.index { |v| v.value == id }
+  sorted.map {|v| v.value}
 end

@@ -171,6 +171,4 @@ class BinarySearchTree
     tree_node
   end
 
-
-
 end

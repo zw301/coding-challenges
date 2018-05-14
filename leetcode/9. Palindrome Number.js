@@ -19,7 +19,7 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function(x) {
+var isPalindrome1 = function(x) {
   if (x < 0) return false;
   const res = [];
 
@@ -38,8 +38,22 @@ var isPalindrome = function(x) {
   return true;
 };
 
+
+var isPalindrome = function(x) {
+  if (x < 0 || (x > 0 && x % 10 === 0)) return false;
+  let y = 0;
+
+  while (y < x) {
+    y = y * 10 + x % 10;
+    x = Math.floor(x / 10);
+  }
+
+  return y === x || Math.floor(y / 10) === x;
+}
+
 console.log(isPalindrome(10))
 console.log(isPalindrome(-121))
 console.log(isPalindrome(121))
 console.log(isPalindrome(343))
 console.log(isPalindrome(5665))
+console.log(isPalindrome(12321))

@@ -17,10 +17,7 @@ var twoSum = function(nums, target) {
     const map = {};
     for(let i = 0; i < nums.length; i++) {
         let left = target - nums[i];
-        // console.log(`target: ${target}`)
-        // console.log(` nums[i]: ${nums[i]}`)
-        // console.log(`left: ${left}`)
-        // console.log(`map[left]: ${map[left]}`)
+        // map[0] = 0 => map[0] == false
         if(map[left] !== undefined) {
             return [map[left], i];
         } else {

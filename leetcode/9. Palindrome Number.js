@@ -49,7 +49,7 @@ var isPalindrome = function(x) {
   }
 
   return y === x || Math.floor(y / 10) === x;
-}
+};
 
 console.log(isPalindrome(10))
 console.log(isPalindrome(-121))

@@ -8,47 +8,67 @@
 // 0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
 //
 // Example
-// Given n = 3, m = 3, array of pair A = [(0,0),(0,1),(2,2),(2,1)].
+// Given n = 3, m = 3, array of pair A = [[0,0],[0,1],[2,2],[2,1]].
 //
 // return [1,1,2,2]
 
-class UF {
-  constructor(n, m) {
-    this.numComponent = 0;
 
-    this.id = new Array(n * m);
-    for (var i = 0; i < n * m; i++) {
-      this.id[i] = i;
-    }
+function numOfIsland(n, m, operators) {
+  const result = [];
+  if (operators === undefined || operators.length === 0) {
+    return result;
   }
 
-  find(i) {
-    while (i !== this.id[i]) {
-      this.id[i] = this.id[this.id[i]];
-      i = this.id[i];
-    }
-    return i;
-  }
+  const id = new Array(n * m);
+  id.fill(-1);
 
-  union(p, q) {
-    let i = this.find(p);
-    let j = this.find(q);
+  let numComponent = 0;
 
-    if (i !== j) {
-      this.numComponent--;
+  const directionX = [0, 0, 1, -1];
+  const directionY = [1, -1, 0, 0];
+
+  for (var i = 0; i < operators.length; i++) {
+    let x = operators[i][0];
+    let y = operators[i][1];
+
+    let p = x * m + y;
+    if (id[p] !== -1) {
+      continue;
     }
 
-    this.id[i] = j;
-  }
+    id[p] = p;
+    numComponent++;
 
-  getNumComponent() {
-    return this.numComponent;
+    for (var j = 0; j < 4; j++) {
+      let nx = x + directionX[j];
+      let ny = y + directionY[j];
+
+      if (nx < 0 || nx >= n || ny < 0 || ny >= m) {
+        continue;
+      }
+
+      let np = nx * m + ny;
+      if (id[np] === -1) {
+        continue;
+      }
+
+      if (find(np, id) !== find(p, id)) {
+        id[find(np, id)] = find(p, id);
+        numComponent--;
+      }
+    }
+    result.push(numComponent);
   }
+  return result;
 }
 
-function numOfIsland(n, m, arr) {
-  for (var i = 0; i < arr.length; i++) {
-    let p = arr[i][0] * m + arr[i][1];
-
+function find(i, id) {
+  while ( i !== id[i]) {
+    id[i] = id[id[i]];
+    i = id[i];
   }
+  return i;
 }
+
+const operators = [[0,0],[0,1],[2,2],[2,1]];
+console.log(numOfIsland(3, 3, operators))

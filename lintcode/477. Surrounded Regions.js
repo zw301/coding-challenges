@@ -3,7 +3,6 @@ Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
 
 A region is captured by flipping all 'O''s into 'X''s in that surrounded region.
 
-Have you met this question in a real interview?
 Example
 X X X X
 X O O X

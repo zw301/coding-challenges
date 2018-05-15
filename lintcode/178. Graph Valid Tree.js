@@ -54,10 +54,24 @@ class UF {
 
   find(i) {
     while (i !== this.id[i]) {
-      this.id[i] = this.id[id[i]];
+      this.id[i] = this.id[this.id[i]];
       i = this.id[i];
     }
     return i;
+  }
+
+  union(p, q) {
+    let i = this.find(p);
+    let j = this.find(q);
+
+    if (i !== j) {
+      this.numComponent--;
+    }
+    this.id[i] = j;
+  }
+
+  getComponent() {
+    return this.numComponent;
   }
 }
 

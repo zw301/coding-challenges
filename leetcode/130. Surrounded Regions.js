@@ -75,7 +75,7 @@ var solve = function(board) {
     for (let j = 0; j < n; j++) {
       if(board[i][j] === "O") {
         if(isEdge(m, n, i, j)) {
-          uf.union(i * m + j, m * n);
+          uf.union(i * n + j, m * n);
         } else {
           for (let k = 0; k < 4; k++) {
             let x = i + dirX[k];

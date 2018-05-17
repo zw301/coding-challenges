@@ -8,7 +8,8 @@ function subsets(nums) {
   nums.sort(function(a, b){return a - b});
 
   subset = [];
-  subsetHelper(nums, 0, subset, results)
+  subsetHelper(nums, 0, subset, results);
+  // return results;
 }
 
 function subsetHelper(nums, startIndex, subset,  results) {
@@ -18,7 +19,7 @@ function subsetHelper(nums, startIndex, subset,  results) {
 
   for (let i = startIndex; i < nums.length; i++) {
     subset.push(nums[i]);
-    subsetHelper(nums, i + 1, subset, results)
+    subsetHelper(nums, i + 1, subset, results);
     subset.splice(subset.length - 1, 1);
   }
 }

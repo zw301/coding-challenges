@@ -43,20 +43,20 @@ function isValid(char) {
   return (char >= "a" && char <= "z") || (char >= "A" && char <= "Z") || (char >= "0" && char <= "9");
 }
 
-// function isEqual(a, b) {
-//   if(a >= "0" && a <= "9") {
-//     return a == b;
-//   }
-//   return a.toLowerCase() === b.toLowerCase();
-// }
 function isEqual(a, b) {
   if(a >= "0" && a <= "9") {
     return a == b;
   }
-  return (a === b)
-    || (a.charCodeAt() === b.charCodeAt() - "A".charCodeAt() + "a".charCodeAt())
-    || (b.charCodeAt() === a.charCodeAt() - "A".charCodeAt() + "a".charCodeAt());
-}
+  return a.toLowerCase() === b.toLowerCase();
+};
+// function isEqual(a, b) {
+//   if(a >= "0" && a <= "9") {
+//     return a == b;
+//   }
+//   return (a === b)
+//     || (a.charCodeAt() === b.charCodeAt() - "A".charCodeAt() + "a".charCodeAt())
+//     || (b.charCodeAt() === a.charCodeAt() - "A".charCodeAt() + "a".charCodeAt());
+// }
 
 
 const s1 = "A man, a plan, a canal: Panama";

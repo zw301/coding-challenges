@@ -48,7 +48,6 @@ var countAndSay = function(n) {
     }
     cur = cur + count + say;
   }
-
   return cur;
 };
 

@@ -28,11 +28,15 @@
   <li>
   38. Count and Say
   </li>
-  
+
+  <li>
+  39. Combination Sum
+  </li>
+
   <li>
   46. Permutations
   </li>
-  
+
   <li>
   47. Permutations II
   </li>
@@ -50,13 +54,17 @@
   </li>
 
   <li>
+  77. Combinations
+  </li>
+
+  <li>
   78. Subsets
   </li>
 
   <li>
   88. Merge Sorted Array
   </li>
-  
+
   <li>
   90. Subsets II
   </li>

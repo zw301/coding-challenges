@@ -54,7 +54,7 @@ var subsets = function(nums) {
     return a - b;
   });
 
-  subset = [];
+  let subset = [];
   subsethelper(nums, subset, 0, results);
   return results;
 };

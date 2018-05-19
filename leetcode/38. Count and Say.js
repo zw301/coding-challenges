@@ -25,10 +25,9 @@
  * @param {number} n
  * @return {string}
  */
-var countAndSay = function(n) {
-  if (n === 1) {
-    return "1";
-  }
+
+function countAndSay(n) {
+  if (n === 1) return "1";
 
   let cur = "1";
 
@@ -37,6 +36,7 @@ var countAndSay = function(n) {
     cur = "";
     let count = 1;
     let say = prev[0];
+
     for (let j = 1; j < prev.length; j++) {
       if (prev[j] !== say) {
         cur = cur + count + say;
@@ -49,7 +49,33 @@ var countAndSay = function(n) {
     cur = cur + count + say;
   }
   return cur;
-};
+}
 
 
-console.log(countAndSay(6))
+console.log(countAndSay(5))
+
+// var countAndSay2 = function(n) {
+//   if (n === 1) {
+//     return "1";
+//   }
+//
+//   let cur = "1";
+//
+//   for (let i = 2; i <= n; i++) {
+//     let prev = cur;
+//     cur = "";
+//     let count = 1;
+//     let say = prev[0];
+//     for (let j = 1; j < prev.length; j++) {
+//       if (prev[j] !== say) {
+//         cur = cur + count + say;
+//         count = 1;
+//         say = prev[j];
+//       } else {
+//         count++;
+//       }
+//     }
+//     cur = cur + count + say;
+//   }
+//   return cur;
+// };

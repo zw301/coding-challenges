@@ -34,6 +34,10 @@
   </li>
 
   <li>
+  40. Combination Sum II
+  </li>
+
+  <li>
   46. Permutations
   </li>
 

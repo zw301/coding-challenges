@@ -28,6 +28,14 @@
   <li>
   38. Count and Say
   </li>
+  
+  <li>
+  46. Permutations
+  </li>
+  
+  <li>
+  47. Permutations II
+  </li>
 
   <li>
   58. Length of Last Word
@@ -47,6 +55,10 @@
 
   <li>
   88. Merge Sorted Array
+  </li>
+  
+  <li>
+  90. Subsets II
   </li>
 
   <li>

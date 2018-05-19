@@ -18,18 +18,18 @@
  * @param {number} k
  * @return {number[][]}
  */
-var combine = function(n, k) {
+function combine(n, k) {
   const results = [];
   if (n === 0 || k === 0 || n < k) {
     return results;
   }
 
   const combination = [];
-  combineHelper(n, k, 1, combination, results);
+  combieHelper(n, k, 1, combination, results);
   return results;
-};
+}
 
-function combineHelper(n, k, start, combination, results) {
+function combieHelper(n, k, start, combination, results) {
   if (combination.length === k) {
     results.push(combination.slice(0));
     return;
@@ -37,7 +37,7 @@ function combineHelper(n, k, start, combination, results) {
 
   for (var i = start; i <= n; i++) {
     combination.push(i);
-    combineHelper(n, k, i + 1, combination, results);
+    combieHelper(n, k, i + 1, combination, results);
     combination.pop();
   }
 }

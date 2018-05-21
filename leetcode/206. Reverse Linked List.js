@@ -45,4 +45,16 @@ var reverseList = function(head) {
   if (head === null || head.next === null) {
     return head;
   }
-}
+
+  const reverse = reverseList(head.next);
+
+  let curr = reverse;
+
+  while (curr.next !== null) {
+    curr = curr.next;
+  }
+
+  curr.next = head;
+  head.next = null;
+  return reverse;
+};

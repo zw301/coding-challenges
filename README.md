@@ -20,6 +20,7 @@
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
+|83|[Remove Duplicates from Sorted List](https://github.com/zw301/coding-challenges/blob/master/leetcode/83.%20Remove%20Duplicates%20from%20Sorted%20List.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|Easy|
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/88.%20Merge%20Sorted%20Array.js)|Easy|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|

@@ -22,9 +22,11 @@
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
+|155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|
+|227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/227.%20Basic%20Calculator%20II.js)|Medium|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/232.%20Implement%20Queue%20using%20Stacks.js)|Easy|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|

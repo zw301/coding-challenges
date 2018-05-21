@@ -28,16 +28,19 @@ var calculate = function(s) {
     return 0;
   }
 
-  const stack = [];
-  let num = 0;
   let sign = "+";
+  let num = 0;
   const len = s.length;
+
+  const stack = [];
 
   for (let i = 0; i < len; i++) {
     const c = s[i];
+
     if (c >= "0" && c <= "9") {
       num = num * 10 + parseInt(c);
     }
+
     if (c === "+" || c === "-" || c === "*" || c === "/" || i === len - 1) {
       if (sign === "+") {
         stack.push(num);
@@ -49,21 +52,29 @@ var calculate = function(s) {
         stack.push(stack.pop() * num);
       }
       if (sign === "/") {
-        stack.push(Math.floor(stack.pop() / num));
+        let val = stack.pop();
+        if (val >= 0) {
+          stack.push(Math.floor(val / num))
+        } else {
+          stack.push(Math.ceil(val / num))
+        }
       }
+      console.log(stack);
       sign = c;
       num = 0;
     }
   }
+
+  console.log(stack);
   let res = 0;
   for (let i = 0; i < stack.length; i++) {
-    res += stack[i]
+    res += stack[i];
   }
-
   return res;
 };
 
 
-console.log(calculate("3+2*2"));
-console.log(calculate(" 3/2 "));
-console.log(calculate(" 3+5 / 2 "));
+// console.log(calculate("3+2*2"));
+// console.log(calculate(" 3/2 "));
+// console.log(calculate(" 3+5 / 2 "));
+console.log(calculate("14-3 / 2"));

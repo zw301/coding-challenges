@@ -21,6 +21,37 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function(head) {
 
-};
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
+}
+
+// var deleteDuplicates = function(head) {
+//   if(head === null) {
+//     return null;
+//   }
+//   const dummy = new ListNode(-1);
+//   dummy.next = head;
+//
+//   while (head.next !== null) {
+//     if (head.val === head.next.val) {
+//        head.next = head.next.next;
+//     }
+//     head = head.next;
+//   }
+//
+//   return dummy.next;
+// };
+
+var deleteDuplicates = function(head) {
+  let curr = head;
+  while (curr !== null && curr.next !== null) {
+    if (curr.val === curr.next.val) {
+      curr.next = curr.next.next
+    } else {
+      curr = curr.next;
+    }
+  }
+  return head;
+}

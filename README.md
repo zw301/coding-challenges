@@ -8,6 +8,7 @@
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/20.%20Valid%20Parentheses.js)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/21.%20Merge%20Two%20Sorted%20Lists.js)|Easy|
+|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|

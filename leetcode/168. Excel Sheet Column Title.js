@@ -28,45 +28,31 @@
  * @param {number} n
  * @return {string}
  */
-var convertToTitle = function(n) {
-  if (n === 0) {
-    return "Z";
-  }
-  let dic = "zabcdefghijklmnopqrstuvwxy".toUpperCase();
-  // const map = {};
-  // for (var i = 0; i < dic.length; i++) {
-  //   map[i] = dic[i];
-  // }
-  //
-  // return map
 
-  let result = "";
-
-  while (n > 1) {
-    // if (n === 1) {
-    //   return result + dic[1];
-    // }
-    result = dic[n % 26] + result;
-    // n = n - 26 * (n - n % 26) / 26;
-    // n = n - 26 * Math.floor(n / 26);
-    n = Math.floor(n / 26)
-  }
-
-  return result;
-};
-
-var convertToTitle = function(n) {
-  let dic = "zabcdefghijklmnopqrstuvwxy".toUpperCase();
-  if (n < 26) {
-    return dic[n];
-  }
+var convertToTitle2 = function(n) {
   let result = "";
 
   while (n > 0) {
+    n--;
+    result = String.fromCharCode("A".charCodeAt(0) + n % 26) + result;
+    n = Math.floor(n / 26);
+  }
+
+  return result;
+}
+
+var convertToTitle = function(n) {
+  let dic = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+
+  let result = "";
+  while (n > 0) {
+    n -= 1;
     result = dic[n % 26] + result;
     n = Math.floor(n / 26);
   }
+
   return result;
-};
+}
 
 console.log(convertToTitle(26))
+console.log(convertToTitle(701))

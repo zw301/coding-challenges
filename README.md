@@ -20,7 +20,7 @@
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
-|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript]()|Medium|
+|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/74.%20Search%20a%202D%20Matrix.js)|Medium|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.jsgi)|Medium|

@@ -27,6 +27,8 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
+|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|

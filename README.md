@@ -9,7 +9,7 @@
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/20.%20Valid%20Parentheses.js)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/21.%20Merge%20Two%20Sorted%20Lists.js)|Easy|
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
-|27|[Remove Element](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|Easy|
+|27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|
@@ -20,8 +20,8 @@
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
-|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.js)|Medium|
-|83|[Remove Duplicates from Sorted List](https://github.com/zw301/coding-challenges/blob/master/leetcode/83.%20Remove%20Duplicates%20from%20Sorted%20List.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|Easy|
+|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.jsgi)|Medium|
+|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/83.%20Remove%20Duplicates%20from%20Sorted%20List.js)|Easy|
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/88.%20Merge%20Sorted%20Array.js)|Easy|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|

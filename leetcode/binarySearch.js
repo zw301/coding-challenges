@@ -1,4 +1,4 @@
-function bs(nums, target) {
+ var bs = function (nums, target) {
   let lo = 0;
   let hi = nums.length - 1;
 
@@ -15,4 +15,61 @@ function bs(nums, target) {
   return -1;
 }
 
-console.log(bs([1,2,3,4,5,6], 6))
+// var bs = function(nums, target) {
+//   if (nums === null || nums.length === 0) {
+//     return -1;
+//   }
+//   let start = 0;
+//   let end = nums.length - 1;
+//
+//   while (start + 1 < end) {
+//     let mid = start + Math.floor((end - start) / 2);
+//
+//     if (nums[mid] === target) {
+//       return mid;
+//     } else if (nums[mid] < target) {
+//       start = mid;
+//     } else {
+//       end = mid;
+//     }
+//
+//     if (nums[start] === target) {
+//       return start;
+//     }
+//     if (nums[end] === target) {
+//       return end;
+//     }
+//   }
+//   return -1;
+// }
+
+var bs = function(nums, target) {
+  if (nums === null || nums.length === 0) {
+    return -1;
+  }
+
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start + 1 < end) {
+    let mid = start + Math.floor((end - start) / 2);
+
+    if (nums[mid] === target) {
+      return mid;
+    } else if (nums[mid] < target) {
+      start = mid;
+    } else {
+      end = mid;
+    }
+
+    if (nums[start] === target) {
+      return start;
+    }
+    if (nums[end] === target) {
+      return end;
+    }
+  }
+  return -1;
+}
+
+console.log(bs([1,2,3,4,5,6], 3))

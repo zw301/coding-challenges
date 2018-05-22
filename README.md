@@ -37,6 +37,7 @@
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/232.%20Implement%20Queue%20using%20Stacks.js)|Easy|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript]()|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|

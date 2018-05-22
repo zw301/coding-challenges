@@ -28,7 +28,6 @@ var solution = function(isBadVersion) {
     return function(n) {
       let start = 1;
       let end = n;
-
       while (start + 1 < end) {
         let mid = start + Math.floor((end - start) / 2);
 

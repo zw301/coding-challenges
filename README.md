@@ -11,6 +11,7 @@
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/28.%20Implement%20strStr().js)|Easy|
+|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[JavaScript]()|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|
@@ -37,7 +38,7 @@
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/232.%20Implement%20Queue%20using%20Stacks.js)|Easy|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
-|278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript]()|Easy|
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|

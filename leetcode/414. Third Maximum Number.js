@@ -36,7 +36,6 @@ var thirdMax = function(nums) {
       third = second;
       second = first;
       first = nums[i];
-
     } else if (second === undefined || nums[i] > second) {
       third = second;
       second = nums[i];
@@ -44,7 +43,6 @@ var thirdMax = function(nums) {
       third = nums[i];
     }
   }
-
   return third === undefined ? first : third;
 };
 

@@ -11,6 +11,7 @@
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/28.%20Implement%20strStr().js)|Easy|
+|34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[JavaScript]()|Medium|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/35.%20Search%20Insert%20Position.js)|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
@@ -30,7 +31,7 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
-|162|[162. Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
+|162|Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|

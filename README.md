@@ -11,7 +11,7 @@
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/28.%20Implement%20strStr().js)|Easy|
-|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[JavaScript]()|Medium|
+|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/33.%20Search%20in%20Rotated%20Sorted%20Array.js)|Medium|
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/34.%20Search%20for%20a%20Range.js)|Medium|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/35.%20Search%20Insert%20Position.js)|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
@@ -26,6 +26,7 @@
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/74.%20Search%20a%202D%20Matrix.js)|Medium|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
+|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|[JavaScript]()|Medium|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.jsgi)|Medium|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/83.%20Remove%20Duplicates%20from%20Sorted%20List.js)|Easy|
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/88.%20Merge%20Sorted%20Array.js)|Easy|
@@ -33,7 +34,7 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
-|162|Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
+|162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|

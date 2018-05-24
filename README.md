@@ -11,7 +11,7 @@
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/28.%20Implement%20strStr().js)|Easy|
-|34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[JavaScript]()|Medium|
+|34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/34.%20Search%20for%20a%20Range.js)|Medium|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/35.%20Search%20Insert%20Position.js)|Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
@@ -21,6 +21,7 @@
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
+|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|[JavaScript]()|Easy|
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/74.%20Search%20a%202D%20Matrix.js)|Medium|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|

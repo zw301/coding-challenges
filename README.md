@@ -51,3 +51,4 @@
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/414.%20Third%20Maximum%20Number.js)|Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/547.%20Friend%20Circles.js)|Medium|
+|744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.js)|Easy|

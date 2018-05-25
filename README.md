@@ -36,6 +36,7 @@
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|[JavaScript]()|Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
@@ -53,5 +54,6 @@
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/350.%20Intersection%20of%20Two%20Arrays%20II.js)|Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/414.%20Third%20Maximum%20Number.js)|Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
+|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/445.%20Add%20Two%20Numbers%20II.js)|Medium|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/547.%20Friend%20Circles.js)|Medium|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.js)|Easy|

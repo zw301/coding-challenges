@@ -40,6 +40,8 @@
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.js)|Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
+|172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/172.%20Factorial%20Trailing%20Zeroes.js)|Easy|
+|189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript]()|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|

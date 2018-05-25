@@ -48,6 +48,7 @@
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|
+|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/349.%20Intersection%20of%20Two%20Arrays.js)|Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/414.%20Third%20Maximum%20Number.js)|Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/547.%20Friend%20Circles.js)|Medium|

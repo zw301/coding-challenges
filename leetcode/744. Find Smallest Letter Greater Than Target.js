@@ -42,21 +42,23 @@
  * @return {character}
  */
 var nextGreatestLetter = function(letters, target) {
-  if (target >= letters[letters.length - 1]) {
+  let len = letters.length;
+  if (target >= letters[len - 1]) {
     return letters[0];
   }
 
   let start = 0;
-  let end = letters.length - 1;
+  let end = len - 1;
 
   while (start + 1 < end) {
     let mid = start + Math.floor((end - start) / 2);
     if (letters[mid] <= target) {
       start = mid;
-    } else{
+    } else {
       end = mid;
     }
   }
+
   if (letters[start] > target) {
     return letters[start];
   } else {

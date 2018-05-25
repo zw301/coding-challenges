@@ -24,6 +24,7 @@
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/69.%20Sqrt(x).js)|Easy|
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/74.%20Search%20a%202D%20Matrix.js)|Medium|
+|75|[Sort Colors](https://leetcode.com/problems/sort-colors)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/75.%20Sort%20Colors.js)|Medium|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/81.%20Search%20in%20Rotated%20Sorted%20Array%20II.js)|Medium|

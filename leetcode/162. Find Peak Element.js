@@ -50,3 +50,25 @@ var findPeakElement = function(nums) {
   }
   return end;
 };
+
+//5.27 nums[mid] only need compare with nums[mid + 1]
+// only needs to compare with its right to decide if it is up or down
+var findPeakElement = function(nums) {
+  if (nums === null || nums.length === 0) {
+    return -1;
+  }
+
+  let start = 0;
+  let end = nums.length - 1;
+  while (start + 1 < end) {
+    if (nums[mid] < nums[mid + 1]) {
+      start = mid;
+    } else {
+      end = mid;
+    }
+  }
+  if (nums[start] > target) {
+    return start;
+  }
+  return end;
+};

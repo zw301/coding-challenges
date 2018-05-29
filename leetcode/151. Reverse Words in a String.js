@@ -22,7 +22,7 @@ var reverseWords = function(str) {
       result += arr[i] + " ";
     }
   }
-  return result;
+  return result.trim();
 };
 
 function reverse(arr, i, j) {

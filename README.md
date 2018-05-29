@@ -19,6 +19,7 @@
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|
 |46|[Permutations](https://leetcode.com/problems/permutations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/46.%20Permutations.js)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/47.%20Permutations%20II.js)|Medium|
+|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
@@ -34,6 +35,7 @@
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/151.%20Reverse%20Words%20in%20a%20String.js)|Medium|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|

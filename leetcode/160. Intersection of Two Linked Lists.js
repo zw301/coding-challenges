@@ -35,7 +35,6 @@
 var getIntersectionNode = function(headA, headB) {
   const set = new Set();
   let curr = headA;
-
   while (curr !== null) {
     set.add(curr);
     curr = curr.next;
@@ -59,5 +58,6 @@ var getIntersectionNode = function(headA, headB) {
     pa = pa === null ? headB : pa.next;
     pb = pb === null ? headA : pb.next;
   }
+
   return pa;
 };

@@ -48,7 +48,7 @@
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
-|204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript]()|Easy|
+|204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/204.%20Count%20Primes.js)|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/215.%20Kth%20Largest%20Element%20in%20an%20Array.js)|Medium|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|

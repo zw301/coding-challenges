@@ -12,9 +12,8 @@
 var countPrimes = function(n) {
   const notPrime = new Array(n).fill(false);
   let count = 0;
-
-  for (var i = 2; i < n; i++) {
-    if (notPrime[i]) {
+  for (let i = 2; i < n; i++) {
+    if (noyPrime[i]) {
       continue;
     }
     count++;
@@ -22,7 +21,6 @@ var countPrimes = function(n) {
     if (i > Math.sqrt(n)) {
       continue;
     }
-
     for (var j = 2; i * j < n; j++) {
       notPrime[i * j] = true;
     }

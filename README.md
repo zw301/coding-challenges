@@ -39,6 +39,7 @@
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/151.%20Reverse%20Words%20in%20a%20String.js)|Medium|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.js)|Medium|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/155.%20Min%20Stack.js)|Easy|
+|160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/160.%20Intersection%20of%20Two%20Linked%20Lists.js)|Easy|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/162.%20Find%20Peak%20Element.js)|Medium|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.js)|Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/168.%20Excel%20Sheet%20Column%20Title.js)|Easy|
@@ -47,6 +48,7 @@
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
+|204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript]()|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/215.%20Kth%20Largest%20Element%20in%20an%20Array.js)|Medium|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|

@@ -60,4 +60,4 @@ var getIntersectionNode = function(headA, headB) {
     pb = pb === null ? headA : pb.next;
   }
   return pa;
-}
+};

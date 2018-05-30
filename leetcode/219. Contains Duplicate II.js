@@ -48,7 +48,6 @@ var containsNearbyDuplicate = function(nums, k) {
        set.delete(nums[i - k]);
     }
   }
-
   return false;
 }
 

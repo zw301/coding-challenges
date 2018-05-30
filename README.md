@@ -58,6 +58,7 @@
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/232.%20Implement%20Queue%20using%20Stacks.js)|Easy|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/240.%20Search%20a%202D%20Matrix%20II.js)|Medium|
+|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/242.%20Valid%20Anagram.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|

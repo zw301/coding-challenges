@@ -49,6 +49,7 @@
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/204.%20Count%20Primes.js)|Easy|
+|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/205.%20Isomorphic%20Strings.js)|Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/206.%20Reverse%20Linked%20List.js)|Easy|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/215.%20Kth%20Largest%20Element%20in%20an%20Array.js)|Medium|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/217.%20Contains%20Duplicate.js)|Easy|

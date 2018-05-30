@@ -61,4 +61,4 @@ var isIsomorphic = function(s, t) {
 // console.log(isIsomorphic("foo", "bar")); //false
 // console.log(isIsomorphic("paper", "title")); //true
 // console.log(isIsomorphic("ab", "aa")); //false
-console.log(isIsomorphic("ab", "ca")); //true ????
+console.log(isIsomorphic("ab", "ca")); //true

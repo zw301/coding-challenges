@@ -46,15 +46,13 @@ var reverseList = function(head) {
     return head;
   }
 
-  const reverse = reverseList(head.next);
-
+  let reverse = reverseList(head.next);
   let curr = reverse;
-
   while (curr.next !== null) {
     curr = curr.next;
   }
-
   curr.next = head;
   head.next = null;
+
   return reverse;
 };

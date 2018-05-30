@@ -40,3 +40,56 @@
 // Note:
 // All characters have an ASCII value in [35, 126].
 // 1 <= len(chars) <= 1000.
+/**
+ * @param {character[]} chars
+ * @return {number}
+ */
+var compress = function(chars) {
+  let i = 0;
+  let j = 1;
+
+  while (i < chars.length && j < chars.length) {
+    if (chars[i] === chars[j]) {
+      i++;
+    }
+    count = i - j + 1;
+    if (count !== 1) {
+      countStr = String(count);
+      let k = 0;
+      while (k < countStr.length) {
+        chars[j] = countStr[k];
+        k++;
+        j++;
+      }
+    }
+    chars[j] = chars[i];
+    j++;
+    i++;
+  }
+
+  return j - 1;
+};
+
+var compress = function(chars) {
+  let say = 0;
+  let write = 0;
+  for (let read = 0; read < chars.length; read++) {
+    if (read === chars.length - 1 || chars[read] !== chars[read + 1]) {
+      chars[write] = chars[say];
+      write++;
+      if (read - say > 0) {
+        let count = String(read - say + 1);
+        for (var i = 0; i < count.length; i++) {
+          chars[write] = count[i];
+          write++;
+        }
+      }
+      say = read + 1;
+    }
+  }
+  return write;
+}
+
+console.log(compress(["a","a","b","b","c","c","c"])) //6
+console.log(compress(["a"])) //1
+console.log(compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"])) //4

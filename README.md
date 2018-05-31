@@ -71,6 +71,7 @@
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/350.%20Intersection%20of%20Two%20Arrays%20II.js)|Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/414.%20Third%20Maximum%20Number.js)|Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
+|443|[String Compression](https://leetcode.com/problems/string-compression)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/443.%20String%20Compression.js)|Easy|
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/445.%20Add%20Two%20Numbers%20II.js)|Medium|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/547.%20Friend%20Circles.js)|Medium|
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/557.%20Reverse%20Words%20in%20a%20String%20III.js)|Easy|

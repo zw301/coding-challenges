@@ -43,7 +43,6 @@ var intersection = function(nums1, nums2) {
       set.add(nums1[i]);
     }
   }
-
   return Array.from(set);
 }
 
@@ -90,6 +89,38 @@ var intersection = function(nums1, nums2) {
   }
   return Array.from(set);
 };
+
+// Time Complexity O(nlogn)  Space Complexity O(1)
+var intersection = function(nums1, nums2) {
+  let compareTo = function(x, y) {
+    return x - y;
+  }
+
+  nums1.sort(compareTo);
+  nums2.sort(compareTo);
+
+  let i = 0;
+  let j = 0;
+
+  let result = [];
+
+  while (i < nums1.length && j < nums2.length) {
+    if (nums1[i] < nums2[j]) {
+      i++;
+      continue;
+    }
+    if (nums1[i] > nums2[j]) {
+      j++;
+      continue;
+    }
+    if (result.length === 0 || result[result.length - 1] !== nums1[i]) {
+      result.push(nums1[i]);
+    }
+    i++;
+    j++;
+  }
+  return result;
+}
 
 
 let nums1 = [1, 2, 2, 1];

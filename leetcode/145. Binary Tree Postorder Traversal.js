@@ -1,4 +1,4 @@
-// Given a binary tree, return the inorder traversal of its nodes' values.
+// Given a binary tree, return the postorder traversal of its nodes' values.
 //
 // Example:
 //
@@ -9,7 +9,7 @@
 //     /
 //    3
 //
-// Output: [1,3,2]
+// Output: [3,2,1]
 // Follow up: Recursive solution is trivial, could you do it iteratively?
 /**
  * Definition for a binary tree node.
@@ -24,48 +24,62 @@
  */
 
 // Recursive - divide and conquer
-var inorderTraversal = function(root) {
+var postorderTraversal = function(root) {
   const result = [];
 
   if (root === null) {
     return result;
   }
 
-  let left = inorderTraversal(root.left);
-  let right = inorderTraversal(root.right);
+  let left = postorderTraversal(root.left);
+  let right = postorderTraversal(root.right);
 
-  return left.concat([root.val]).concat(right);
+  return left.concat(right).concat([root.val]);
 };
 
 // Iterative
-var inorderTraversal = function(root) {
-  const stack = [];
+var postorderTraversal = function(root) {
   const result = [];
+  if (root === null) {
+    return result;
+  }
 
-  while (root !== null || stack.length !== 0) {
-    while (root !== null) {
-      stack.push(root);
-      root = root.left;
-    }
+  const stack = [];
+  stack.push(root);
+  while (stack.length !== 0) {
     let node = stack.pop();
     result.push(node.val);
-    root = node.right;
+    if (node.left) {
+      stack.push(node.left);
+    }
+    if (node.right) {
+      stack.push(node.right);
+    }
+  }
+
+  let i = 0;
+  let j = result.length - 1;
+  while (i < j) {
+    let tmp = result[i];
+    result[i] = result[j];
+    result[j] = tmp;
+    i++;
+    j--;
   }
   return result;
 }
 
 // Recursive - traverse
-var inorderTraversal = function(root) {
+var postorderTraversal = function(root) {
   const result = [];
 
   traverse(root, result);
   return result;
-}
+};
 
 let traverse = function(node, result) {
   if (node === null) return;
-
   traverse(node.left, result);
-  result.push(node.val)
   traverse(node.right, result);
+  result.push(node.val)
 }

@@ -27,14 +27,15 @@
 // Recursive
 var preorderTraversal = function(root) {
   const result = [];
-  if (root === null) {
-    return result
-  }
+
   traverse(root, result);
   return result;
 };
 
 function traverse(node, result) {
+  if (root === null) {
+    return;
+  }
   result.push(node.val);
   traverse(node.left, result);
   traverse(node.right, result);

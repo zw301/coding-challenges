@@ -51,6 +51,31 @@ function countAndSay(n) {
   return cur;
 }
 
+var countAndSay = function(n) {
+    if (n <= 0) {
+        return null;
+    }
+    let i = 1;
+    let result = "1";
+    while (i < n) {
+        let say = result[0];
+        let count = 1;
+        let curr = "";
+        for (let j = 1; j < result.length; j++) {
+            if (result[j] !== say) {
+                curr += String(count) + say;
+                say = result[j];
+                count = 1;
+            } else {
+                count++;
+            }
+        }
+        result = curr + String(count) + say;
+        i++;
+    }
+    return result;
+};
+
 
 console.log(countAndSay(5))
 

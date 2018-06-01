@@ -41,6 +41,27 @@ const compareTo = function(x, y) {
   return x - y;
 };
 
+var intersect = function(nums1, nums2) {
+    let hash = {};
+    for (let i = 0; i < nums1.length; i++) {
+        if (hash[nums1[i]] === undefined) {
+            hash[nums1[i]] = 0;
+        }
+        hash[nums1[i]]++;
+    }
+    let result = [];
+    for (let i = 0; i < nums2.length; i++) {
+        if (hash[nums2[i]] !== undefined) {
+            if(hash[nums2[i]] > 0) {
+               result.push(nums2[i]);
+            }
+            hash[nums2[i]]--;
+        }
+
+    }
+    return result;
+};
+
 const nums1 = [1, 2, 2, 1];
 const nums2 = [2, 2];
 

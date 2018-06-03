@@ -37,7 +37,7 @@
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/104.%20Maximum%20Depth%20of%20Binary%20Tree.js)|Easy|
 |107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/107.%20Binary%20Tree%20Level%20Order%20Traversal%20II.js)|Easy|
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/111.%20Minimum%20Depth%20of%20Binary%20Tree.js)|Easy|
-|201|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|Medium|
+
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|
@@ -54,6 +54,7 @@
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/172.%20Factorial%20Trailing%20Zeroes.js)|Easy|
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
+|201|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|Medium|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/204.%20Count%20Primes.js)|Easy|
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/205.%20Isomorphic%20Strings.js)|Easy|
@@ -67,6 +68,7 @@
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/240.%20Search%20a%202D%20Matrix%20II.js)|Medium|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/242.%20Valid%20Anagram.js)|Easy|
+|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/257.%20Binary%20Tree%20Paths.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|

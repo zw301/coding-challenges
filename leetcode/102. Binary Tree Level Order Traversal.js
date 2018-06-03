@@ -37,20 +37,19 @@ var levelOrder = function(root) {
     let curr = [];
     let size = q.length;
 
-    let node = q.shift();
-    curr.push(node.val);
 
-    if (curr.length === size) {
-      result.push(curr);
-      curr = [];
+    for (var i = 0; i < size; i++) {
+      let node = q.shift();
+      curr.push(node.val);
+
+      if (node.left) {
+        q.push(node.left);
+      }
+      if (node.right) {
+        q.push(node.right);
+      }
     }
-    
-    if (node.left) {
-      q.push(node.left);
-    }
-    if (node.right) {
-      q.push(node.right);
-    }
+    result.push(curr);
   }
 
   return result;

@@ -40,8 +40,9 @@ var flatten = function(root) {
 
   let right = root.right;
   root.right = root.left;
+  root.left = null;
 
-  let curr = root.right;
+  let curr = root;
 
   while (curr.right !== null) {
     curr = curr.right;

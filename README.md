@@ -4,6 +4,7 @@
 |:---:|:---:|:---:|:---:|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/1.%20Two%20Sum.js)|Easy|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/2.%20Add%20Two%20Numbers.js)|Medium|
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/3.%20Longest%20Substring%20Without%20Repeating%20Characters.js)|Medium|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/9.%20Palindrome%20Number.js)|Easy|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/20.%20Valid%20Parentheses.js)|Easy|

@@ -68,6 +68,152 @@ var validTree = function(n, edges) {
   return uf.getNumComponent() === 1;
 };
 
+/**
+ * @param {number} n
+ * @param {number[][]} edges
+ * @return {boolean}
+ use union find
+ [1, 2], [2, 3], [1, 3]
+ 1 has root 2, 2 has root 3,(1's root is 3 as well) 1 has root 3, if edge[1] === root already, return false, it is a graph
+ */
+var validTree = function(n, edges) {
+    if(edges.length !== n - 1) return false;
+    var roots = [];
+    for(var i = 0; i < n; i++) {
+        roots[i] = i;
+    }
+
+    for(var edge of edges) {
+        var superRoot0 = findRoot(edge[0], roots);
+        var superRoot1 = findRoot(edge[1], roots);
+
+        if(superRoot0 === superRoot1) {
+            return false;
+        }
+        roots[superRoot0] = superRoot1;
+    }
+    return true;
+};
+
+var findRoot = function(val, roots) {
+    if(val === roots[val]) {
+        return val;
+    }
+     return findRoot(roots[val], roots);
+}
+
+
+
+// BFS
+var validTree = function(n, edges) {
+    if (n === 0) {
+        return false;
+    }
+
+    if (edges.length !== n - 1) {
+        return false;
+    }
+
+    // build adjacent map
+    const map = {};
+
+    edges.forEach(edge => {
+        let node0 = edge[0];
+        let node1 = edge[1];
+
+        if (map[node0] && !map[node0].includes(node1)) {
+            map[node0].push(node1);
+        } else {
+            map[node0] = [node1];
+        }
+
+        if (map[node1] && !map[node1].includes(node0)) {
+            map[node1].push(node0);
+        } else {
+            map[node1] = [node0];
+        }
+    });
+
+
+    // bfs
+    const q = [];
+    const set = new Set();
+
+    q.push(0);
+    set.add(0);
+
+    while ( q.length !== 0) {
+        let node = q.shift();
+
+        if (map[node] !== undefined) {
+                for(let i = 0; i < map[node].length; i++) {
+                if (set.has(map[node][i])) {
+                    continue;
+                }
+                q.push(map[node][i]);
+                set.add(map[node][i]);
+            }
+        }
+    }
+    return set.size === n;
+};
+
+// BFS II
+var validTree = function(n, edges) {
+    if (n === 0) {
+        return false;
+    }
+
+    if (edges.length !== n - 1) {
+        return false;
+    }
+
+    // build adjacent map
+    const map = {};
+
+    edges.forEach(edge => {
+        let node0 = edge[0];
+        let node1 = edge[1];
+
+        if (map[node0] && !map[node0].has(node1)) {
+            map[node0].add(node1);
+        } else {
+            map[node0] = new Set();
+            map[node0].add(node1);
+
+        }
+
+        if (map[node1] && !map[node1].has(node0)) {
+            map[node1].add(node0);
+        } else {
+          map[node1] = new Set();
+          map[node1].add(node0);
+        }
+    });
+
+
+    // bfs
+    const q = [];
+    const set = new Set();
+
+    q.push(0);
+    set.add(0);
+
+    while ( q.length !== 0) {
+        let node = q.shift();
+
+        if (map[node] !== undefined) {
+                map[node].forEach(node => {
+                  if (!set.has(node)) {
+                    q.push(node);
+                    set.add(node);
+                  }
+                });
+        }
+    }
+    return set.size === n;
+};
+
 const edges1 = [[0,1], [0,2], [0,3], [1,4]];
 const edges2 = [[0,1], [1,2], [2,3], [1,3], [1,4]];
 

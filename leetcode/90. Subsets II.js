@@ -25,11 +25,15 @@ function subsetsWithDup(nums) {
   if (nums === null || nums.length === 0) {
     return results
   }
-
+  nums.sort(compareTo);
   let subset = [];
 
   subsetHelper(nums, 0, subset, results);
   return results;
+}
+
+function compareTo(x, y) {
+  return x - y;
 }
 
 function subsetHelper(nums, startIndex, subset, results) {

@@ -120,8 +120,6 @@ var cloneGraph = function(graph) {
             }
         }
     }
-    console.log(graph);
-    console.log(nodesSet);
 
     // clone nodes
     nodesSet.forEach(node => {

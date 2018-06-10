@@ -34,33 +34,20 @@ var canFinish = function(numCourses, prerequisites) {
   const adjacentList = new Map();
   const indegree = new Map();
 
+  for (let i = 0; i < numCourses; i++) {
+    adjacentList.set(i, []);
+    indegree.set(i, 0);
+  }
+
   prerequisites.forEach(prerequisit => {
     let courseNext = prerequisit[0];
     let coursePre = prerequisit[1];
 
-    if (!adjacentList.has(courseNext)) {
-      adjacentList.set(courseNext, []);
-    }
-
-    if (adjacentList.has(coursePre)) {
-      adjacentList.set(coursePre, adjacentList.get(coursePre).push(courseNext));
-    } else {
-      adjacentList.set(coursePre, []);
-    }
-
-    if (!indegree.has(coursePre)) {
-      indegree.set(coursePre, 0);
-    }
-
-    if (indegree.has(courseNext)) {
-      indegree.set(courseNext, indegree.get(courseNext) + 1);
-    } else {
-      indegree.set(courseNext, 0);
-    }
+    adjacentList.get(coursePre).push(courseNext);
+    indegree.set(courseNext, indegree.get(courseNext) + 1);
   })
 
-  console.log(adjacentList);
-  console.log(indegree);
+
   const queue = [];
 
   for (let i = 0; i < numCourses; i++) {
@@ -70,7 +57,7 @@ var canFinish = function(numCourses, prerequisites) {
   }
 
   let count = 0;
-  while (queue !== 0) {
+  while (queue.length !== 0) {
     let course = queue.shift();
     count++;
     adjacentList.get(course).forEach(couseNext => {
@@ -84,66 +71,46 @@ var canFinish = function(numCourses, prerequisites) {
 };
 
 
-var canFinish = function(numCourses, prerequisites) {
-
-  const adjacentList = {};
-  const indegree = {};
-
-  for (let i = 0; i < numCourses; i++) {
-    indegree[i] = 0;
-    adjacentList[i] = [];
-  }
-
-  prerequisites.forEach(prerequisit => {
-    let courseNext = prerequisit[0];
-    let coursePre = prerequisit[1];
-
-    // if (!adjacentList[courseNext]) {
-    //   adjacentList[courseNext] = [];
-    // }
-
-    // if (adjacentList[coursePre]) {
-    //   adjacentList[coursePre].push(courseNext);
-    // } else {
-    //   adjacentList[coursePre] = [];
-    //   adjacentList[coursePre].push(courseNext);
-    // }
-    adjacentList[coursePre].push(courseNext);
-    //
-    // if (!indegree[coursePre]) {
-    //   indegree[coursePre] = 0;
-    // }
-    //
-    // if (indegree[courseNext]) {
-    //   indegree[courseNext]++; ;
-    // } else {
-    //   indegree[courseNext] = 1;
-    // }
-    indegree[courseNext]++;
-  })
-
-  const queue = [];
-
-  for (let i = 0; i < numCourses; i++) {
-    if (indegree[i] === 0) {
-      queue.push(i);
-    }
-  }
-
-  let count = 0;
-  while (queue.length !== 0) {
-    let course = queue.shift();
-    count++;
-    adjacentList[course].forEach(couseNext => {
-      indegree[couseNext]--;
-      if (indegree[couseNext] === 0) {
-        queue.push(couseNext);
-      }
-    });
-  }
-  console.log(count)
-  return count === numCourses;
-};
+// var canFinish = function(numCourses, prerequisites) {
+//
+//   const adjacentList = {};
+//   const indegree = {};
+//
+//   for (let i = 0; i < numCourses; i++) {
+//     indegree[i] = 0;
+//     adjacentList[i] = [];
+//   }
+//
+//   prerequisites.forEach(prerequisit => {
+//     let courseNext = prerequisit[0];
+//     let coursePre = prerequisit[1];
+//
+//     adjacentList[coursePre].push(courseNext);
+//
+//     indegree[courseNext]++;
+//   })
+//
+//   const queue = [];
+//
+//   for (let i = 0; i < numCourses; i++) {
+//     if (indegree[i] === 0) {
+//       queue.push(i);
+//     }
+//   }
+//
+//   let count = 0;
+//   while (queue.length !== 0) {
+//     let course = queue.shift();
+//     count++;
+//     adjacentList[course].forEach(couseNext => {
+//       indegree[couseNext]--;
+//       if (indegree[couseNext] === 0) {
+//         queue.push(couseNext);
+//       }
+//     });
+//   }
+//   return count === numCourses;
+// };
 
 console.log(canFinish(2, [[1,0]]));
 console.log(canFinish(2, [[1,0], [0, 1]]));

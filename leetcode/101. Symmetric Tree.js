@@ -57,6 +57,5 @@ var isSymmetric = function(root) {
     queue.push(p.right);
     queue.push(q.left);
   }
-
   return true;
 }

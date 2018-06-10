@@ -33,38 +33,36 @@
  * @return {UndirectedGraphNode}
  */
 
- // wrong!!!
+ // working!!!
 var cloneGraph = function(graph) {
   if (graph === null) {
-    return null
+    return null;
   }
 
   const nodesSet = getNodes(graph);
-  const mapping = {};
+  const mapping = new Map();
 
   nodesSet.forEach(node => {
-    mapping[node] = node.label;
+    mapping.set(node, new UndirectedGraphNode(node.label));
   });
 
   nodesSet.forEach(node => {
-    let newNode = new UndirectedGraphNode(mapping[node]);
+    let newNode = mapping.get(node);
     for (let i = 0; i < node.neighbors.length; i++) {
       let neighbor = node.neighbors[i];
-      let newNeighbor = new UndirectedGraphNode(mapping[neighbor]);
+      let newNeighbor = mapping.get(neighbor);
       newNode.neighbors.push(newNeighbor);
     }
   });
-
-
   return mapping[graph];
 };
 
-function getNodes(node) {
+function getNodes(graph) {
   const q = [];
-  q.push(node);
+  q.push(graph);
 
   const set = new Set();
-  set.add(node.label);
+  set.add(graph);
 
   while (q.length !== 0) {
     let node = q.shift();

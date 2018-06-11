@@ -35,6 +35,7 @@
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/88.%20Merge%20Sorted%20Array.js)|Easy|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/94.%20Binary%20Tree%20Inorder%20Traversal.js)|Medium|
+|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/98.%20Validate%20Binary%20Search%20Tree.js)|Medium|
 |100|[Same Tree](https://leetcode.com/problems/same-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/100.%20Same%20Tree.js)|Easy|
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/101.%20Symmetric%20Tree.js)|Easy|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.js)|Medium|

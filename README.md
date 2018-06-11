@@ -59,6 +59,7 @@
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/172.%20Factorial%20Trailing%20Zeroes.js)|Easy|
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/200.%20Number%20of%20Islands.js)|Medium|
 |201|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|Medium|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/204.%20Count%20Primes.js)|Easy|

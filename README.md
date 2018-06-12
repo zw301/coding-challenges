@@ -22,6 +22,7 @@
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/47.%20Permutations%20II.js)|Medium|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/49.%20Group%20Anagrams.js)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
+|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/53.%20Maximum%20Subarray.js)|Easy|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|

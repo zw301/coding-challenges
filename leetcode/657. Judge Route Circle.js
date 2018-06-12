@@ -17,7 +17,14 @@ var judgeCircle = function(moves) {
       return true;
     }
 
+    const map = {};
     for (let i = 0; i < moves.length; i++) {
-      array[i]
+      if (map[moves[i]]) {
+        map[moves[i]]++
+      } else {
+        map[moves[i]] = 1;
+      }
     }
+
+    return map["R"] === map["L"] && map["U"] === map["D"];
 };

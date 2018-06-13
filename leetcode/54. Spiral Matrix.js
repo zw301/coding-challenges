@@ -28,10 +28,48 @@ var spiralOrder = function(matrix) {
   }
 
   const result = [];
-  const m = matrix.length;
-  const n = matrix[0].length;
+  let top = 0;
+  let bottom = matrix.length - 1;
+  let left = 0;
+  let right = matrix[0].length - 1;
 
-  
+  while (result.length !== matrix[0].length * matrix.length) {
+    // go left
+    if (left > right || top > bottom) {
+      break;
+    }
+    for (let j = left; j <= right; j++) {
+      result.push(matrix[top][j]);
+    }
+    top++;
+
+    // go down
+    if (left > right || top > bottom) {
+      break;
+    }
+    for (var i = top; i <= bottom; i++) {
+      result.push(matrix[i][right]);
+    }
+    right--;
+
+    // go left
+    if (left > right || top > bottom) {
+      break;
+    }
+    for (var j = right; j >= left; j--) {
+      result.push(matrix[bottom][j]);
+    }
+    bottom--;
+
+    // go up
+    if (left > right || top > bottom) {
+      break;
+    }
+    for (var i = bottom; i >= top; i--) {
+      result.push(matrix[i][left]);
+    }
+    left++;
+  }
   return result;
 };
 

@@ -23,6 +23,7 @@
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/49.%20Group%20Anagrams.js)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/53.%20Maximum%20Subarray.js)|Easy|
+|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/54.%20Spiral%20Matrix.js)|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
@@ -103,6 +104,7 @@
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
 |443|[String Compression](https://leetcode.com/problems/string-compression)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/443.%20String%20Compression.js)|Easy|
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/445.%20Add%20Two%20Numbers%20II.js)|Medium|
+|538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/538.%20Convert%20BST%20to%20Greater%20Tree.js)|Easy|
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/547.%20Friend%20Circles.js)|Medium|
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/557.%20Reverse%20Words%20in%20a%20String%20III.js)|Easy|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/617.%20Merge%20Two%20Binary%20Trees.js)|Easy|

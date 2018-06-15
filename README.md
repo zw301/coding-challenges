@@ -24,6 +24,7 @@
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/53.%20Maximum%20Subarray.js)|Easy|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/54.%20Spiral%20Matrix.js)|Medium|
+|56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|[JavaScript]()|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/59.%20Spiral%20Matrix%20II.js)|Medium|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
@@ -86,6 +87,7 @@
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/237.%20Delete%20Node%20in%20a%20Linked%20List.js)|Easy|
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/240.%20Search%20a%202D%20Matrix%20II.js)|Medium|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/242.%20Valid%20Anagram.js)|Easy|
+|252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/252.%20Meeting%20Rooms.js)|Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/257.%20Binary%20Tree%20Paths.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|

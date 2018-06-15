@@ -52,30 +52,29 @@ var binaryTreePaths = function(root) {
   if (root === null) {
     return [];
   }
-  const path = [];
+  const paths = [];
 
-  helper(path, root, String(root.val));
-  return path;
+  helper(paths, root, String(root.val));
+  return paths;
 }
 
-function helper(path, node, str) {
+function helper(paths, node, path) {
   if (node === null) {
     return;
   }
 
   if (node.left === null && node.right === null) {
-    path.push(str);
+    paths.push(path);
     return;
   }
 
   if (node.left !== null) {
-    helper(path, node.left, str + "->" + String(node.left.val));
+    helper(paths, node.left, path + "->" + String(node.left.val));
   }
 
   if (node.right !== null) {
-    helper(path, node.right, str + "->" + String(node.right.val));
+    helper(paths, node.right, path + "->" + String(node.right.val));
   }
-  return path;
 }
 
 var binaryTreePaths = function(root) {

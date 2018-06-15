@@ -25,16 +25,6 @@ var reverseWords = function(str) {
   return result.trim();
 };
 
-function reverse(arr, i, j) {
-  while (i < j) {
-    let tmp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = tmp;
-    i++;
-    j--;
-  }
-  return arr;
-}
 
 
 const s1 = "   ab  cde   ";

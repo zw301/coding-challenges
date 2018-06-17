@@ -49,6 +49,7 @@
 |107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/107.%20Binary%20Tree%20Level%20Order%20Traversal%20II.js)|Easy|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.js)|Easy|
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/111.%20Minimum%20Depth%20of%20Binary%20Tree.js)|Easy|
+|112|[Path Sum](https://leetcode.com/problems/path-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/112.%20Path%20Sum.js)|Easy|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|

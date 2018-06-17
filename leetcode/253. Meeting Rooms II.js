@@ -20,7 +20,7 @@
  * @return {number}
  */
 var minMeetingRooms = function(intervals) {
-    if (intervals === null || interval.length === 0) {
+    if (intervals === null || intervals.length === 0) {
       return 0;
     }
 
@@ -38,17 +38,20 @@ var minMeetingRooms = function(intervals) {
     let result = 0;
     let curr = 0;
 
+    let i = 0;
     let j = 0;
-    for (var i = 0; i < startArr.length; i++) {
+
+    while (i < startArr.length) {
       if (startArr[i] < endArr[j]) {
+        i++;
         curr++;
         result = Math.max(result, curr);
-      } else {
-        curr--;
+      } else if (startArr[i] > endArr[j]) {
         j++;
-        if(j !== endArr.length - 1) {
-            i--;
-        }
+        curr--;
+      } else {
+        i++;
+        j++;
       }
     }
     return result;

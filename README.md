@@ -100,6 +100,7 @@
 |292|[Nim Game](https://leetcode.com/problems/nim-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/292.%20Nim%20Game.js)|Easy|
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/298.%20Binary%20Tree%20Longest%20Consecutive%20Sequence.js)|Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
+|322|[Coin Change](https://leetcode.com/problems/coin-change)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/322.%20Coin%20Change.js)|Medium|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/344.%20Reverse%20String.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/349.%20Intersection%20of%20Two%20Arrays.js)|Easy|

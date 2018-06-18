@@ -28,6 +28,7 @@
 |57|[Insert Interval](https://leetcode.com/problems/insert-interval)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/57.%20Insert%20Interval.js)|Hard|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/59.%20Spiral%20Matrix%20II.js)|Medium|
+|62|[Unique Paths](https://leetcode.com/problems/unique-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/62.%20Unique%20Paths.js)|Medium|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/69.%20Sqrt(x).js)|Easy|

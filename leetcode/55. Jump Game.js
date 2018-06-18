@@ -20,5 +20,15 @@
  * @return {boolean}
  */
 var canJump = function(nums) {
+  let maxReach = 0;
 
+  for (let i = 0; i < nums.length; i++) {
+    if (i <= maxReach) {
+      maxReach = Math.max(i + nums[i], maxReach);
+      if (maxReach >= nums.length - 1) {
+        return true;
+      }
+    }
+  }
+  return false;
 };

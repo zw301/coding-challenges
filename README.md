@@ -24,6 +24,7 @@
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/53.%20Maximum%20Subarray.js)|Easy|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/54.%20Spiral%20Matrix.js)|Medium|
+|55|[Jump Game](https://leetcode.com/problems/jump-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/55.%20Jump%20Game.js)|Medium|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/56.%20Merge%20Intervals.js)|Medium|
 |57|[Insert Interval](https://leetcode.com/problems/insert-interval)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/57.%20Insert%20Interval.js)|Hard|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/58.%20Length%20of%20Last%20Word.js)|Easy|

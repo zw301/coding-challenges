@@ -167,6 +167,5 @@ var sortList = function(head) {
   curr.next = head;
   equal.next = greaterDummy.next;
 
-  return dummy.next
-
+  return dummy.next;
 }

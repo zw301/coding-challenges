@@ -63,6 +63,7 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/144.%20Binary%20Tree%20Preorder%20Traversal.js)|Medium|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/145.%20Binary%20Tree%20Postorder%20Traversal.js)|Hard|
+|148|[Sort List](https://leetcode.com/problems/sort-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/148.%20Sort%20List.js)|Medium|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/151.%20Reverse%20Words%20in%20a%20String.js)|Medium|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/152.%20Maximum%20Product%20Subarray.js)|Medium|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.js)|Medium|

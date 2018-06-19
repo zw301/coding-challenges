@@ -32,3 +32,20 @@ var canJump = function(nums) {
   }
   return false;
 };
+
+var canJump = function(nums) {
+  const dp = new Array(nums.length);
+
+  dp[0] = true;
+  for (let i = 1; i < nums.length; i++) {
+    dp[i] = false;
+
+    for (let j = 0; j < i; j++) {
+      if (dp[j] && j + nums[j] >= i) {
+        dp[i] = true;
+        break;
+      }
+    }
+  }
+  return dp[nums.length - 1];
+}

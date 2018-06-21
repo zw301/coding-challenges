@@ -124,6 +124,7 @@ var intersection = function(nums1, nums2) {
 
 
 // binary search time O((n + m)logn) n is shorter arr
+// space O(1)
 var intersection = function(nums1, nums2) {
     if (nums1 === null || nums2 === null || nums1.length === 0 || nums2.length === 0) {
         return [];

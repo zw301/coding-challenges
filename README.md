@@ -5,6 +5,7 @@
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/1.%20Two%20Sum.js)|Easy|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/2.%20Add%20Two%20Numbers.js)|Medium|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/3.%20Longest%20Substring%20Without%20Repeating%20Characters.js)|Medium|
+|4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/4.%20Median%20of%20Two%20Sorted%20Arrays.js)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/5.%20Longest%20Palindromic%20Substring.js)|Medium|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/9.%20Palindrome%20Number.js)|Easy|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|
@@ -65,6 +66,7 @@
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/133.%20Clone%20Graph.js)|Medium|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/138.%20Copy%20List%20with%20Random%20Pointer.js)|Medium|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|
+|142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/142.%20Linked%20List%20Cycle%20II.js)|Medium|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/144.%20Binary%20Tree%20Preorder%20Traversal.js)|Medium|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/145.%20Binary%20Tree%20Postorder%20Traversal.js)|Hard|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/148.%20Sort%20List.js)|Medium|

@@ -45,7 +45,7 @@ var reverseBetween = function(head, m, n) {
     if (postNNode === null) {
       return null;
     }
-    let tmp = posNNode.next;
+    let tmp = postNNode.next;
     postNNode.next = nNode;
     nNode = postNNode;
     postNNode = tmp;

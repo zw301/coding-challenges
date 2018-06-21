@@ -23,13 +23,14 @@ var sortColors = function(nums) {
 };
 
 const partition = function(nums, lo, hi) {
-  if (hi <= lo) {
-    return
-  }
+  // if (hi <= lo) {
+  //   return;
+  // }
 
   let lt = lo;
   let gt = hi;
-  let pivot = nums[lo];
+  // let pivot = nums[lo];
+  let pivot = 1;
   let i = lo;
 
   while (i <= gt) {
@@ -44,8 +45,8 @@ const partition = function(nums, lo, hi) {
       i++;
     }
   }
-  partition(nums, lo, lt - 1);
-  partition(nums, gt + 1, hi);
+  // partition(nums, lo, lt - 1);
+  // partition(nums, gt + 1, hi);
 }
 
 const exch = function (nums, x, y) {

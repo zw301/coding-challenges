@@ -123,6 +123,56 @@ var intersection = function(nums1, nums2) {
 }
 
 
+// binary search time O((n + m)logn) n is shorter arr
+var intersection = function(nums1, nums2) {
+    if (nums1 === null || nums2 === null || nums1.length === 0 || nums2.length === 0) {
+        return [];
+
+    }
+
+    let shortArr, longArr;
+
+    if (nums1.length < nums2.length) {
+        shortArr = nums1;
+        longArr = nums2;
+    } else {
+        shortArr = nums2;
+        longArr = nums1;
+    }
+
+    longArr.sort((a, b) => a - b);
+
+    const set = new Set();
+
+    for (let i = 0; i < shortArr.length; i++) {
+        if (bs(longArr, shortArr[i])) {
+            set.add(shortArr[i]);
+        }
+    }
+
+    return Array.from(set);
+};
+
+function bs(arr, target) {
+    let start = 0;
+    let end = arr.length - 1;
+
+    while (start + 1 < end) {
+        let mid = start + Math.floor((end - start) / 2);
+
+        if (arr[mid] < target) {
+            start = mid;
+        } else {
+            end = mid;
+        }
+    }
+
+    if (arr[start] === target || arr[end] === target) {
+        return true;
+    }
+    return false;
+}
+
 let nums1 = [1, 2, 2, 1];
 let nums2 = [2, 2]
 

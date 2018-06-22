@@ -63,6 +63,7 @@
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
+|131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/131.%20Palindrome%20Partitioning.js)|Medium|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/133.%20Clone%20Graph.js)|Medium|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/138.%20Copy%20List%20with%20Random%20Pointer.js)|Medium|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|

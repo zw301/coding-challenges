@@ -40,13 +40,6 @@ var reverseKGroup = function(head, k) {
     node = reverseK(node, k);
   }
 
-  // head = dummy;
-  // while (true) {
-  //   node = reverseK(head, k);
-  //   if (head === null) {
-  //     break;
-  // }
-
   return dummy.next;
 };
 

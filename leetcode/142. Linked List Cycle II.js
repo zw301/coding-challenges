@@ -5,24 +5,25 @@
 // Follow up:
 // Can you solve it without using extra space?
 var detectCycle = function(head) {
-    if (head === null) {
-        return null
+    if (head === null || head.next === null) {
+        return null;
     }
-    let fast = head.next;
+    let fast = head;
     let slow = head;
 
-    while (fast !== slow) {
-        if (fast === null || fast.next === null) {
-            return null;
-        }
+    while (fast !== null && fast.next !== null) {
+
         fast = fast.next.next;
         slow = slow.next
+        if (fast === slow) {
+            while (head !== slow) {
+                slow = slow.next;
+                head = head.next;
+            }
+            return head;
+        }
     }
 
-    while (head !== slow) {
-        slow = slow.next;
-        head = head.next;
-    }
+    return null
 
-    return head;
 };

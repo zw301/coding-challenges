@@ -71,3 +71,46 @@ var copyRandomList = function(head) {
 
   return dummy.next;
 }
+
+var copyRandomList = function(head) {
+    if (head === null) {
+        return null;
+    }
+    copyNext(head);
+    copyRandom(head);
+    return splitList(head);
+};
+
+function copyNext(node) {
+    while (node !== null) {
+        const newNode = new RandomListNode(node.label);
+        newNode.random = node.random;
+        newNode.next = node.next;
+        node.next = newNode;
+
+        node = node.next.next;
+    }
+}
+
+function copyRandom(node) {
+    while (node !== null) {
+        if (node.next.random !== null) {
+            node.next.random = node.random.next;
+        }
+        node = node.next.next;
+    }
+}
+
+function splitList(head) {
+    const newHead = head.next;
+
+    while (head !== null) {
+        let tmp = head.next;
+        head.next = tmp.next;
+        if (tmp.next !== null) {
+            tmp.next = tmp.next.next;
+        }
+        head = head.next;
+    }
+    return newHead;
+}

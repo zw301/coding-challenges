@@ -24,18 +24,25 @@ var numDecodings = function(s) {
   if (s === null || s.length === 0) {
     return 0;
   }
-  if (s === "0") {
-    return 0;
-  }
-  const dp = new Array(s.length + 1);
+
+  const len = s.length;
+  const dp = new Array(len + 1).fill(0);
+
   dp[0] = 1;
-  dp[1] = s[0] === "0" ? 0 : 1;
 
-  for (let i = 2; i < s.length; i++) {
-
+  for (let i = 1; i <= len; i++) {
+    if (s[i - 1] !== "0") {
+      dp[i] += dp[i - 1];
+    }
+    if (i >= 2) {
+      let val = Number(s[i - 2]) * 10 + Number(s[i - 1]);
+      if (val >= 10 && val <= 26) {
+        dp[i] += dp[i - 2];
+      }
+    }
   }
-  return dp[dp.length - 1];
+  return dp[len];
 };
 
 
-console.log(numDecodings("00"));
+console.log(numDecodings("000"));

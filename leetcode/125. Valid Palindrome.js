@@ -18,8 +18,8 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-  i = 0;
-  j = s.length - 1;
+  let i = 0;
+  let j = s.length - 1;
 
   while (i < j) {
     if (!isValid(s[i])) {

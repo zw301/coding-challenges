@@ -14,6 +14,7 @@
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.js)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/20.%20Valid%20Parentheses.js)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/21.%20Merge%20Two%20Sorted%20Lists.js)|Easy|
+|22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/22.%20Generate%20Parentheses.js)|Medium|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/25.%20Reverse%20Nodes%20in%20k-Group.js)|Hard|
 |26|[Remove Duplicates from Sorted Array](https://github.com/zw301/coding-challenges/blob/master/leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.js)|[JavaScript](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/27.%20Remove%20Element.js)|Easy|

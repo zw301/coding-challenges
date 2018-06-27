@@ -40,12 +40,12 @@ function partition(nums, lo, hi, pos) {
     if (nums[i] < pivot) {
       exch(nums, i, lt);
       i++;
-      lt++
+      lt++;
     } else if (nums[i] > pivot) {
       exch(nums, i, gt);
       gt--;
     } else {
-      i++
+      i++;
     }
   }
 

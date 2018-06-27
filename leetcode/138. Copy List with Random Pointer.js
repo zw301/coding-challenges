@@ -72,6 +72,7 @@ var copyRandomList = function(head) {
   return dummy.next;
 }
 
+///////////////////////
 var copyRandomList = function(head) {
     if (head === null) {
         return null;

@@ -10,7 +10,7 @@
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/9.%20Palindrome%20Number.js)|Easy|
 |15|[3Sum](https://leetcode.com/problems/3sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/15.%203Sum.js)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|
-|18|[4Sum](https://leetcode.com/problems/4sum)|[JavaScript]()|Medium|
+|18|[4Sum](https://leetcode.com/problems/4sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/18.%204Sum.js)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/20.%20Valid%20Parentheses.js)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/21.%20Merge%20Two%20Sorted%20Lists.js)|Easy|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/25.%20Reverse%20Nodes%20in%20k-Group.js)|Hard|

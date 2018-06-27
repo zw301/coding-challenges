@@ -27,6 +27,7 @@
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|
 |46|[Permutations](https://leetcode.com/problems/permutations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/46.%20Permutations.js)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/47.%20Permutations%20II.js)|Medium|
+|48|[Rotate Image](https://leetcode.com/problems/rotate-image)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/48.%20Rotate%20Image.js)|Medium|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/49.%20Group%20Anagrams.js)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/51.%20N-Queens.js)|Hard|

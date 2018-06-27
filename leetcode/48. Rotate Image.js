@@ -49,9 +49,6 @@ var rotate = function(matrix) {
 
   for (let i = 0; i < matrix.length; i++) {
     for (let j = i; j < matrix[0].length; j++) {
-      // let tmp = matrix[i][j];
-      // matrix[i][j] = matrix[j][i];
-      // matrix[j][i] = tmp;
       swap(matrix, i, j, j, i);
     }
   }
@@ -60,9 +57,6 @@ var rotate = function(matrix) {
     let start = 0;
     let end = matrix[0].length - 1;
     while (start < end) {
-      // let tmp = matrix[i][start];
-      // matrix[i][start] = matrix[i][end];
-      // matrix[i][end] = tmp;
       swap(matrix, i, start, i, end);
       start++;
       end--;
@@ -75,7 +69,7 @@ const swap = function(matrix, i1, j1, i2, j2) {
   let tmp = matrix[i1][j1];
   matrix[i1][j1] = matrix[i2][j2];
   matrix[i2][j2] = tmp;
-}
+};
 
 
 let matrix =

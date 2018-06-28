@@ -3,3 +3,24 @@
 //
 // Example
 // Given [1,3,2], the max area of the container is 2.
+const maxArea = function (heights) {
+  if (heights === null || heights.length === 0) {
+    return 0;
+  }
+
+  let left = 0;
+  let right = heights.length - 1;
+  let max = -Infinity;
+
+  while (left < right) {
+    let area = (right - left) * Math.min(heights[right], heights[left]);
+    max = Math.max(max, area);
+
+    if (heights[left] < heights[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+  return max;
+}

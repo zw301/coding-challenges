@@ -26,8 +26,6 @@ var isPalindrome = function(head) {
     return true;
   }
 
-  // const dummy = new ListNode(0);
-  // dummy.next = head;
   let fast = head.next;
   let slow = head;
 
@@ -35,34 +33,22 @@ var isPalindrome = function(head) {
     fast = fast.next.next;
     slow = slow.next;
   }
-
-  let head2;
-
-  if (slow.next !== null && slow.next.val === slow.val) {
-    head2 = slow.next;
-
-  }
-  if (slow.next !== null && slow.next.val !== slow.val) {
-    head2 = new ListNode(slow.label);
-    head2.next = slow.next;
-  }
-  slow.next = null;
+  slow = slow.next;
 
   let prev = null;
-  while (head2 !== null) {
-    let next = head2.next;
-    head2.next = prev;
-    prev = head2;
-    head2 = next;
+  while (slow !== null) {
+    let next = slow.next;
+    slow.next = prev;
+    prev = slow;
+    slow = next;
   }
 
-  while (head !== null && head2 !== null) {
-    if (head.val !== head2.val) {
+  while (prev !== null) {
+    if (prev.val !== head.val) {
       return false;
     }
+    prev = prev.next;
     head = head.next;
-    head2 = head2.next;
   }
-
-  return head2 === null && head2 === null;
+  return true;
 };

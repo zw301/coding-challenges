@@ -49,3 +49,9 @@ const partition = function(nums, lo, hi, k) {
         partition(nums, lo, lt - 1, k);
     }
 }
+
+const swap = function(nums, i, j) {
+    let tmp = nums[i];
+    nums[i] = nums[j];
+    nums[j]= tmp;
+}

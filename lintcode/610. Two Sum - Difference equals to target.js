@@ -31,7 +31,7 @@ const twoSum7 = function (nums, target) {
         } else if (diff > Math.abs(target)) {
             i++;
         } else {
-            return [arr[i].idx + 1, arr[j].idx + 1].sort();
+            return [arr[i].idx + 1, arr[j].idx + 1].sort((a, b) => a - b);
         }
     }
     return [];

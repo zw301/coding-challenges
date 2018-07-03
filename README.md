@@ -77,6 +77,7 @@
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/142.%20Linked%20List%20Cycle%20II.js)|Medium|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/144.%20Binary%20Tree%20Preorder%20Traversal.js)|Medium|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/145.%20Binary%20Tree%20Postorder%20Traversal.js)|Hard|
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/146.%20LRU%20Cache.js)|Hard|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/148.%20Sort%20List.js)|Medium|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/151.%20Reverse%20Words%20in%20a%20String.js)|Medium|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/152.%20Maximum%20Product%20Subarray.js)|Medium|

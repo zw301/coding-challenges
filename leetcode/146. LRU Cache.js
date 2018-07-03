@@ -27,7 +27,6 @@ class Node {
         this.next = null;
     }
 }
-
 class LRUCache {
     /*
     * @param capacity: An integer

@@ -17,6 +17,8 @@
 //   [0, 0, 0, 0, 1]
 // ]
 
+
+// union find
 class UF {
   constructor(graph) {
     this.numComponent = 0;
@@ -61,7 +63,7 @@ class UF {
   }
 }
 
-function numOfIsland(graph) {
+function numOfIsland1(graph) {
   if (graph.length === 0 || graph[0].length === 0) {
     return 0;
   }
@@ -95,6 +97,66 @@ function numOfIsland(graph) {
   return uf.getNumComponent();
 }
 
+// bfs
+var numIslands = function(grid) {
+  if (grid === null || grid.length === 0) {
+    return 0;
+  }
+  if (grid[0] === null || grid[0].length === 0) {
+    return 0;
+  }
+
+  let m = grid.length;
+  let n = grid[0].length;
+
+  let count = 0;
+
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (grid[i][j]) {
+        bfs(grid, i, j);
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+const bfs = function(grid, x, y) {
+  const goX = [1, -1, 0, 0];
+  const goY = [0, 0, 1, -1];
+
+  const queue = [];
+  const pt = new Point(x, y);
+  queue.push(pt);
+  grid[x][y] = false;
+
+  while (queue.length !== 0) {
+    let cur = queue.shift();
+    grid[cur.x][cur.y] = false;
+
+    for (let i = 0; i < 4; i++) {
+      let adj = new Point(cur.x + goX[i], cur.y + goY[i]);
+      if (inBound(grid, adj) && grid[adj.x][adj.y]) {
+        queue.push(adj);
+      }
+    }
+  }
+}
+
+const inBound = function(grid, point) {
+  let n = grid.length;
+  let m = grid[0].length;
+
+  return point.x >= 0 && point.x < n && point.y >= 0 && point.y < m;
+}
+
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
 
 const graph =
   [
@@ -104,4 +166,4 @@ const graph =
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 1]
   ];
-console.log(numOfIsland(graph));
+console.log(numIslands(graph));

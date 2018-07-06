@@ -54,7 +54,7 @@ var cloneGraph = function(graph) {
       newNode.neighbors.push(newNeighbor);
     }
   });
-  return mapping[graph];
+  return mapping.get(graph);
 };
 
 function getNodes(graph) {
@@ -109,7 +109,7 @@ var cloneGraph = function(graph) {
     let queue = [];
     nodesSet.add(graph);
     queue.push(graph);
-    while (queue.length != 0) {
+    while (queue.length !== 0) {
         let node = queue.shift();
         for (let i = 0; i < node.neighbors.length; i++) {
             if (!nodesSet.has(node.neighbors[i])) {
@@ -126,13 +126,38 @@ var cloneGraph = function(graph) {
 
     // clone edges
     nodesSet.forEach(node => {
-    let newNode = mapping.get(node);
-    for (let i = 0; i < node.neighbors.length; i++) {
-      let neighbor = node.neighbors[i];
-      let newNeighbor = mapping.get(neighbor);
-      newNode.neighbors.push(newNeighbor);
-    }
+      let newNode = mapping.get(node);
+      for (let i = 0; i < node.neighbors.length; i++) {
+        let neighbor = node.neighbors[i];
+        let newNeighbor = mapping.get(neighbor);
+        newNode.neighbors.push(newNeighbor);
+      }
     });
+
+    // 错的，不知道为什么过不了
+    // nodeSet.forEach(node => {
+    //     let newNode = map.get(node);
+    //     node.neighbors.forEach(neighbor => {
+    //         let newNeighbor = map.get(neighbor);
+    //         console.log(newNeighbor)
+    //         newNode.neigbors.push(newNeighbor);
+    //     });
+    // });
  
     return mapping.get(graph);
 };
+
+// leetcode best Solution bfs
+// function cloneGraph(graph) {
+//  var map = {};
+//  return traverse(graph);
+//
+//  function traverse(node) {
+//    if (!node) return node;
+//    if (!map[node.label]) {
+//      map[node.label] = new UndirectedGraphNode(node.label);
+//      map[node.label].neighbors = node.neighbors.map(traverse);
+//    }
+//    return map[node.label];
+//  }
+// }

@@ -68,6 +68,7 @@
 |112|[Path Sum](https://leetcode.com/problems/path-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/112.%20Path%20Sum.js)|Easy|
 |113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/113.%20Path%20Sum%20II.js)|Medium|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.js)|Medium|
+|120|[Triangle](https://leetcode.com/problems/triangle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/120.%20Triangle.js)|Medium|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/127.%20Word%20Ladder.js)|Medium|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|

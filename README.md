@@ -122,6 +122,7 @@
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/287.%20Find%20the%20Duplicate%20Number.js)|Medium|
 |292|[Nim Game](https://leetcode.com/problems/nim-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/292.%20Nim%20Game.js)|Easy|
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/298.%20Binary%20Tree%20Longest%20Consecutive%20Sequence.js)|Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|

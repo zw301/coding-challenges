@@ -15,3 +15,24 @@
 // Input: [7,6,4,3,1]
 // Output: 0
 // Explanation: In this case, no transaction is done, i.e. max profit = 0.
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function(prices) {
+  if (prices === null || prices.length === 0) {
+    return 0;
+  }
+
+  let minPrice = prices[0];
+  let maxProfit = 0;
+  for (let i = 0; i < prices.length; i++) {
+    let currPrice = prices[i];
+    let currProfit = currPrice - minPrice;
+
+    minPrice = Math.min(minPrice, currPrice);
+    maxProfit = Math.max(maxProfit, currProfit);
+  }
+
+  return maxProfit;
+}

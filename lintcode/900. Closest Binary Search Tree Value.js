@@ -18,7 +18,6 @@ const closestValue = function (root, target) {
         if (Math.abs(min - target) > Math.abs(root.val - target)) {
             min = root.val;
         }
-
         if (root.val > target) {
             root = root.left;
         } else if (root.val < target) {

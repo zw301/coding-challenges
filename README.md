@@ -126,6 +126,7 @@
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/287.%20Find%20the%20Duplicate%20Number.js)|Medium|
 |292|[Nim Game](https://leetcode.com/problems/nim-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/292.%20Nim%20Game.js)|Easy|
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.js)|Hard|
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/298.%20Binary%20Tree%20Longest%20Consecutive%20Sequence.js)|Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
 |322|[Coin Change](https://leetcode.com/problems/coin-change)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/322.%20Coin%20Change.js)|Medium|

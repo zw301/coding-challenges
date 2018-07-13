@@ -121,6 +121,7 @@
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/257.%20Binary%20Tree%20Paths.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/263.%20Ugly%20Number.js)|Easy|
+|270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/270.%20Closest%20Binary%20Search%20Tree%20Value.js)|Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|

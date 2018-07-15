@@ -59,13 +59,12 @@ var calculate = function(s) {
           stack.push(Math.ceil(val / num))
         }
       }
-      console.log(stack);
       sign = c;
       num = 0;
     }
   }
 
-  console.log(stack);
+  // console.log(stack);
   let res = 0;
   for (let i = 0; i < stack.length; i++) {
     res += stack[i];

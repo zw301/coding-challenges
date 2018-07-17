@@ -26,6 +26,7 @@ const isValidBST = function (root) {
   }
 
   const stack = [];
+  let prev = null;
   while (root !== null || stack.length !== 0) {
     while (root !== null) {
       stack.push(root);
@@ -39,4 +40,27 @@ const isValidBST = function (root) {
     root = root.right;
   }
   return true;
+}
+
+
+const isValidBST = function (root) {
+
+  let lastNode = null;
+  let isValid = true;
+
+  const inorderTraversal = function(root) {
+    if (root == null) {
+      return true;
+    }
+    inorderTraversal(root.left);
+    if (lastNode !== null && lastNode.val >= root.val) {
+      isValid = false;
+      return;
+    }
+    lastNode = root;
+    inorderTraversal(root.right);
+  }
+
+  inorderTraversal(root);
+  return isValid;
 }

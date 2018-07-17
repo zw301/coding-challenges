@@ -22,7 +22,6 @@ class ResultType {
 const isBalanced = function(root) {
   return helper(root).isBalanced;
 }
-
 const helper = function(root) {
   if (root === null) {
     return new ResultType(0, true);

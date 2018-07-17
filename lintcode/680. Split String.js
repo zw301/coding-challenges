@@ -18,12 +18,16 @@ const splitString = function(s) {
 
 const helper = (s, startIndex, subset, result) => {
   if (startIndex === s.length) {
-    result.push(subset);
+    result.push(subset.slice());
     return;
   }
 
-  for (let i = 1; i < s.length - 1; i++) {
-    helper(s, i + 1, str + s[i], result);
+  for (let i = 1; i < s.length; i++) {
+    if (startIndex + i <= s.length) {
+      subset.push(s.slice(startIndex, startIndex + i));
+      helper(s, startIndex + i, subset, result);
+      subset.pop();
+    }
   }
 }
 

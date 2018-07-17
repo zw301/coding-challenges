@@ -56,6 +56,8 @@ var isValidBST = function(root) {
   return true;
 };
 
+
+// divide and conquer
 var isValidBST = function(root) {
   return helper(root, null, null)
 }
@@ -73,4 +75,69 @@ function helper(root, min, max) {
   }
 
   return helper(root.left, min, root.val) && helper(root.right, root.val, max);
+}
+
+var isValidBST = function(root) {
+  if (root === null) {
+    return true;
+  }
+
+  let isValid = true;
+  let lastNode = null;
+
+  const helper = function(root) {
+    if (root === null) {
+      return;
+    }
+    helper(root.left);
+    if (lastNode !== null && lastNode.val >= root.val) {
+      isValid = false;
+      return;
+    }
+    lastNode = root;
+    helper(root.right);
+  }
+
+  helper(root);
+  return isValid;
+}
+
+
+// divide and conquer
+class ResultType {
+  constructor(isBST) {
+    this.isBST = isBST;
+    this.maxNode = maxNode;
+    this.minNode = minNode;
+  }
+}
+
+var isValidBST = function(root) {
+  return divideConquer(root).isBST;
+}
+
+const divideConquer = function(root) {
+  if (root === null) {
+    return new ResultType(true);
+  }
+
+  let left = divideConquer(root.left);
+  let right = divideConquer(root.right);
+
+  if (!left.isBST || !right.isBST) {
+    return new ResultType(false);
+  }
+  if (left.maxNode !== null && left.maxNode.val >= root.val) {
+    return new ResultType(false);
+  }
+  if (right.minNode !== null && right.minNode.val <= root.val) {
+    return new ResultType(false);
+  }
+
+  // is bst
+  let result = new ResultType(true);
+  result.minNode = left.minNode !== null ? left.minNode : root;
+  result.maxNode = right.maxNode !== null ? right.maxNode : root;
+
+  return result;
 }

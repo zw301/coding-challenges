@@ -68,5 +68,32 @@ function subsethelper(nums, subset, startIndex, results) {
     subset.pop();
   }
 }
+
+
+var subsets = function(nums) {
+  if (nums === null) {
+    return [];
+  }
+
+  const result = [];
+  dfs(nums, 0, [], result);
+  return result;
+}
+
+const dfs = (nums, index,  subset, result) => {
+  if (index === nums.length) {
+    result.push(subset.slice());
+    return;
+  }
+
+  // 选 nums[index]
+  subset.push(nums[index]);
+  dfs(nums, index + 1, subset, result);
+
+
+  // 不选 nums[index]
+  subset.pop();
+  dfs(nums, index + 1, subset, result);
+}
 // console.log(subset1([1,2,3]));
 console.log(subsets([1,2,3]));

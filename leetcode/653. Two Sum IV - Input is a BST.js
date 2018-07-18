@@ -76,3 +76,28 @@ function inorder(root) {
 
   return sortedArr;
 }
+
+var findTarget = function(root, k) {
+  if (root === null) {
+    return [];
+  }
+
+  const stack = [];
+  const set = new Set();
+
+  while (root !== null || stack.length !== 0) {
+    while (root !== null) {
+      stack.push(root);
+      root = root.left;
+    }
+    root = stack.pop();
+    if (set.has(k - root.val)) {
+      return true;
+    } else {
+      set.add(root.val);
+    }
+    root = root.right;
+  }
+
+  return false;
+}

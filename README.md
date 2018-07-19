@@ -31,6 +31,7 @@
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/49.%20Group%20Anagrams.js)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/50.%20Pow(x%2C%20n).js)|Medium|
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/51.%20N-Queens.js)|Hard|
+|52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/52.%20N-Queens%20II.js)|Hard|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/53.%20Maximum%20Subarray.js)|Easy|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/54.%20Spiral%20Matrix.js)|Medium|
 |55|[Jump Game](https://leetcode.com/problems/jump-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/55.%20Jump%20Game.js)|Medium|

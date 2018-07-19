@@ -77,7 +77,7 @@
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/131.%20Palindrome%20Partitioning.js)|Medium|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/133.%20Clone%20Graph.js)|Medium|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/138.%20Copy%20List%20with%20Random%20Pointer.js)|Medium|
-|140|[Word Break II](https://leetcode.com/problems/word-break-ii)|[]()|Hard|
+|140|[Word Break II](https://leetcode.com/problems/word-break-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/140.%20Word%20Break%20II.js)|Hard|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/141.%20Linked%20List%20Cycle.js)|Easy|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/142.%20Linked%20List%20Cycle%20II.js)|Medium|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/144.%20Binary%20Tree%20Preorder%20Traversal.js)|Medium|

@@ -23,63 +23,57 @@
  * @param {number} n
  * @return {string[][]}
  */
-var solveNQueens = function(n) {
-  if (n <= 0) {
-    return [];
-  }
-  const results = [];
-  search(results, [], n);
+ var solveNQueens = function(n) {
 
-  return results;
-};
+     const results = [];
+     search(results, [], n);
+     return results;
+ };
 
-function search(results, cols, n) {
-  if (cols.length === n) {
-    results.push(drawChessboard(cols));
-    return;
-  }
-  for (let colIndex = 0; colIndex < n; colIndex++) {
-    if (!isValid(cols, colIndex)) {
-      continue;
-    }
-    cols.push(colIndex);
-    search(results, cols, n);
-    cols.pop();
-  }
-}
+ function search(results, cols, n) {
+     if (cols.length === n) {
+         results.push(drawChessboard(cols));
+         return;
+     }
 
-function drawChessboard(cols) {
-  const chessboard = [];
-  for (let i = 0; i < cols.length; i++) {
-    let sb = "";
-    for (let j = 0; j < cols.length; j++) {
-      // sb += (j === cols[i] ? "Q" : ".");
-      if (j === cols[i]) {
-        sb += "Q";
-      } else {
-        sb += ".";
-      }
-    }
-    chessboard.push(sb);
-  }
-  return chessboard;
-}
+     for (let colIndex = 0; colIndex < n; colIndex++) {
+         if (!isValid(cols, colIndex)) {
+             continue;
+         }
+         cols.push(colIndex);
+         search(results, cols, n);
+         cols.pop();
+     }
+ }
 
-function isValid(cols, column) {
-  let row = cols.length;
+ function drawChessboard(cols) {
+     const chessboard = [];
+     for (let i = 0; i < cols.length; i++) {
+         let str = "";
+         for (let j = 0; j < cols.length; j++) {
+             if (j === cols[i]) {
+                 str += "Q";
+             } else {
+                 str += ".";
+             }
+         }
+         chessboard.push(str);
+     }
+     return chessboard;
+ }
 
-  for (var rowIndex = 0; rowIndex < cols.length; rowIndex++) {
-    if (cols[rowIndex] === column) {
-      return false;
-    }
-    if (rowIndex + cols[rowIndex] === row + column) {
-      return false;
-    }
-    if (rowIndex - cols[rowIndex] === row - column) {
-      return false;
-    }
-  }
-  return true;
-}
+ function isValid(cols, colIndex) {
+     let row = cols.length;
+
+     for (let rowIndex = 0; rowIndex < cols.length; rowIndex++) {
+         if (cols[rowIndex] === colIndex) {
+             return false;
+         }
+         if (Math.abs(rowIndex - row) === Math.abs(cols[rowIndex] - colIndex)) {
+             return false;
+         }
+     }
+     return true;
+ }
 
 console.log(solveNQueens(4));

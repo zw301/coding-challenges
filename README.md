@@ -123,6 +123,7 @@
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/257.%20Binary%20Tree%20Paths.js)|Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/263.%20Ugly%20Number.js)|Easy|
+|268|[Missing Number](https://leetcode.com/problems/missing-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/268.%20Missing%20Number.js)|Easy|
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/270.%20Closest%20Binary%20Search%20Tree%20Value.js)|Easy|
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.js)|Hard|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|

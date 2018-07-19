@@ -10,8 +10,16 @@
  * @param str: a string with number from 1-n in random order and miss one number
  * @return: An integer
  */
+//
+// Solution:
+// This problem can be solved by depth first search.
+// initialize a foundNums boolean array with false value for number from 1 to n.
+// If the first digit is less than n, set it as found in foundNums and check the remaining part.
+// If the first two digits are less than n, set this number as found in foundNums and check the remaining part.
+// Stop when no more digit left, and return the only missing number in foundNums.
+
 const findMissing2 = function (n, str) {
-  
+
 }
 
 // wrong

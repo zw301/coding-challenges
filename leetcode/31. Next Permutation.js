@@ -15,3 +15,38 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var nextPermutation = function(nums) {
+  let len = nums.length;
+
+  if (len <= 1) {
+    return;
+  }
+
+  let i = len - 1;
+  while (i > 0 && nums[i] <= nums[i - 1]) {
+    i--;
+  }
+
+  if (i !== 0) {
+    let j = len - 1;
+    while (nums[j] <= nums[i - 1]) {
+      j--;
+    }
+
+    swapItem(nums, j, i - 1);
+  }
+  swapList(nums, i, len - 1);
+};
+
+const swapItem = (nums, i, j) => {
+  let tmp = nums[i];
+  nums[i] = nums[j];
+  nums[j] = tmp;
+}
+
+const swapList = (nums, i, j) => {
+  while (i < j) {
+    swapItem(nums, i, j);
+    i++;
+    j--;
+  }
+}

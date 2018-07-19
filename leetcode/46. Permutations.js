@@ -74,4 +74,54 @@ console.log(permute([1,2,3]))
 //   return results;
 // };
 
+// iterative
+var permute = function(nums) {
+  nums.sort((a, b) => a - b);
+  const result = [];
+
+  let next = true;
+  while (next) {
+    let curr = nums.slice();
+    result.push(curr);
+    next = nextPermutation(nums);
+  }
+
+  return result;
+}
+
+const nextPermutation = (nums) => {
+  let len = nums.length;
+
+  let i = len - 1;
+  while ( i > 0 && nums[i] <= nums[i - 1]) {
+    i--;
+  }
+  if (i <= 0) {
+    return false;
+  }
+  if (i !== 0) {
+    let j = len - 1;
+    while (nums[j] <= nums[i - 1]) {
+      j--;
+    }
+    swapItem(nums, j, i - 1);
+  }
+  swapList(nums, i, len - 1);
+  return true;
+};
+
+const swapItem = (nums, i, j) => {
+  let tmp = nums[i];
+  nums[i] = nums[j];
+  nums[j] = tmp;
+};
+
+const swapList = (nums, i, j) => {
+  while (i < j) {
+    swapItem(nums, i, j);
+    i++;
+    j--;
+  }
+};
+
 // console.log(permute([1,2,3]));

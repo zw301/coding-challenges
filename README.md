@@ -73,6 +73,7 @@
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.js)|Easy|
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.js)|Easy|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
+|126|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/126.%20Word%20Ladder%20II.js)|Hard|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/127.%20Word%20Ladder.js)|Medium|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/131.%20Palindrome%20Partitioning.js)|Medium|
@@ -131,6 +132,8 @@
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/287.%20Find%20the%20Duplicate%20Number.js)|Medium|
+|290|[Word Pattern](https://leetcode.com/problems/word-pattern)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/290.%20Word%20Pattern.js)|Easy|
+|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/291.%20Word%20Pattern%20II.js)|Hard|
 |292|[Nim Game](https://leetcode.com/problems/nim-game)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/292.%20Nim%20Game.js)|Easy|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.js)|Hard|
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/298.%20Binary%20Tree%20Longest%20Consecutive%20Sequence.js)|Medium|

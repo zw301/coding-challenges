@@ -52,3 +52,25 @@ var letterCombinations = function(str) {
   }
   return result;
 };
+
+var letterCombinations = function(digits) {
+    if (digits === null || digits.length === 0) {
+        return [];
+    }
+    const result = [];
+    helper(digits, 0, "", result);
+    return result;
+};
+
+const helper = (digits, pos, str, result) => {
+    const keys = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
+    if (pos === digits.length) {
+        result.push(str);
+        return;
+    }
+
+    const letter = keys[Number(digits[pos])];
+    for (let i = 0; i < letter.length; i++) {
+        helper(digits, pos + 1, str + letter[i], result);
+    }
+};

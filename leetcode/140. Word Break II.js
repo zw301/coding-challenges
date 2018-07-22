@@ -43,8 +43,7 @@ var wordBreak = function(s, wordDict) {
         return [];
     }
     const map = {};
-    helper(s, wordDict, map);
-    return map[s];
+    return helper(s, wordDict, map);
 };
 
 const helper = (s, wordDict, map) => {

@@ -50,7 +50,8 @@ var findLadders = function(beginWord, endWord, wordList) {
   let dict = new Set(wordList);
   bfs(map, distance, endWord, beginWord, dict);
 
-  path = [];
+  console.log(map);
+  let path = [];
   dfs(ladders, path, beginWord, endWord, distance, map);
 
   return ladders;
@@ -100,8 +101,10 @@ const expand = (crt, dict) => {
 }
 
 const dfs = (ladders, path, crt, end, distance, map) => {
+
   path.push(crt);
   if (crt === end) {
+    //为什么这里没有return？
     ladders.push(path.slice());
   } else {
     let nextList = map.get(crt);

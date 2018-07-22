@@ -61,11 +61,7 @@ const bfs = (map, distance, start, end, dict) => {
   const queue = [];
   queue.push(start);
   distance.set(start, 0);
-  // for (let i = 0; i < dict.length; i++) {
-  //   let s = dict[i];
-  //   console.log(s);
-  //   map.set(s, new Array());
-  // }
+
 
   dict.forEach(s => {
     map.set(s, []);
@@ -76,8 +72,6 @@ const bfs = (map, distance, start, end, dict) => {
     let nextList = expand(crt, dict);
     for (let i = 0; i < nextList.length; i++) {
       let next = nextList[i];
-      // console.log(next);
-      // console.log(map.get(next));
       map.get(next).push(crt);
       if (!distance.has(next)) {
         distance.set(next, distance.get(crt) + 1);

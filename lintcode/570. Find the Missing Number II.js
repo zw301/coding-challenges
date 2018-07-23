@@ -18,9 +18,6 @@
 // If the first two digits are less than n, set this number as found in foundNums and check the remaining part.
 // Stop when no more digit left, and return the only missing number in foundNums.
 
-const findMissing2 = function (n, str) {
-
-}
 
 // wrong
 // const findMissing2 = function (n, str) {
@@ -75,3 +72,42 @@ const findMissing2 = function (n, str) {
 //
 //     }
 // }
+
+/**
+ * @param n: An integer
+ * @param str: a string with number from 1-n in random order and miss one number
+ * @return: An integer
+ */
+const findMissing2 = function (n, str) {
+    let missing = -1;
+
+    const visited = new Array(n + 1).fill(false);
+
+    const helper = (n, str, visited, count) => {
+        if (str.length === 0 && count === n - 1) {
+            console.log(visited)
+            for (let i = 1; i <= n; i++) {
+                if (visited[i] === false) {
+                    missing = i;
+                }
+            }
+        }
+
+        for (let i = 1; i <= 2 && i <= str.length; i++) {
+            let num = Number(str.substring(0, i));
+            if (num === 0 || num > n || visited[num]) {
+                continue;
+            }
+            visited[num] = true;
+            helper(n, str.substring(i), visited, count + 1);
+            visited[num] = false;
+        }
+    };
+
+    helper(n, str, visited, 0);
+    return missing;
+}
+
+let str = "19201234567891011121314151618";
+
+console.log(findMissing2(20, str));

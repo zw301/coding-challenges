@@ -93,6 +93,58 @@ function replace(word, index, char) {
 }
 
 
+// refactor
+var ladderLength = function(beginWord, endWord, wordList) {
+    if (wordList === null || wordList.length === 0) {
+        return 0;
+    }
+    if (beginWord === endWord) {
+        return 1;
+    }
+
+    wordList.push(beginWord);
+
+    const dict = new Set(wordList);
+
+    let count = 1;
+    const queue = [];
+    queue.push(beginWord);
+
+    while (queue.length !== 0) {
+        count++;
+        let size = queue.length;
+        for (let i = 0; i < size; i++) {
+            let curr = queue.shift();
+            let nextList = expand(curr, dict);
+            for (let i = 0; i < nextList.length; i++) {
+                let nextWord = nextList[i];
+                if (nextWord === endWord) {
+                    return count;
+                }
+                queue.push(nextWord);
+            }
+        }
+    }
+    return 0;
+};
+
+
+
+const expand = (curr, dict) => {
+    const nextList = [];
+    for (let i = 0; i < curr.length; i++) {
+        for (let charcode = 'a'.charCodeAt(0); charcode <= 'z'.charCodeAt(0); charcode++) {
+            let nextWord = curr.substring(0, i) + String.fromCharCode(charcode) + curr.substring(i + 1);
+            if (nextWord !== curr && dict.has(nextWord)) {
+                nextList.push(nextWord);
+                dict.delete(nextWord);
+            }
+        }
+    }
+    return nextList;
+};
+
+
 ///// leetcode 最优解法
 var ladderLength = function (beginWord, endWord, wordList) {
   wordList = new Set(wordList)

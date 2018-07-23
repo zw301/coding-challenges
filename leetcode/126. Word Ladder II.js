@@ -38,80 +38,82 @@
  * @param {string[]} wordList
  * @return {string[][]}
  */
-var findLadders = function(beginWord, endWord, wordList) {
-  const ladders = [];
-  const map = new Map();
-  const distance = new Map();
+ /**
+  * @param {string} beginWord
+  * @param {string} endWord
+  * @param {string[]} wordList
+  * @return {string[][]}
+  */
+ var findLadders = function(beginWord, endWord, wordList) {
+     if (wordList === null || wordList.length === 0) {
+         return [];
+     }
+     if (!wordList.includes(endWord)) {
+         return [];
+     }
+     wordList.push(beginWord);
 
-  if (!wordList.includes(endWord)) {
-    return [];
-  }
-  wordList.push(beginWord);
-  let dict = new Set(wordList);
-  bfs(map, distance, endWord, beginWord, dict);
+     const dict = new Set(wordList);
+     const map = new Map();
+     const distance = new Map();
 
-  console.log(map);
-  let path = [];
-  dfs(ladders, path, beginWord, endWord, distance, map);
+     bfs(distance, map, endWord, beginWord, dict);
 
-  return ladders;
-};
+     const ladders = [];
+     dfs(ladders, [], beginWord, endWord, distance, map);
 
-const bfs = (map, distance, start, end, dict) => {
-  const queue = [];
-  queue.push(start);
-  distance.set(start, 0);
+     return ladders;
+ };
 
+ const bfs = (distance, map, start, end, dict) => {
+     const queue = [];
+     queue.push(start);
+     distance.set(start, 0);
 
-  dict.forEach(s => {
-    map.set(s, []);
-  })
+     dict.forEach(word => {
+         map.set(word, []);
+     })
 
-  while (queue.length !== 0) {
-    let crt = queue.shift();
-    let nextList = expand(crt, dict);
-    for (let i = 0; i < nextList.length; i++) {
-      let next = nextList[i];
-      map.get(next).push(crt);
-      if (!distance.has(next)) {
-        distance.set(next, distance.get(crt) + 1);
-        queue.push(next);
-      }
-    }
-  }
-}
+     while (queue.length !== 0) {
+         let curr = queue.shift();
+         let nextList = expand(curr, dict);
+         nextList.forEach(nextWord => {
+             map.get(nextWord).push(curr);
+             if (!distance.has(nextWord)) {
+                 distance.set(nextWord, distance.get(curr) + 1);
+                 queue.push(nextWord);
+             }
+         })
+     }
+ };
 
-const expand = (crt, dict) => {
-  let expansion = [];
-  for (let i = 0; i < crt.length; i++) {
-    for (let charcode = "a".charCodeAt(0); charcode <= "z".charCodeAt(0); charcode++) {
-      let expanded = crt.substring(0, i) + String.fromCharCode(charcode) + crt.substring(i + 1);
-      if (dict.has(expanded)) {
-        expansion.push(expanded);
-      }
-    }
-  }
-  return expansion;
-}
+ const expand = (curr, dict) => {
+     let nextList = [];
+     for (let i = 0; i < curr.length; i++) {
+         for (let charcode = "a".charCodeAt(0); charcode <= 'z'.charCodeAt(0); charcode++) {
+             let nextWord = curr.substring(0, i) + String.fromCharCode(charcode) + curr.substring(i + 1);
+             if (curr !== nextWord && dict.has(nextWord)) {
+                 nextList.push(nextWord);
+             }
+         }
+     }
+     return nextList;
+ };
 
-const dfs = (ladders, path, crt, end, distance, map) => {
+ const dfs = (ladders, path, curr, end, distance, map) => {
+     path.push(curr);
+     if (curr === end) {
+         ladders.push(path.slice());
+     }
 
-  path.push(crt);
-  if (crt === end) {
-    //为什么这里没有return？
-    ladders.push(path.slice());
-  } else {
-    let nextList = map.get(crt);
-    for (let i = 0; i < nextList.length; i++) {
-      let next = nextList[i];
-      if (distance.has(next) && distance.get(crt) === distance.get(next) + 1) {
-        dfs(ladders, path, next, end, distance, map);
-      }
-    }
-  }
-
-  path.pop();
-}
+     let nextList = map.get(curr);
+     nextList.forEach(nextWord => {
+         if (distance.has(nextWord) && distance.get(nextWord) === distance.get(curr) - 1) {
+             dfs(ladders, path, nextWord, end, distance, map);
+         }
+     })
+     path.pop();
+ };
 
 let start = "hit";
 let end = "cog";

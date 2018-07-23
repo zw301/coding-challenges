@@ -66,7 +66,7 @@ const match = (pattern, str, map, set) => {
 let pattern = "abab";
 let str = "redblueredblue";
 
-// pattern = "aabb";
-// str = "xyzabcxzyabc";
+pattern = "aabb";
+str = "xyzabcxzyabc";
 
 console.log(wordPatternMatch(pattern, str))

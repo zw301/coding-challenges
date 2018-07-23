@@ -23,7 +23,7 @@
  * @return {boolean}
  */
 
-// wrong
+
 var wordPatternMatch = function(pattern, str) {
     const map = new Map();
     const set = new Set();
@@ -37,13 +37,15 @@ const match = (pattern, str, map, set) => {
 
     let c = pattern[0];
     if (map.has(c)) {
-        console.log({str});
-        console.log(str[0]);
-        // console.log(map.get(c))
-        if (str !== "" && str[0] !== map.get(c)) {
+        if (!str.startsWith(map.get(c))) {
             return false;
         }
-        return match(pattern.substring(1), str.substring(map.get(c).length), map, set);
+        return match(
+          pattern.substring(1),
+          str.substring(map.get(c).length),
+          map,
+          set
+        );
     }
     for (let i = 0; i < str.length; i++) {
         let word = str.substring(0, i + 1);
@@ -56,12 +58,15 @@ const match = (pattern, str, map, set) => {
             return true;
         }
         set.delete(word);
-        map.delete(c);;
+        map.delete(c);
     }
     return false;
 };
 
 let pattern = "abab";
 let str = "redblueredblue";
+
+// pattern = "aabb";
+// str = "xyzabcxzyabc";
 
 console.log(wordPatternMatch(pattern, str))

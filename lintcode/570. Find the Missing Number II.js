@@ -102,6 +102,26 @@ const findMissing2 = function (n, str) {
             helper(n, str.substring(i), visited, count + 1);
             visited[num] = false;
         }
+
+        // let num;
+        // if (str.length >= 1) {
+        //     num = Number(str.substring(0, 1));
+        //     if (num !== 0 && num <= n && !visited[num]) {
+        //         visited[num] = true;
+        //         helper(n, str.substring(1), visited, count + 1);
+        //         visited[num] = false;
+        //     }
+        // }
+        //
+        // // cut 2
+        // if (str.length >= 2) {
+        //     num = Number(str.substring(0, 2));
+        //     if (num !== 0 && num <= n && !visited[num]) {
+        //         visited[num] = true;
+        //         helper(n, str.substring(2), visited, count + 1);
+        //         visited[num] = false;
+        //     }
+        // }
     };
 
     helper(n, str, visited, 0);

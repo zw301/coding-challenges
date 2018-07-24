@@ -166,5 +166,6 @@
 |657|[Judge Route Circle](https://leetcode.com/problems/judge-route-circle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/657.%20Judge%20Route%20Circle.js)|Easy|
 |658|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/658.%20Find%20K%20Closest%20Elements.js)|Medium|
 |669|[Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/669.%20Trim%20a%20Binary%20Search%20Tree.js)|Easy|
+|681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/681.%20Next%20Closest%20Time.js)|Medium|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.js)|Easy|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/836.%20Rectangle%20Overlap.js)|Easy|

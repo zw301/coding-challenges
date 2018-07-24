@@ -13,4 +13,65 @@
 // Input: "23:59"
 // Output: "22:22"
 // Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22.
-// It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
+// It may be assumed that the returned time is next day's time since it is smaller than the input time numerically
+
+/**
+ * @param {string} time
+ * @return {string}
+ */
+
+ var nextClosestTime = function(time) {
+    let diff = Infinity;
+    let result = "";
+
+    const set = new Set();
+    set.add(Number(time.substring(0, 1)));
+    set.add(Number(time.substring(1, 2)));
+    set.add(Number(time.substring(3, 4)));
+    set.add(Number(time.substring(4, 5)));
+
+    if (set.size === 1) {
+        return time;
+    }
+
+    const digits = Array.from(set);
+    let minutes = Number(time.substring(0, 2)) * 60 + Number(time.substring(3, 5));
+
+    const dfs = (digits, cur, pos, target) => {
+
+        if (pos === 4) {
+
+            let m = Number(cur.substring(0, 2)) * 60 + Number(cur.substring(2, 4));
+
+            if (m === target) {
+                return;
+            }
+            let d = m - target > 0 ? m - target : 1440 + m - target;
+            if (d < diff) {
+                diff = d;
+                result = cur.substring(0, 2) + ":" + cur.substring(2, 4);
+            }
+            return;
+        }
+
+        for (let i = 0; i < digits.length; i++) {
+            if (pos === 0 && digits[i] > 2) {
+                continue;
+            }
+            if (pos === 1 && Number(cur) * 10 + digits[i] > 23) {
+                continue;
+            }
+            if (pos === 2 && digits[i] > 5) {
+                continue;
+            }
+            if (pos === 3 && Number(cur.substring(2)) * 10 + digits[i] > 59) {
+                continue;
+            }
+            dfs(digits, cur + digits[i], pos + 1, target);
+        }
+    };
+
+    dfs(digits, "", 0, minutes);
+
+    return result;
+};

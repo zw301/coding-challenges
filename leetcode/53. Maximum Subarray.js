@@ -13,27 +13,28 @@
  * @return {number}
  */
 var maxSubArray = function(nums) {
-  let min = 0;
+  let minSum = 0;
   let max = -Infinity;
 
   let sum = 0;
   for (let i = 0; i < nums.length; i++) {
+    console.log({sum}, {max}, {minSum})
     sum += nums[i];
-    max = Math.max(max, sum - min);
-    min = Math.min(min, sum);
+    max = Math.max(max, sum - minSum);
+    minSum = Math.min(minSum, sum);
   }
   return max;
 };
 
-var maxSubArray = function(nums) {
-  let localMax = nums[0];
-  let globalMax = nums[0];
-  for (let i = 1; i < nums.length; i++) {
-    localMax = Math.max(localMax + nums[i], nums[i]);
-    globalMax = Math.max(localMax, globalMax);
-  }
-  return globalMax;
-};
+// var maxSubArray = function(nums) {
+//   let localMax = nums[0];
+//   let globalMax = nums[0];
+//   for (let i = 1; i < nums.length; i++) {
+//     localMax = Math.max(localMax + nums[i], nums[i]);
+//     globalMax = Math.max(localMax, globalMax);
+//   }
+//   return globalMax;
+// };
 
 const nums1 = [-2,1,-3,4,-1,2,1,-5,4];
 console.log(maxSubArray(nums1));

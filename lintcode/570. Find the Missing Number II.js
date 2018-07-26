@@ -85,7 +85,6 @@ const findMissing2 = function (n, str) {
 
     const helper = (n, str, visited, count) => {
         if (str.length === 0 && count === n - 1) {
-            console.log(visited)
             for (let i = 1; i <= n; i++) {
                 if (visited[i] === false) {
                     missing = i;

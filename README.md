@@ -132,6 +132,7 @@
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/270.%20Closest%20Binary%20Search%20Tree%20Value.js)|Easy|
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.js)|Hard|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
+|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/279.%20Perfect%20Squares.js)|Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/287.%20Find%20the%20Duplicate%20Number.js)|Medium|

@@ -67,7 +67,7 @@ var isMatch = function(s, p) {
   return isMatchHelper(s, 0, p, 0, memo);
 };
 
-const isMatchHelper = (s, sIndex, p, pIndex, memp) => {
+const isMatchHelper = (s, sIndex, p, pIndex, memo) => {
   if (pIndex === p.length) {
     return sIndex === s.length;
   }

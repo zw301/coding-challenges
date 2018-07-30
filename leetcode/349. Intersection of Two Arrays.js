@@ -11,6 +11,10 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
+// n < m                                 time            extra space
+// 1 hashmap 小的数组                 => O(n + m)           O(n)
+// 2 sort小的 + binary Search        => O(nlogn + mlogn)   O(1)
+// 3 sort + merge sorted arrays     => O(nlogn + mlogm)   O(1)
 
 // Time Complexity O(n). Space Complexity O(n)
 var intersection = function(nums1, nums2) {
@@ -34,7 +38,7 @@ var intersection = function(nums1, nums2) {
   const compareTo = function(x, y) {
     return x - y;
   }
-  nums1.sort(compareTo);
+  // nums1.sort(compareTo);  sort shoter array
   nums2.sort(compareTo);
 
   const set = new Set();

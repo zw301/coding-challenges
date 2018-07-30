@@ -15,6 +15,14 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
+
+ // n < m                                 time            extra space
+ // 1 hashmap 小的数组                 => O(n + m)           O(n)
+ // 3 sort + merge sorted arrays     => O(nlogn + mlogm)    O(1)
+ // ------------
+ // 重复的多，下面的不能用
+ // 2 sort小的 + binary Search        => O(nlogn + mlogn)   O(1)
+
 var intersect = function(nums1, nums2) {
   const result = [];
   let i = 0;

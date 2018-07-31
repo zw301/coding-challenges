@@ -143,6 +143,7 @@
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/298.%20Binary%20Tree%20Longest%20Consecutive%20Sequence.js)|Medium|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/301.%20Remove%20Invalid%20Parentheses.js)|Hard|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/305.%20Number%20of%20Islands%20II.js)|Hard|
+|311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)|[JavaScript]()|Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/322.%20Coin%20Change.js)|Medium|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/344.%20Reverse%20String.js)|Easy|

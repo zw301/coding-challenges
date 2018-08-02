@@ -46,6 +46,7 @@ function compareTo(a, b) {
 }
 
 
+
 // update 02/08
 var merge = function(intervals) {
     if (intervals === null || intervals.length === 0) {

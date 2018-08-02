@@ -80,7 +80,6 @@ var inorderSuccessor = function(root, p) {
 
     const stack = [];
     let prev = null;
-
     while (root !== null || stack.length !== 0) {
         while (root !== null) {
             stack.push(root);

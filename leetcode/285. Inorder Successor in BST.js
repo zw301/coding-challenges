@@ -72,3 +72,26 @@ var inorderSuccessor = function(root, p) {
   }
   return successor;
 }
+
+var inorderSuccessor = function(root, p) {
+    if (root === null || p === null) {
+        return null;
+    }
+
+    const stack = [];
+    let prev = null;
+
+    while (root !== null || stack.length !== 0) {
+        while (root !== null) {
+            stack.push(root);
+            root = root.left;
+        }
+        root = stack.pop();
+        if (prev === p) {
+            return root;
+        }
+        prev = root;
+        root = root.right;
+    }
+    return null;
+};

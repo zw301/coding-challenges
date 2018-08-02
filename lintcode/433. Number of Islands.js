@@ -18,6 +18,85 @@
 // ]
 
 
+// 过不了
+var numIslands = function(grid) {
+    if (grid === null || grid.length === 0) {
+        return 0;
+    }
+    if (grid[0] === null || grid[0].length === 0) {
+        return 0;
+    }
+
+    const uf = new UF(grid);
+    const n = grid.length;
+    const m = grid[0].length;
+
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < m ; j++) {
+            if (grid[i][j] === "0") {
+                continue;
+            }
+            let p = i * m + j;
+
+            //connect  right
+            if (j + 1 < m && grid[i][j + 1] === "1") {
+                let q = p + 1;
+                uf.union(p, q);
+            }
+
+            //connect down
+            if (i + 1 < n && grid[i + 1][j] === "1") {
+                let q = p + m;
+                uf.union(p, q);
+            }
+        }
+    }
+    return uf.getNumComponent();
+};
+
+class UF {
+    constructor(graph) {
+        this.component = 0;
+
+        const n = graph.length;
+        const m = graph[0].length;
+
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < m; j++) {
+                this.component++;
+            }
+        }
+
+        this.id = new Array(n * m);
+        for (let i = 0; i < this.id.length; i++) {
+            this.id[i] = i;
+        }
+    }
+
+    find(i) {
+        while (i !== this.id[i]) {
+            this.id[i] = this.id[this.id[i]];
+            i = this.id[i];
+        }
+        return i;
+    }
+
+    union(p, q) {
+        let i = this.find(p);
+        let j = this.find(q);
+
+        if (i !== j) {
+            this.component--;
+        }
+        this.id[i] = j;
+    }
+
+    getNumComponent() {
+        return this.component;
+    }
+}
+
+
 // union find
 class UF {
   constructor(graph) {

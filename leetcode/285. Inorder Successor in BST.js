@@ -57,6 +57,7 @@ var inorderSuccessor = function(root, p) {
   return null;
 };
 
+// 利用bst特性
 var inorderSuccessor = function(root, p) {
   if (root === null) {
     return null;
@@ -73,6 +74,24 @@ var inorderSuccessor = function(root, p) {
   return successor;
 }
 
+var inorderSuccessor = function(root, p) {
+    if (root === null || p === null) {
+        return null;
+    }
+
+    let succssor = null;
+    while (root !== null) {
+        if (root.val <= p.val) {
+            root = root.right;
+        } else {
+            succssor = root;
+            root = root.left;
+        }
+    }
+    return succssor;
+};
+
+// inorder traverse
 var inorderSuccessor = function(root, p) {
     if (root === null || p === null) {
         return null;

@@ -44,3 +44,27 @@ var merge = function(intervals) {
 function compareTo(a, b) {
   return a.start - b.start;
 }
+
+
+// update 02/08
+var merge = function(intervals) {
+    if (intervals === null || intervals.length === 0) {
+        return intervals;
+    }
+
+    intervals.sort((a, b) => a.start - b.start);
+
+    const result = [];
+    result.push(intervals[0]);
+
+    for (let i = 1; i < intervals.length; i++) {
+        let curr = intervals[i];
+        let last = result[result.length - 1];
+        if (last.end >= curr.start) {
+            last.end = Math.max(last.end, curr.end);
+        } else {
+            result.push(curr);
+        }
+    }
+    return result;
+};

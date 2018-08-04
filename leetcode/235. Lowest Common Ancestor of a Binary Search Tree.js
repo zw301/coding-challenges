@@ -49,6 +49,7 @@ var lowestCommonAncestor = function(root, p, q) {
   return root;
 };
 
+
 var lowestCommonAncestor = function(root, p, q) {
   while ((root.val - p.val) * (root.val - q.val) > 0) {
     if (p.val < root.val) {

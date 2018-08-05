@@ -47,9 +47,7 @@ var groupAnagrams = function(strs) {
 
 var groupAnagrams = function(strs) {
   const sorted = strs.map(str => {
-    return str.split("").sort(function(x, y) {
-      return x < y ? -1 : 1;
-    }).join("");
+    return str.split("").sort().join("");
   })
 
   const map = new Map();

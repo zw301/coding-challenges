@@ -59,9 +59,9 @@ var binaryTreePaths = function(root) {
 }
 
 function helper(paths, node, path) {
-  if (node === null) {
-    return;
-  }
+  // if (node === null) {
+  //   return;
+  // }
 
   if (node.left === null && node.right === null) {
     paths.push(path);

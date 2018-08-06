@@ -9,6 +9,7 @@
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/5.%20Longest%20Palindromic%20Substring.js)|Medium|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/9.%20Palindrome%20Number.js)|Easy|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/10.%20Regular%20Expression%20Matching.js)|Hard|
+|12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/12.%20Integer%20to%20Roman.js)|Medium|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/13.%20Roman%20to%20Integer.js)|Easy|
 |15|[3Sum](https://leetcode.com/problems/3sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/15.%203Sum.js)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|

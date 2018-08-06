@@ -110,6 +110,7 @@
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/207.%20Course%20Schedule.js)|Medium|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/208.%20Implement%20Trie%20(Prefix%20Tree).js)|Medium|
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/210.%20Course%20Schedule%20II.js)|Medium|
+|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/211.%20Add%20and%20Search%20Word%20-%20Data%20structure%20design.js)|Medium|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/215.%20Kth%20Largest%20Element%20in%20an%20Array.js)|Medium|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/217.%20Contains%20Duplicate.js)|Easy|
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/219.%20Contains%20Duplicate%20II.js)|Easy|

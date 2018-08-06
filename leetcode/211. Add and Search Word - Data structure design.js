@@ -54,7 +54,7 @@ WordDictionary.prototype.search = function(word) {
   let curr = this.root;
   const find = function(word, curr, pos) {
     if (pos === word.length) {
-      return true;
+      return curr.isEnd;
     }
 
     let char = word[pos];

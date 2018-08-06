@@ -64,6 +64,57 @@ function partition(nums, lo, hi, pos) {
   }
 }
 
+// improved
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findKthLargest = function(nums, k) {
+    k = nums.length - k;
+
+    partition(nums, 0, nums.length - 1, k);
+
+    return nums[k];
+};
+
+const partition = function(nums, lo, hi, k) {
+    if (lo >= hi) {
+        return;
+    }
+
+    let lt = lo;
+    let gt = hi;
+    let p = nums[lo];
+    let i = lo + 1;
+
+    while (i <= gt) {
+        if (nums[i] < p) {
+            swap(nums, i, lt);
+            i++;
+            lt++;
+        } else if (nums[i] > p) {
+            swap(nums, i, gt);
+            gt--;
+        } else {
+            i++;
+        }
+    }
+
+    if (lt < k) {
+        partition(nums, gt + 1, hi, k);
+    } else if (lt > k){
+        partition(nums, lo, lt - 1, k);
+    }
+}
+
+const swap = function(nums, i, j) {
+    let tmp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = tmp;
+}
+
+
 const nums1 = [3,2,1,5,6,4];
 const nums2 = [3,2,3,1,2,4,5,5,6];
 

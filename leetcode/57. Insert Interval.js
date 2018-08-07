@@ -33,7 +33,6 @@ var insert = function(intervals, newInterval) {
     return a.start - b.start;
   });
 
-  // console.log(intervals);
 
   const result = [];
   result.push(intervals[0]);
@@ -48,6 +47,28 @@ var insert = function(intervals, newInterval) {
   }
   return result;
 };
+
+
+var insert = function(intervals, newInterval) {
+    intervals.push(newInterval);
+    intervals.sort((a, b) => a.start - b.start);
+
+    const result = [];
+    result.push(intervals[0]);
+
+    for (let i = 1; i < intervals.length; i++) {
+        let last = result[result.length - 1];
+        let curr = intervals[i];
+        if (last.end >= curr.start) {
+            last.end = Math.max(last.end, curr.end);
+        } else {
+            result.push(curr);
+        }
+    }
+
+    return result;
+};
+
 
 let intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]];
 let newInterval = [4,8];

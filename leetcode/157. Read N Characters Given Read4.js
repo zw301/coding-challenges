@@ -56,3 +56,26 @@ var solution = function(read4) {
        return count;
    };
 };
+
+
+var solution = function(read4) {
+    /**
+     * @param {character[]} buf Destination buffer
+     * @param {number} n Maximum number of characters to read
+     * @return {number} The number of characters read
+     */
+    return function(buf, n) {
+        const internal = new Array(4);
+        let offset = 0;
+        while (true) {
+            let count = read4(internal);
+            for (let i = 0; i < count && offset != n; i++) {
+                buf[offset++] = internal[i];
+            }
+            if (offset === n || count === 0) {
+                break;
+            }
+        }
+        return offset;
+    };
+};

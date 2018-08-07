@@ -48,7 +48,7 @@ var insert = function(intervals, newInterval) {
   return result;
 };
 
-
+// nlogn
 var insert = function(intervals, newInterval) {
     intervals.push(newInterval);
     intervals.sort((a, b) => a.start - b.start);
@@ -69,6 +69,31 @@ var insert = function(intervals, newInterval) {
     return result;
 };
 
+
+// n
+var insert = function(intervals, newInterval) {
+  if (intervals === null || newInterval === null) {
+    return intervals;
+  }
+
+  const result = [];
+  let pos = 0;
+  for (let i = 0; i < intervals.length; i++) {
+    let curr = intervals[i];
+    if (curr.end < newInterval.start) {
+      result.push(curr);
+      pos++;
+    } else if (curr.start > newInterval.end) {
+      result.push(curr);
+    } else {
+      newInterval.start = Math.min(curr.start, newInterval.start);
+      newInterval.end = Math.max(curr.end, newInterval.end);
+    }
+  }
+  result.splice(pos, 0, newInterval);
+
+  return result;
+};
 
 let intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]];
 let newInterval = [4,8];

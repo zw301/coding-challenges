@@ -19,6 +19,10 @@
 // cache.get(1);       // returns -1 (not found)
 // cache.get(3);       // returns 3
 // cache.get(4);       // returns 4
+
+/**
+ * @param {number} capacity
+ */
 class Node {
     constructor(key, value) {
         this.key = key;
@@ -27,6 +31,7 @@ class Node {
         this.next = null;
     }
 }
+
 class LRUCache {
     /*
     * @param capacity: An integer
@@ -84,6 +89,10 @@ class LRUCache {
         current.next = this.tail;
     }
 }
+
+////
+
+
 
 const cache = new LRUCache(2);
 

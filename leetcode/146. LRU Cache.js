@@ -92,7 +92,75 @@ class LRUCache {
 
 ////
 
+/**
+ * @param {number} capacity
+ */
+class Node {
+    constructor(key, value) {
+        this.key = key;
+        this.value = value;
+        this.next = null;
+        this.prev = null;
+    }
+}
+var LRUCache = function(capacity) {
+    this.capacity = capacity;
+    this.map = new Map();
+    this.head = new Node(-1, -1);
+    this.tail = new Node(-1, -1);
+    this.head.next = this.tail;
+    this.tail.prev = this.head;
+};
 
+/**
+ * @param {number} key
+ * @return {number}
+ */
+LRUCache.prototype.get = function(key) {
+    if (!this.map.has(key)) {
+        return -1;
+    }
+    let curr = this.map.get(key);
+    curr.prev.next = curr.next;
+    curr.next.prev = curr.prev;
+
+    this.moveToTail(curr);
+    return this.map.get(key).value;
+};
+
+/**
+ * @param {number} key
+ * @param {number} value
+ * @return {void}
+ */
+LRUCache.prototype.put = function(key, value) {
+    if (this.get(key) !== -1) {
+        this.map.get(key).value = value;
+        return;
+    }
+    if (this.map.size === this.capacity) {
+        this.map.delete(this.head.next.key);
+        this.head.next = this.head.next.next;
+        this.head.next.prev = this.head;
+    }
+    const insert = new Node(key, value);
+    this.map.set(key, insert);
+    this.moveToTail(insert);
+};
+
+LRUCache.prototype.moveToTail = function(curr) {
+    curr.prev = this.tail.prev;
+    this.tail.prev.next = curr;
+    this.tail.prev = curr;
+    curr.next = this.tail;
+}
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * var obj = Object.create(LRUCache).createNew(capacity)
+ * var param_1 = obj.get(key)
+ * obj.put(key,value)
+ */
 
 const cache = new LRUCache(2);
 

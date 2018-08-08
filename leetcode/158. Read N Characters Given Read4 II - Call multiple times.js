@@ -58,33 +58,3 @@ var solution = function(read4) {
       return count;
     };
 };
-
-
-var solution = function(read4) {
-    /**
-     * @param {character[]} buf Destination buffer
-     * @param {number} n Maximum number of characters to read
-     * @return {number} The number of characters read
-     */
-    const tmpBuff = new Array(4);
-    let tmpOffset = 0;
-    let tmpCount = 0;
-
-    return function(buf, n) {
-        let offset = 0;
-        while (offset < n) {
-          if (tmpOffset === tmpCount) {
-            tmpCount = read4(tmpBuff);
-            tmpOffset = 0;
-          }
-          if (tmpCount === 0) {
-            break;
-          }
-
-          while (offset < n && tmpOffset < tmpCount) {
-            buf[offset++] = tmpBuff[tmpOffset++];
-          }
-        }
-        return offset;
-    };
-};

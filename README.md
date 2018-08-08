@@ -74,6 +74,7 @@
 |112|[Path Sum](https://leetcode.com/problems/path-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/112.%20Path%20Sum.js)|Easy|
 |113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/113.%20Path%20Sum%20II.js)|Medium|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.js)|Medium|
+|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.js)|Medium|
 |120|[Triangle](https://leetcode.com/problems/triangle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/120.%20Triangle.js)|Medium|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.js)|Easy|
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.js)|Easy|

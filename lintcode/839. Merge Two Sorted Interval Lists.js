@@ -15,4 +15,46 @@
  */
 const mergeTwoInterval = function (list1, list2) {
   const result = [];
+
+  let last = null;
+  let curr = null;
+  let i = 0;
+  let j = 0;
+
+  while (i < list1.length && j < list2.length) {
+    if (list1[i].start < list2[j].start) {
+      curr = list1[i];
+      i++;
+    } else {
+      curr = list2[j];
+      j++;
+    }
+    last = merge(result, last, curr);
+  }
+
+  while (i < list1.length) {
+    last = merge(result, last, list1[i]);
+    i++;
+  }
+
+  while (j < list2.length) {
+    last = merge(result, last, list2[j]);
+    j++;
+  }
+  if (last !== null) {
+    result.push(last);
+  }
+  return result;
+}
+
+const merge = function (result, last, curr) {
+  if (last == null) {
+    return curr;
+  }
+  if (last.end < curr.start) {
+    result.push(last);
+    return curr;
+  }
+  last.end = Math.max(last.end, curr.end);
+  return last;
 }

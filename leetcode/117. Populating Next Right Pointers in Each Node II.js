@@ -71,4 +71,28 @@ var connect = function(root) {
 };
 
 // space O(1)
-var connect = function(root) {};
+var connect = function(root) {
+  if (root === null) {
+    return;
+  }
+
+  const dummy = new TreeLinkNode(0);
+  let prev = dummy;
+
+  while (root !== null) {
+    while (root !== null) {
+      if (root.left) {
+        prev.next = root.left;
+        prev = prev.next;
+      }
+      if (root.right) {
+        prev.next = root.right;
+        prev = prev.next;
+      }
+      root = root.next;
+    }
+    root = dummy.next;
+    dummy.next = null;
+    prev = dummy;
+  }
+};

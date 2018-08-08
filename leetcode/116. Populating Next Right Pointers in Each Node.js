@@ -43,6 +43,8 @@
  * @param {TreeLinkNode} root
  * @return {void} Do not return anything, modify tree in-place instead.
  */
+
+// use extra n space
 var connect = function(root) {
   if (root === null) {
     return;
@@ -71,3 +73,23 @@ var connect = function(root) {
     }
   }
 }
+
+// only use constant extra space
+
+var connect = function(root) {
+  let levelStart = root;
+  while (levelStart !== null) {
+    let curr = levelStart;
+
+    while (curr !== null) {
+      if (curr.left !== null) {
+        curr.left.next = curr.right;
+      }
+      if (curr.right !== null && curr.next !== null) {
+        curr.right.next = curr.next.left;
+      }
+      curr = curr.next;
+    }
+    levelStart = levelStart.left;
+  }
+};

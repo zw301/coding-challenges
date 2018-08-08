@@ -78,6 +78,13 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
+//
+// The idea is to level order traverse the tree and for each node we assign a weight to it.
+// We first assign root with weight 0.
+// For any given node with weight w, we assign w - 1 to its left child and w + 1 to its right child.
+// In this way, we level order traverse all nodes, and put all the nodes to thire assigned weight list.
+// Finally, we add all lists to the result.
+
 var verticalOrder = function(root) {
   if (root === null) {
     return [];

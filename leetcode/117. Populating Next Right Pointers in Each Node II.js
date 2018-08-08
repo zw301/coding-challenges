@@ -41,6 +41,8 @@
  * @param {TreeLinkNode} root
  * @return {void} Do not return anything, modify tree in-place instead.
  */
+
+// space O(n)
 var connect = function(root) {
   if (root === null) {
     return;
@@ -67,3 +69,6 @@ var connect = function(root) {
     }
   }
 };
+
+// space O(1)
+var connect = function(root) {};

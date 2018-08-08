@@ -75,7 +75,6 @@ var connect = function(root) {
 }
 
 // only use constant extra space
-
 var connect = function(root) {
   let levelStart = root;
   while (levelStart !== null) {

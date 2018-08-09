@@ -27,18 +27,33 @@
  * @param {string} s
  * @return {number}
  */
-// var titleToNumber = function(s) {
-//   let dic = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-//   let i = 0;
-//
-//   let result = 0;
-//
-//   while (i < s.length) {
-//     result = result * 26 + (dic.indexOf(s[i]) + 1);
-//     i++;
-//   }
-//   return result;
-// };
+var titleToNumber = function(s) {
+  let dic = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+  let i = 0;
+
+  let result = 0;
+
+  while (i < s.length) {
+    result = result * 26 + (dic.indexOf(s[i]) + 1);
+    i++;
+  }
+  return result;
+};
+
+var titleToNumber = function(s) {
+    const str = "abcdefghijklmnopqrstuvwxyz";
+    const map = {};
+    str.toUpperCase().split("").forEach((value, index) => {
+        map[value] = index + 1;
+    });
+
+    let result = 0;
+    for (let i = 0; i < s.length; i++) {
+        result = result * 26 + map[s[i]];
+    }
+
+    return result;
+};
 
 var titleToNumber = function(s) {
   let sum = 0;

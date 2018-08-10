@@ -97,7 +97,7 @@ var connect = function(root) {
   }
 };
 
-
+// not modify the root
 var connect = function(root) {
   if (root === null) {
     return;

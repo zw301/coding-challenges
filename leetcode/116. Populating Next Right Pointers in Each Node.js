@@ -75,9 +75,30 @@ var connect = function(root) {
 }
 
 // only use constant extra space
+// Solution:
+//
+// We use level order traversal and maintain the start node in each level.
+//
+// Since this is a perfect binary tree, every node except the leaves has both left and right children.
+//
+// Therefore, for each node we can connect its left child with right child. (curr.left.next = curr.right)
+//
+//          1 -> NULL
+//        /  \
+//       2 -> 3 -> NULL
+//      / \  / \
+//     4->5->6->7 -> NULL
+//
+// For a right child, if curr is not the last node in the level, we can connect the right child with curr node's neighbor's left child. (curr.right.next = curr.next.left)
+//
+//          1 -> NULL
+//        /  \
+//       2 -> 3 -> NULL
+//      / \  / \
+//     4->5->6->7 -> NULL
 var connect = function(root) {
   let levelStart = root;
-  
+
   while (levelStart !== null) {
     let curr = levelStart;
 

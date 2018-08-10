@@ -97,7 +97,10 @@ var connect = function(root) {
   }
 };
 
-// not modify the root
+
+// Since the binary tree may not be perfect, we need to tweak a little bit to connect nodes.
+// We use a dummy node to keep track of every level start node.
+// We also use a prev node to connect the children of each level.
 var connect = function(root) {
   if (root === null) {
     return;

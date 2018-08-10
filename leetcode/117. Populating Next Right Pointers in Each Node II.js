@@ -96,3 +96,31 @@ var connect = function(root) {
     prev = dummy;
   }
 };
+
+
+var connect = function(root) {
+  if (root === null) {
+    return;
+  }
+
+  const dummy = new TreeLinkNode(0);
+  let prev = dummy;
+
+  let curr = root;
+  while (curr !== null) {
+    while (curr !== null) {
+      if (curr.left) {
+        prev.next = curr.left;
+        prev = prev.next;
+      }
+      if (curr.right) {
+        prev.next = curr.right;
+        prev = prev.next;
+      }
+      curr = curr.next;
+    }
+    curr = dummy.next;
+    dummy.next = null;
+    prev = dummy;
+  }
+}

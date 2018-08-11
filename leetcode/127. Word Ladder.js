@@ -194,3 +194,96 @@ var ladderLength = function (beginWord, endWord, wordList) {
   }
   return 0
 }
+
+
+// 8.10
+
+var ladderLength = function(beginWord, endWord, wordList) {
+    const dict = new Set(wordList);
+    if (!dict.has(endWord)) {
+        return 0;
+    }
+
+    dict.add(endWord);
+
+    const queue = [];
+    queue.push(beginWord);
+
+    let count = 1;
+
+    while (queue.length !== 0) {
+        count++;
+        let size = queue.length;
+        for (let i = 0; i < size; i++) {
+            let word = queue.shift();
+            let nextWordList = expand(word, dict);
+            for (let j = 0; j < nextWordList.length; j++) {
+                let nextWord = nextWordList[j];
+                if (nextWord === endWord) {
+                    return count;
+                }
+                queue.push(nextWord)
+            }
+        }
+    }
+    return 0;
+};
+
+const expand = function(word, dict) {
+    const nextWordList = [];
+    dict.delete(word);
+
+    for (let i = 0; i < 26; i++) {
+        let char = String.fromCharCode('a'.charCodeAt(0) + i);
+        for (let j = 0; j < word.length; j++) {
+            if (word[j] === char) {
+                continue;
+            }
+            let nextWord = word.slice(0, j) + char + word.slice(j + 1);
+
+            if (dict.has(nextWord)) {
+                nextWordList.push(nextWord);
+            }
+        }
+    }
+    return nextWordList;
+}
+
+// without add endword to wordList
+var ladderLength = function(beginWord, endWord, wordList) {
+    const dict = new Set(wordList);
+    if (!dict.has(endWord)) {
+        return 0;
+    }
+
+
+    let count = 1;
+
+    const queue = [];
+    queue.push(beginWord);
+    dict.delete(beginWord);
+
+    while (queue.length !== 0) {
+        let size = queue.length;
+        for (let i = 0; i < size; i++) {
+            let word = queue.shift();
+            for (let j = 0; j < word.length; j++) {
+                let charArr = word.split("");
+                for (let charcode = 'a'.charCodeAt(0); charcode <= 'z'.charCodeAt(0); charcode++) {
+                    let char = String.fromCharCode(charcode);
+                    charArr[j] = char;
+
+                    let nextWord = charArr.join("");
+                    if (nextWord === endWord) {
+                        return count + 1;
+                    }
+                    if (dict.delete(nextWord)) {
+                        queue.push(nextWord);
+                    }
+                }
+            }
+        }
+        count++;
+    }
+    return 0;
+};

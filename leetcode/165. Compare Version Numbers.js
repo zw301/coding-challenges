@@ -22,6 +22,8 @@
  * @param {string} version2
  * @return {number}
  */
+
+// Time O(n)  Space O(n)
 var compareVersion = function(version1, version2) {
   const v1Arr = version1.split(".");
   const v2Arr = version2.split(".");
@@ -40,6 +42,39 @@ var compareVersion = function(version1, version2) {
     }
     i++;
     j++;
+  }
+  return 0;
+};
+
+
+// Time O(n)  Space O(1)
+var compareVersion = function(version1, version2) {
+  let v1 = 0;
+  let v2 = 0;
+
+  let i = 0;
+  let j = 0;
+
+  while (i < version1.length || j < version2.length) {
+    while (i < version1.length && version1[i] !== ".") {
+      v1 = v1 * 10 + Number(version1[i]);
+      i++;
+    }
+    while (j < version2.length && version2[j] !== ".") {
+      v2 = v2 * 10 + Number(version2[j]);
+      j++;
+    }
+
+    if (v1 < v2) {
+      return -1;
+    } else if (v1 > v2) {
+      return 1;
+    } else {
+      i++;
+      j++;
+      v1 = 0;
+      v2 = 0;
+    }
   }
   return 0;
 };

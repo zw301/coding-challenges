@@ -172,7 +172,7 @@
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/380.%20Insert%20Delete%20GetRandom%20O(1).js)|Medium|
 |383|[Ransom Note](https://leetcode.com/problems/ransom-note)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/383.%20Ransom%20Note.js)|Easy|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/387.%20First%20Unique%20Character%20in%20a%20String.js)|Easy|
-|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)|[JavaScript]()||
+|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/404.%20Sum%20of%20Left%20Leaves.js)|Easy|
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/408.%20Valid%20Word%20Abbreviation.js)|Easy|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/409.%20Longest%20Palindrome.js)|Easy|
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/412.%20Fizz%20Buzz.js)|Easy|

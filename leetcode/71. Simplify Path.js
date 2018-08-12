@@ -29,14 +29,15 @@ var simplifyPath = function(path) {
     }
   }
 
-  let result = "/";
-  for (let i = 0; i < paths.length; i++) {
-    result = result + paths[i] + "/";
-  }
-
-  if (result.length > 1) {
-    result = result.slice(0, result.length - 1);
-  }
+  // let result = "/";
+  // for (let i = 0; i < paths.length; i++) {
+  //   result = result + paths[i] + "/";
+  // }
+  //
+  // if (result.length > 1) {
+  //   result = result.slice(0, result.length - 1);
+  // }
+  let result = "/" + paths.join("/");
 
   return result;
 };

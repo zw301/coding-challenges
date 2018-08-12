@@ -71,16 +71,16 @@ var sumOfLeftLeaves = function(root) {
   stack.push(root);
   while (stack.length !== 0) {
     let node = stack.pop();
+    if (node.right !== null) {
+      if (node.right.left !== null || node.right.right !== null) {
+        stack.push(node.right);
+      }
+    }
     if (node.left) {
       if (node.left.left === null && node.left.right === null) {
         sum += node.left.val;
       } else {
         stack.push(node.left);
-      }
-    }
-    if (node.right !== null) {
-      if (node.right.left !== null || node.right.right !== null) {
-        stack.push(node.right);
       }
     }
   }

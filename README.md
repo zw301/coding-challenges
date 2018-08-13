@@ -131,6 +131,7 @@
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/226.%20Invert%20Binary%20Tree.js)|Easy|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/227.%20Basic%20Calculator%20II.js)|Medium|
 |230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/230.%20Kth%20Smallest%20Element%20in%20a%20BST.js)|Medium|
+|231|[Power of Two](https://leetcode.com/problems/power-of-two)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/231.%20Power%20of%20Two.js)|Easy|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/232.%20Implement%20Queue%20using%20Stacks.js)|Easy|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/234.%20Palindrome%20Linked%20List.js)|Easy|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.js)|Easy|

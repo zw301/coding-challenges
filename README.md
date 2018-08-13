@@ -149,6 +149,7 @@
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/252.%20Meeting%20Rooms.js)|Easy|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/253.%20Meeting%20Rooms%20II.js)|Medium|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/257.%20Binary%20Tree%20Paths.js)|Easy|
+|259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/259.%203Sum%20Smaller.js)|Medium|
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/260.%20Single%20Number%20III.js)|Medium|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/261.%20Graph%20Valid%20Tree.js)|Medium|
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/263.%20Ugly%20Number.js)|Easy|

@@ -14,7 +14,7 @@
  * @return {number}
  */
 var threeSumSmaller = function(nums, target) {
-  if (nums === null || nums.length === 0) {
+  if (nums === null || nums.length < 3) {
     return 0;
   }
 

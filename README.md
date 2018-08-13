@@ -115,6 +115,7 @@
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/173.%20Binary%20Search%20Tree%20Iterator.js)|Medium|
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
+|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/190.%20Reverse%20Bits.java)|Easy|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/191.%20Number%20of%201%20Bits.js)|Easy|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/200.%20Number%20of%20Islands.js)|Medium|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/203.%20Remove%20Linked%20List%20Elements.js)|Easy|

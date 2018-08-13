@@ -11,8 +11,6 @@ return [0, 1].
  * @param {number} target
  * @return {number[]} two integers in an array, ie: [index1, index2]
  */
-
-
 var twoSum = function(nums, target) {
     const map = {};
     for(let i = 0; i < nums.length; i++) {

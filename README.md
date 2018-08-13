@@ -209,5 +209,6 @@
 |669|[Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/669.%20Trim%20a%20Binary%20Search%20Tree.js)|Easy|
 |681|[Next Closest Time](https://leetcode.com/problems/next-closest-time)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/681.%20Next%20Closest%20Time.js)|Medium|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/713.%20Subarray%20Product%20Less%20Than%20K.js)|Medium|
+|724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/724.%20Find%20Pivot%20Index.js)|Easy|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.js)|Easy|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/836.%20Rectangle%20Overlap.js)|Easy|

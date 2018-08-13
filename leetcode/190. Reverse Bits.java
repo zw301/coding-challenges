@@ -19,3 +19,27 @@ public class Solution {
         return result;
     }
 }
+
+
+//之前对位操作不是很熟，经过这题有所理解。
+// js的符号位是挥之不去的，而当作位操作时，js的位操作限制在32位，除去一个符号位，
+// 其上限只能达到2^31 - 1，so，符号位上的数值需要单独计算
+
+var reverseBits = function(n) {
+	var tmp;
+  var res = 0;
+	var count = 1;
+	var sign = n & 1;
+	n = n >>> 1;
+
+    while(n){
+    	tmp = n & 1;
+    	res = res | tmp << (31-count);
+    	++count;
+    	n = n >>> 1;
+    }
+    if(sign){
+    	res += 2147483648;
+    }
+    return res;
+};

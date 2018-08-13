@@ -167,6 +167,7 @@
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/314.%20Binary%20Tree%20Vertical%20Order%20Traversal.js)|Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/322.%20Coin%20Change.js)|Medium|
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.js)|Medium|
+|342|[Power of Four](https://leetcode.com/problems/power-of-four)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/342.%20Power%20of%20Four.js)|Easy|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/344.%20Reverse%20String.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/349.%20Intersection%20of%20Two%20Arrays.js)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/350.%20Intersection%20of%20Two%20Arrays%20II.js)|Easy|

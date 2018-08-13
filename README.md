@@ -12,6 +12,7 @@
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/12.%20Integer%20to%20Roman.js)|Medium|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/13.%20Roman%20to%20Integer.js)|Easy|
 |15|[3Sum](https://leetcode.com/problems/3sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/15.%203Sum.js)|Medium|
+|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/16.%203Sum%20Closest.js)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|Medium|
 |18|[4Sum](https://leetcode.com/problems/4sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/18.%204Sum.js)|Medium|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.js)|Medium|

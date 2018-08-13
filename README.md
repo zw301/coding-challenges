@@ -199,6 +199,7 @@
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/557.%20Reverse%20Words%20in%20a%20String%20III.js)|Easy|
 |561|[Array Partition I](https://leetcode.com/problems/array-partition-i)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/561.%20Array%20Partition%20I.js)|Easy|
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/572.%20Subtree%20of%20Another%20Tree.js)|Easy|
+|611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/611.%20Valid%20Triangle%20Number.js)|Medium|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/617.%20Merge%20Two%20Binary%20Trees.js)|Easy|
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/633.%20Sum%20of%20Square%20Numbers.js)|Easy|
 |653|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST.js)|Easy|

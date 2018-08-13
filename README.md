@@ -90,6 +90,7 @@
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/131.%20Palindrome%20Partitioning.js)|Medium|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/133.%20Clone%20Graph.js)|Medium|
+|136|[Single Number](https://leetcode.com/problems/single-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/136.%20Single%20Number.js)|Easy|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/138.%20Copy%20List%20with%20Random%20Pointer.js)|Medium|
 |139|[Word Break](https://leetcode.com/problems/word-break)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/139.%20Word%20Break.js)|Medium|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/140.%20Word%20Break%20II.js)|Hard|

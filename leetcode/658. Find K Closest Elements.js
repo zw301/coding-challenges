@@ -16,6 +16,24 @@
  * @param {number} x
  * @return {number[]}
  */
+
+ var findClosestElements = function(arr, k, x) {
+     let start = 0;
+     let end = arr.length - 1;
+
+     while (start < end) {
+         let mid = start + Math.floor((end - start) / 2);
+         if (x - arr[mid] > arr[mid + k] - x) {
+             start = mid + 1;
+         } else {
+             end = mid;
+         }
+     }
+
+     return arr.slice(start, end + k);
+ };
+
+ 
 var findClosestElements = function(arr, k, x) {
   if (arr === null || arr.length === 0) {
     return [];

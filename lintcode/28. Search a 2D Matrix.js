@@ -22,37 +22,34 @@
  * @param target: An integer
  * @return: a boolean, indicate whether matrix contains target
  */
-const searchMatrix = function (matrix, target) {
-    if (matrix === null || matrix.length === 0) {
-        return false;
-    }
-    if (matrix[0] === null || matrix[0].length === 0) {
-        return false;
-    }
+ var searchMatrix = function(matrix, target) {
+     if (matrix === null || matrix.length === 0 || matrix[0] === null || matrix[0].length === 0) {
+         return false;
+     }
 
-    let m = matrix.length;
-    let n = matrix[0].length;
+     const n = matrix.length;
+     const m = matrix[0].length;
 
-    let start = 0;
-    let end = m * n - 1;
+     let start = 0;
+     let end = m * n - 1;
 
-    while (start + 1 < end) {
-        let mid = start + Math.floor((end - start) / 2);
-        let curr = matrix[Math.floor(mid / n)][mid % n];
-        if (curr === target) {
-            return true;
-        } else if (curr < target) {
-            start = mid;
-        } else {
-            end = mid;
-        }
-    }
+     while (start + 1 < end) {
+         let mid = start + Math.floor((end - start) / 2);
+         let curr = matrix[Math.floor(mid / m)][mid % m];
 
-    if (matrix[Math.floor(start / n)][start % n] === target) {
-        return true;
-    }
-    if (matrix[Math.floor(end / n)][end % n] === target) {
-        return true;
-    }
-    return false;
-}
+         if (curr === target) {
+             return true;
+         } else if (curr < target) {
+             start = mid;
+         } else {
+             end = mid;
+         }
+     }
+
+     if (matrix[Math.floor(start / m)][start % m] === target) {
+         return true;
+     } else if (matrix[Math.floor(end / m)][end % m] === target) {
+         return true;
+     }
+     return false;
+ };

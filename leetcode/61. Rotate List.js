@@ -69,6 +69,13 @@ const deleteLast = function(head) {
 
 
 ///////////////////////////////////////////////
+// Solution:
+// If we know the length of the linked list, we know the new head after rotate is k % length - k.
+// Therefore, we go through the linked list and count the length.
+// After reaching the end, we connect the tail to the head.
+// From the tail, we go k % length - k steps and set the new head.
+// Also we need to set the tail node points to null.
+
 var rotateRight = function(head, k) {
   if (head === null) {
     return null;

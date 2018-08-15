@@ -69,3 +69,26 @@ const deleteLast = function(head) {
 
 
 ///////////////////////////////////////////////
+var rotateRight = function(head, k) {
+  if (head === null) {
+    return null;
+  }
+
+  let curr = head;
+  let len = 1;
+  while (curr.next !== null) {
+    curr = curr.next;
+    len++;
+  }
+
+  k = k % len;
+  curr.next = head;
+
+  for (let i = 0; i < len - k; i++) {
+    curr = curr.next;
+  }
+
+  head = curr.next;
+  curr.next = null;
+  return head;
+}

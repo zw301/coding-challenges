@@ -15,8 +15,8 @@ const woodCut = function (L, k) {
     if (L === null || L.length === 0) {
         return 0;
     }
-    let start = 0;
-    let end = 0;
+    let start = 1;
+    let end = 1;
     for (let i = 0; i < L.length; i++) {
         end = Math.max(end, L[i]);
     }
@@ -31,9 +31,10 @@ const woodCut = function (L, k) {
     }
     if (getPieces(L, end) >= k) {
         return end;
-    } else {
+    } else if (getPieces(L, start) >= k){
         return start;
     }
+    return 0;
 }
 
 const getPieces = function(L, length) {

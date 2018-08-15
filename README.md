@@ -214,3 +214,4 @@
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/724.%20Find%20Pivot%20Index.js)|Easy|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.js)|Easy|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/836.%20Rectangle%20Overlap.js)|Easy|
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/876.%20Middle%20of%20the%20Linked%20List.js)|Medium|

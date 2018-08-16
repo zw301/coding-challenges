@@ -13,6 +13,9 @@
  * @param {RandomListNode} head
  * @return {RandomListNode}
  */
+
+
+// O(n) space
 var copyRandomList = function(head) {
   const map = new Map();
 
@@ -25,21 +28,20 @@ var copyRandomList = function(head) {
   curr = head;
   while (curr !== null) {
     let newListNode = map.get(curr);
-    newListNode.next = map.get(curr.next);
-    // newListNode.random = map.get(curr.random);
-    curr = curr.next
-  }
-
-  curr = head;
-  while (curr !== null) {
-    let newListNode = map.get(curr);
-    newListNode.random = map.get(curr.random);
+    if (map.has(curr.next)) {
+      newListNode.next = map.get(curr.next);
+    }
+    if (map.has(curr.random)) {
+      newListNode.random = map.get(curr.random);
+    }
     curr = curr.next
   }
 
   return map.get(head);
 };
 
+
+// No extra space
 var copyRandomList = function(head) {
   let curr = head;
   while (curr !== null) {
@@ -73,6 +75,7 @@ var copyRandomList = function(head) {
 }
 
 ///////////////////////
+// No extra space & step by step
 var copyRandomList = function(head) {
     if (head === null) {
         return null;

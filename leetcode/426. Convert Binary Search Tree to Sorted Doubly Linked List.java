@@ -37,11 +37,10 @@ class Solution {
         return null;
       }
 
-      Node curr = root;
       Node head = null;
-
       Node prev = null;
       Stack<Node> stack = new Stack<>();
+      
       while (root != null || !stack.isEmpty()) {
         while (root != null) {
           stack.push(root);

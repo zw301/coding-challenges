@@ -33,6 +33,35 @@ class Node {
 */
 class Solution {
     public Node treeToDoublyList(Node root) {
+      if (root == null) {
+        return null;
+      }
 
+      Node curr = root;
+      Node head = null;
+
+      Node prev = null;
+      Stack<Node> stack = new Stack<>();
+      while (root != null || !stack.isEmpty()) {
+        while (root != null) {
+          stack.push(root);
+          root = root.left;
+        }
+        root = stack.pop();
+        if (head == null) {
+          head = root;
+        }
+        if (prev != null) {
+          prev.right = root;
+          root.left = prev;
+        }
+        prev = root;
+        root = root.right;
+      }
+
+      head.left = prev;
+      prev.right = head;
+
+      return head;
     }
 }

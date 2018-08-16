@@ -88,7 +88,6 @@ var copyRandomList = function(head) {
 function copyNext(node) {
     while (node !== null) {
         const newNode = new RandomListNode(node.label);
-        newNode.random = node.random;
         newNode.next = node.next;
         node.next = newNode;
 
@@ -98,7 +97,7 @@ function copyNext(node) {
 
 function copyRandom(node) {
     while (node !== null) {
-        if (node.next.random !== null) {
+        if (node.random !== null) {
             node.next.random = node.random.next;
         }
         node = node.next.next;

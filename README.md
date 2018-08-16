@@ -183,6 +183,7 @@
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/344.%20Reverse%20String.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/349.%20Intersection%20of%20Two%20Arrays.js)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/350.%20Intersection%20of%20Two%20Arrays%20II.js)|Easy|
+|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/369.%20Plus%20One%20Linked%20List.js)|Medium|
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/380.%20Insert%20Delete%20GetRandom%20O(1).js)|Medium|
 |383|[Ransom Note](https://leetcode.com/problems/ransom-note)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/383.%20Ransom%20Note.js)|Easy|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/387.%20First%20Unique%20Character%20in%20a%20String.js)|Easy|

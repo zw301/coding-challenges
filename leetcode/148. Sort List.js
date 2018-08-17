@@ -73,57 +73,8 @@ function merge(l1, l2) {
 // quicksort
 // 把链表分成三份： 比head.val小的， 比head.val大的， 和head.val相等的
 // 把前面两个quicksort，然后把三个链表接起来
-
 var sortList = function(head) {
-  if (head === null || head.next === null) {
-    return head;
-  }
-
-  const lessDummy = new ListNode(0);
-  let less = lessDummy;
-
-  const greaterDummy = new ListNode(0);
-  let greater = greaterDummy;
-
-  let equal = head;
-
-  let curr = head.next;
-
-  while ( curr !== null) {
-    if (curr.val < head.val) {
-      less.next = curr;
-      less = less.next;
-    } else if (curr.val > head.val) {
-      greater.next = curr;
-      greater = greater.next;
-    } else {
-      equal.next = curr;
-      equal = equal.next;
-    }
-    curr = curr.next;
-  }
-
-  less.next = null;
-  greater.next = null;
-  equal.next = null;
-
-  lessDummy.next = sortList(lessDummy.next);
-  greaterDummy.next = sortList(greaterDummy.next);
-
-  const dummy = lessDummy;
-  curr = dummy;
-  while (curr.next !== null) {
-    curr = curr.next;
-  }
-  curr.next = head;
-  equal.next = greaterDummy.next;
-
-  return dummy.next;
-}
-
-
-var sortList = function(head) {
-  if (head === null || head.next === null) {
+  if (head === null) {
     return head;
   }
 

@@ -108,7 +108,7 @@ var sortList = function(head) {
   lessDummy.next = sortList(lessDummy.next);
   greaterDummy.next = sortList(greaterDummy.next);
 
-  const dummy = lessDummy;
+  const dummy = lessDummy; //也可以直接用lessDummy
   curr = dummy;
 
   while (curr.next !== null) {

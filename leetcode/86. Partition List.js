@@ -40,7 +40,7 @@ var partition = function(head, x) {
     }
     curr = curr.next;
   }
-  less.next = null;
+  less.next = null; // 这句可以不用，因为下面重新赋值了。但是gte.next=null必须有
   gte.next = null;
 
   less.next = gteDummy.next;

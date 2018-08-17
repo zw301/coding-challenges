@@ -65,6 +65,7 @@
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/81.%20Search%20in%20Rotated%20Sorted%20Array%20II.js)|Medium|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.jsgi)|Medium|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/83.%20Remove%20Duplicates%20from%20Sorted%20List.js)|Easy|
+|86|[Partition List](https://leetcode.com/problems/partition-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/86.%20Partition%20List.js)|Medium|
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/88.%20Merge%20Sorted%20Array.js)|Easy|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/90.%20Subsets%20II.js)|Medium|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/91.%20Decode%20Ways.js)|Medium|

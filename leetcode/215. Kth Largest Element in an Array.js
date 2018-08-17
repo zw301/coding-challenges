@@ -65,11 +65,6 @@ function partition(nums, lo, hi, pos) {
 }
 
 // improved
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {number}
- */
 var findKthLargest = function(nums, k) {
     k = nums.length - k;
 

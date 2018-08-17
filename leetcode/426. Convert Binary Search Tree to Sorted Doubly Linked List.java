@@ -40,7 +40,7 @@ class Solution {
       Node head = null;
       Node prev = null;
       Stack<Node> stack = new Stack<>();
-      
+
       while (root != null || !stack.isEmpty()) {
         while (root != null) {
           stack.push(root);
@@ -63,4 +63,41 @@ class Solution {
 
       return head;
     }
+}
+
+
+class Solution {
+  private Node concatenate(Node a, Node b) {
+    if (a == null) {
+      return b;
+    }
+    if (b == null) {
+      return a;
+    }
+
+    Node aEnd = a.left;
+    Node bEnd = b.left;
+
+    a.left = bEnd;
+    bEnd.right = a;
+
+    aEnd.right = b;
+    b.left = aEnd;
+
+    return a;
+  }
+
+  public Node treeToDoublyList(Node n) {
+    if (n == null) {
+      return n;
+    }
+    Node leftList = treeToDoublyList(n.left);
+    Node rightList = treeToDoublyList(n.right);
+    n.left = n;
+    n.right = n;
+
+    n = concatenate(left, n);
+    n = concatenate(n, right);
+    return n;
+  }
 }

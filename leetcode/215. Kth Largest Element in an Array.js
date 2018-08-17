@@ -97,7 +97,7 @@ const partition = function(nums, lo, hi, k) {
     }
 
     if (lt < k) {
-        partition(nums, gt + 1, hi, k);
+        partition(nums, lt + 1, hi, k);
     } else if (lt > k){
         partition(nums, lo, lt - 1, k);
     }

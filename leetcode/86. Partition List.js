@@ -19,5 +19,30 @@
  * @return {ListNode}
  */
 var partition = function(head, x) {
+  if (head === null || head.next === null) {
+    return head;
+  }
 
+  const lessDummy = new ListNode(0);
+  let less = lessDummy;
+
+  const gteDummy = new ListNode(0);
+  let gte = gteDummy;
+
+  let curr = head;
+  while (curr !== null) {
+    if (curr.val < x) {
+      less.next = curr;
+      less = less.next;
+    } else {
+      gte.next = curr;
+      gte = gte.next;
+    }
+    curr = curr.next;
+  }
+  less.next = null;
+  gte.next = null;
+
+  less.next = gteDummy.next;
+  return lessDummy.next;
 };

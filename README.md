@@ -123,6 +123,7 @@
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/171.%20Excel%20Sheet%20Column%20Number.js)|Easy|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/172.%20Factorial%20Trailing%20Zeroes.js)|Easy|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/173.%20Binary%20Search%20Tree%20Iterator.js)|Medium|
+|179|[Largest Number](https://leetcode.com/problems/largest-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/179.%20Largest%20Number.js)|Medium|
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/186.%20Reverse%20Words%20in%20a%20String%20II.js)|Medium|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/189.%20Rotate%20Array.js)|Easy|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/190.%20Reverse%20Bits.java)|Easy|

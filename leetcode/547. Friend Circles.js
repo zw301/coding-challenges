@@ -81,6 +81,25 @@ var findCircleNum = function(M) {
   return uf.getNumComponent();
 };
 
+//优化了一下
+var findCircleNum = function(M) {
+    if (M === null || M.length === 0 || M[0] === null || M[0].length === 0) {
+        return 0;
+    }
+
+    const n = M.length;
+    const uf = new UF(n);
+
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < i; j++) {
+            if (M[i][j] === 1) {
+                uf.union(i, j);
+            }
+        }
+    }
+
+    return uf.getComponent();
+};
 
 const friends =
 [[1,1,0],

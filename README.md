@@ -199,6 +199,7 @@
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/414.%20Third%20Maximum%20Number.js)|Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/415.%20Add%20Strings.js)|Easy|
 |426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/426.%20Convert%20Binary%20Search%20Tree%20to%20Sorted%20Doubly%20Linked%20List.java)|Medium|
+|428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/428.%20Serialize%20and%20Deserialize%20N-ary%20Tree.js)|Hard|
 |430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/430.%20Flatten%20a%20Multilevel%20Doubly%20Linked%20List.js)|Medium|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/437.%20Path%20Sum%20III.js)|Easy|
 |443|[String Compression](https://leetcode.com/problems/string-compression)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/443.%20String%20Compression.js)|Easy|

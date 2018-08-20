@@ -40,3 +40,25 @@ function helper(nums, start, end) {
 
   return node;
 }
+
+// 8.19
+var sortedArrayToBST = function(nums) {
+    if (nums === null) {
+        return null;
+    }
+
+    return toBST(nums, 0, nums.length);
+};
+
+const toBST = function(nums, start, end) {
+    if (start === end) {
+        return null;
+    }
+
+    let mid = start + Math.floor((end - start) / 2);
+    const root = new TreeNode(nums[mid]);
+    root.left = toBST(nums, start, mid);
+    root.right = toBST(nums, mid + 1, end);
+
+    return root;
+}

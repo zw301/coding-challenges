@@ -65,5 +65,48 @@ var countComponents = function(n, edges) {
   return uf.getNumComponent();
 };
 
+// DFS
+var countComponents = function(n, edges) {
+    if (n <= 1) {
+        return n;
+    }
+
+    const adj = new Array();
+    for (let i = 0; i < n; i++) {
+        adj[i] = new Array();
+    }
+
+    for (let i = 0; i < edges.length; i++) {
+        let v1 = edges[i][0];
+        let v2 = edges[i][1];
+
+        adj[v1].push(v2);
+        adj[v2].push(v1);
+    }
+
+    const visited = new Array(n).fill(false);
+    let count = 0;
+
+    for (let i = 0; i < n; i++) {
+        if (!visited[i]) {
+            count++;
+            dfs(visited, i, adj);
+        }
+    }
+    return count;
+};
+
+const dfs = function(visited, index, adj) {
+    visited[index] = true;
+
+    let neighbors = adj[index];
+    for (let i = 0; i < neighbors.length; i++) {
+        let next = neighbors[i];
+        if (!visited[next]) {
+            dfs(visited, next, adj);
+        }
+    }
+}
+
 const edges = [[0, 1], [1, 2], [2, 3], [3, 4]];
 console.log(countComponents(5, edges));

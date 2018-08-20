@@ -216,6 +216,7 @@
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/611.%20Valid%20Triangle%20Number.js)|Medium|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/617.%20Merge%20Two%20Binary%20Trees.js)|Easy|
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/633.%20Sum%20of%20Square%20Numbers.js)|Easy|
+|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/637.%20Average%20of%20Levels%20in%20Binary%20Tree.js)|Easy|
 |653|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST.js)|Easy|
 |657|[Judge Route Circle](https://leetcode.com/problems/judge-route-circle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/657.%20Judge%20Route%20Circle.js)|Easy|
 |658|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/658.%20Find%20K%20Closest%20Elements.js)|Medium|

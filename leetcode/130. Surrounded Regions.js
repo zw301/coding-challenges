@@ -23,86 +23,83 @@
 // on the border will be flipped to 'X'. Two cells are connected if they are
 // adjacent cells connected horizontally or vertically.
 
-/**
- * @param {character[][]} board
- * @return {void} Do not return anything, modify board in-place instead.
- */
+ /**
+  * @param {character[][]} board
+  * @return {void} Do not return anything, modify board in-place instead.
+  */
+ var solve = function(board) {
+     if (board === null || board.length === 0 || board[0] === null || board[0].length === 0) {
+         return;
+     }
 
-class UF {
-  constructor(n) {
-    this.id = new Array(n);
+     const n = board.length;
+     const m = board[0].length;
 
-    for (var i = 0; i < n; i++) {
-      this.id[i] = i;
-    }
-  }
+     const dirX = [-1, 1, 0, 0];
+     const dirY = [0, 0, -1, 1];
 
-  find(i) {
-    while (i !== this.id[i]) {
-      this.id[i] = this.id[this.id[i]];
-      i = this.id[i];
-    }
-    return i;
-  }
+     const uf = new UF(m * n + 1);
 
-  union(p, q) {
-    const i = this.find(p);
-    const j = this.find(q);
+     for (let i = 0; i < n; i++) {
+         for (let j = 0; j < m; j++) {
+             if (board[i][j] === "O") {
+                 if (isEdge(n, m, i, j)) {
+                     uf.union(i * m + j, m * n);
+                 } else {
+                     for (let k = 0; k < 4; k++) {
+                         let x = i + dirX[k];
+                         let y = j + dirY[k];
 
-    this.id[i] = j;
-  }
+                         if (insideBoard(n, m, x, y) && board[x][y] === "O") {
+                             uf.union(i * m + j, x * m + y);
+                         }
+                     }
+                 }
+             }
+         }
+     }
 
-  connected(p, q) {
-    return this.find(p) === this.find(q);
-  }
-};
+     for (let i = 0; i < n; i++) {
+         for (let j = 0; j < m; j++) {
+             if (!uf.connected(i * m + j, m * n)) {
+                 board[i][j] = "X";
+             }
+         }
+     }
+ };
 
+ const isEdge = function(n, m, i, j) {
+     return i === 0 || i === n - 1 || j === 0 || j === m - 1;
+ }
 
-var solve = function(board) {
-  if (board === null || board.length === 0 || board[0].length === 0) {
-    return;
-  }
+ const insideBoard = function(n, m, i, j) {
+     return i >= 0 && i < n && j >= 0 && j < m;
+ }
 
-  const m = board.length;
-  const n = board[0].length;
+ class UF {
+     constructor(n) {
+         this.id = [];
+         for (let i = 0; i < n; i++) {
+             this.id[i] = i;
+         }
+     }
 
-  const dirX = [0, 0, -1, 1];
-  const dirY = [1, -1, 0, 0];
+     find(i) {
+         while (i !== this.id[i]) {
+             this.id[i] = this.id[this.id[i]];
+             i = this.id[i];
+         }
+         return i;
+     }
 
-  const uf = new UF(m * n + 1);
+     union(p, q) {
+         let i = this.find(p);
+         let j = this.find(q);
 
-  for (let i = 0; i < m; i++) {
-    for (let j = 0; j < n; j++) {
-      if(board[i][j] === "O") {
-        if(isEdge(m, n, i, j)) {
-          uf.union(i * n + j, m * n);
-        } else {
-          for (let k = 0; k < 4; k++) {
-            let x = i + dirX[k];
-            let y = j + dirY[k];
+         this.id[i] = j;
+     }
 
-            if (insideBoard(m, n, x, y) && board[x][y] === "O") {
-              uf.union(i * n + j, x * n + y)
-            }
-          }
-        }
-      }
-    }
-  }
-
-  for (let i = 0; i < m; i++) {
-    for (let j = 0; j < n; j++) {
-      if (!uf.connected(i * n + j, m * n)) {
-        board[i][j] = "X";
-      }
-    }
-  }
-
-  function isEdge(m, n, i, j) {
-    return (i === 0 || i === m - 1 || j === 0 || j === n - 1)
-  }
-  function insideBoard(m, n, i, j) {
-    return (i >= 0 && i < m && j >= 0 && j < n);
-  }
-
-};
+     connected(p, q) {
+         return this.find(p) === this.find(q);
+     }
+ }

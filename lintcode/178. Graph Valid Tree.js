@@ -79,10 +79,10 @@ var validTree = function(n, edges) {
   }
 
   for (let i = 0; i < edges.length; i++) {
-    let from = edges[i][0];
-    let to = edges[i][1];
-    adj[from].push(to);
-    adj[to].push(from);
+    let v1 = edges[i][0];
+    let v2 = edges[i][1];
+    adj[v1].push(v2);
+    adj[v2].push(v1);
   }
 
   const queue = [];

@@ -67,37 +67,39 @@ class Solution {
 
 
 class Solution {
-  private Node concatenate(Node a, Node b) {
-    if (a == null) {
-      return b;
+    public Node treeToDoublyList(Node root) {
+      if (root == null) {
+        return null;
+      }
+      Node left = treeToDoublyList(root.left);
+      Node right = treeToDoublyList(root.right);
+
+      root.left = root;
+      root.right = root;
+
+      root = concat(left, root);
+      root = concat(root, right);
+
+      return root;
     }
-    if (b == null) {
+
+    public Node concat(Node a, Node b) {
+      if (a == null) {
+        return b;
+      }
+      if (b == null) {
+        return a;
+      }
+
+      Node aEnd = a.left;
+      Node bEnd = b.left;
+
+      a.left = bEnd;
+      bEnd.right = a;
+
+      aEnd.right = b;
+      b.left = aEnd;
+
       return a;
     }
-
-    Node aEnd = a.left;
-    Node bEnd = b.left;
-
-    a.left = bEnd;
-    bEnd.right = a;
-
-    aEnd.right = b;
-    b.left = aEnd;
-
-    return a;
-  }
-
-  public Node treeToDoublyList(Node n) {
-    if (n == null) {
-      return n;
-    }
-    Node leftList = treeToDoublyList(n.left);
-    Node rightList = treeToDoublyList(n.right);
-    n.left = n;
-    n.right = n;
-
-    n = concatenate(left, n);
-    n = concatenate(n, right);
-    return n;
-  }
 }

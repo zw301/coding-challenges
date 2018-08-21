@@ -163,7 +163,7 @@
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/263.%20Ugly%20Number.js)|Easy|
 |264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/264.%20Ugly%20Number%20II.js)|Medium|
 |268|[Missing Number](https://leetcode.com/problems/missing-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/268.%20Missing%20Number.js)|Easy|
-|269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary)|[Java]()|Hard|
+|269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/269.%20Alien%20Dictionary.java)|Hard|
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/270.%20Closest%20Binary%20Search%20Tree%20Value.js)|Easy|
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.js)|Hard|
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/273.%20Integer%20to%20English%20Words.js)|Hard|

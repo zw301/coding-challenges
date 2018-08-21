@@ -215,6 +215,7 @@
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/560.%20Subarray%20Sum%20Equals%20K.js)|Medium|
 |561|[Array Partition I](https://leetcode.com/problems/array-partition-i)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/561.%20Array%20Partition%20I.js)|Easy|
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/572.%20Subtree%20of%20Another%20Tree.js)|Easy|
+|589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/589.%20N-ary%20Tree%20Preorder%20Traversal.js)|Easy|
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|[Java](https://github.com/zw301/coding-challenges/blob/master/leetcode/590.%20N-ary%20Tree%20Postorder%20Traversal.js)|Easy|
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/611.%20Valid%20Triangle%20Number.js)|Medium|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/617.%20Merge%20Two%20Binary%20Trees.js)|Easy|

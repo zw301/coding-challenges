@@ -54,6 +54,8 @@ const sequenceReconstruction = function (org, seqs) {
       if (seq[j] <= 0 || seq[j] > n) {
         return false;
       }
+
+      // 虽然set可以不重复添加，但是如果有重复的seq例如[[1,2],[1,2]]，其中2的入度不会被设置为2
       if (map.get(seq[j - 1]) && !map.get(seq[j - 1]).has(seq[j])) {
         map.get(seq[j - 1]).add(seq[j]);
         indegree.set(seq[j], indegree.get(seq[j]) + 1);

@@ -13,7 +13,7 @@ var countPrimes = function(n) {
   const notPrime = new Array(n).fill(false);
   let count = 0;
   for (let i = 2; i < n; i++) {
-    if (noyPrime[i]) {
+    if (notPrime[i]) {
       continue;
     }
     count++;

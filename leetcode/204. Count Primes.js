@@ -9,6 +9,8 @@
  * @param {number} n
  * @return {number}
  */
+
+// Time Complexity - O(nloglogn)， Space Complexity - O(n)
 var countPrimes = function(n) {
   const notPrime = new Array(n).fill(false);
   let count = 0;

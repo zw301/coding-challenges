@@ -1,41 +1,116 @@
-Check whether the original sequence org can be uniquely reconstructed from the sequences in seqs. The org sequence is a permutation of the integers from 1 to n, with 1 ≤ n ≤ 104. Reconstruction means building a shortest common supersequence of the sequences in seqs (i.e., a shortest sequence so that all sequences in seqs are subsequences of it). Determine whether there is only one sequence that can be reconstructed from seqs and it is the org sequence.
+// Check whether the original sequence org can be uniquely reconstructed from the sequences in seqs. The org sequence is a permutation of the integers from 1 to n, with 1 ≤ n ≤ 104. Reconstruction means building a shortest common supersequence of the sequences in seqs (i.e., a shortest sequence so that all sequences in seqs are subsequences of it). Determine whether there is only one sequence that can be reconstructed from seqs and it is the org sequence.
+//
+// Example 1:
+//
+// Input:
+// org: [1,2,3], seqs: [[1,2],[1,3]]
+//
+// Output:
+// false
+//
+// Explanation:
+// [1,2,3] is not the only one sequence that can be reconstructed, because [1,3,2] is also a valid sequence that can be reconstructed.
+// Example 2:
+//
+// Input:
+// org: [1,2,3], seqs: [[1,2]]
+//
+// Output:
+// false
+//
+// Explanation:
+// The reconstructed sequence can only be [1,2].
+// Example 3:
+//
+// Input:
+// org: [1,2,3], seqs: [[1,2],[1,3],[2,3]]
+//
+// Output:
+// true
+//
+// Explanation:
+// The sequences [1,2], [1,3], and [2,3] can uniquely reconstruct the original sequence [1,2,3].
+// Example 4:
+//
+// Input:
+// org: [4,1,5,2,6,3], seqs: [[5,2,6,3],[4,1,5,2]]
+//
+// Output:
+// true
+// UPDATE (2017/1/8):
+// The seqs parameter had been changed to a list of list of strings (instead of a 2d array of strings). Please reload the code definition to get the latest changes.
+/**
+ * @param {number[]} org
+ * @param {number[][]} seqs
+ * @return {boolean}
+ */
 
-Example 1:
+// 通过seqs是否能构建出org。=> 是否存在唯一拓扑排序（queue的size始终为1）
+var sequenceReconstruction = function(org, seqs) {
 
-Input:
-org: [1,2,3], seqs: [[1,2],[1,3]]
+    const adj = new Map();
+    const indegree = new Map();
 
-Output:
-false
 
-Explanation:
-[1,2,3] is not the only one sequence that can be reconstructed, because [1,3,2] is also a valid sequence that can be reconstructed.
-Example 2:
+    const n = org.length;
+    let count = 0;
 
-Input:
-org: [1,2,3], seqs: [[1,2]]
+    for (let i = 1; i <= n; i++) {
+        adj.set(i, new Set());
+        indegree.set(i, 0);
+    }
 
-Output:
-false
+    for (let i = 0; i < seqs.length; i++) {
+        let seq = seqs[i];
+        count += seq.length;
 
-Explanation:
-The reconstructed sequence can only be [1,2].
-Example 3:
+        if (seq.length >= 1  && seq[0] < 1 || seq[0] > n) {
+            return false;
+        }
+        for (let j = 1; j < seq.length; j++) {
+            let prev = seq[j - 1];
+            let next = seq[j];
 
-Input:
-org: [1,2,3], seqs: [[1,2],[1,3],[2,3]]
+            if (next < 1 || next > n) {
+                return false;
+            }
 
-Output:
-true
+            if (adj.has(prev) && !adj.get(prev).has(next)) {
+                adj.get(prev).add(next);
+                indegree.set(next, indegree.get(next) + 1);
+            }
+        }
+    }
 
-Explanation:
-The sequences [1,2], [1,3], and [2,3] can uniquely reconstruct the original sequence [1,2,3].
-Example 4:
+    if (count < n) {
+        return false;
+    }
 
-Input:
-org: [4,1,5,2,6,3], seqs: [[5,2,6,3],[4,1,5,2]]
 
-Output:
-true
-UPDATE (2017/1/8):
-The seqs parameter had been changed to a list of list of strings (instead of a 2d array of strings). Please reload the code definition to get the latest changes.
+    const queue = [];
+
+    indegree.forEach((value, key) => {
+        if (value === 0) {
+            queue.push(key);
+        }
+    });
+
+    let cnt = 0;
+    while (queue.length == 1) {
+        let curr = queue.shift();
+
+        if(curr !== org[cnt]) {
+            return false;
+        }
+        cnt++;
+
+        let nextList = adj.get(curr);
+        nextList.forEach(next => {
+            indegree.set(next, indegree.get(next) - 1);
+            if (indegree.get(next) === 0) {
+                queue.push(next);
+            }
+        })
+    }
+    return cnt === org.length;
+};

@@ -38,3 +38,31 @@ const helper = function(root) {
 
   return new ResultType(Math.max(left.depth, right.depth) + 1, true);
 }
+
+// 8.22
+const isBalanced = function(root) {
+  if (root === null) {
+    return true;
+  }
+  return height(root) !== -1;
+}
+const height = function(node) {
+  if (node === null) {
+    return 0;
+  }
+  let leftHeight = height(root.left);
+  if (leftHeight == -1) {
+    return -1;
+  }
+
+  let rightHeight = height(root.right);
+  if (rightheight === -1) {
+    return -1;
+  }
+
+  if (leftHeight - rightHeight < -1 || leftHeight - rightHeight > 1) {
+    return -1;
+  }
+
+  return Math.max(leftHeight, rightHeight) + 1;
+}

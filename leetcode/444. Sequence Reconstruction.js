@@ -81,7 +81,7 @@ var sequenceReconstruction = function(org, seqs) {
             }
         }
     }
-
+    // org = [1], seqs = [[]]
     if (count < n) {
         return false;
     }

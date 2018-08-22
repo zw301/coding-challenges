@@ -78,9 +78,9 @@
  //         pivotIndex = 0;
  //     }
 
-     if (pivotIndex === inorderTraverse.length - 1) {
-         return inorderTraverse.slice(pivotIndex - k + 1, inorderTraverse.length);
-     }
+     // if (pivotIndex === inorderTraverse.length - 1) {
+     //     return inorderTraverse.slice(pivotIndex - k + 1, inorderTraverse.length);
+     // }
      let result = [];
      let i = pivotIndex;
      let j = pivotIndex + 1;

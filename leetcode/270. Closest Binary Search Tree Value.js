@@ -28,25 +28,26 @@
  * @return {number}
  */
 
-// 边界数值会超时
 var closestValue = function(root, target) {
-  if (root === null) {
-    return null;
-  }
-  let min = root.val;
-  while (root !== null) {
-    if (Math.abs(root.val - target) < Math.abs(min - target)) {
-      min = root.val;
+    if (root === null) {
+        return null;
     }
-    if (root.val > target) {
-      root = root.left;
+
+    let min = root.val;
+    while (root !== null) {
+        if (Math.abs(root.val - target) < Math.abs(min - target)) {
+            min = root.val;
+        }
+        if (root.val > target) {
+            root = root.left;
+        } else if (root.val < target) {
+            root = root.right;
+        } else {
+            return root.val
+        }
     }
-    if (root.val < target) {
-      root = root.right;
-    }
-  }
-  return min;
-}
+    return min;
+};
 
 var closestValue = function(root, target) {
   if (root === null) {

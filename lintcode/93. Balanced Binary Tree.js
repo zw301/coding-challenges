@@ -51,11 +51,11 @@ const height = function(node) {
     return 0;
   }
   let leftHeight = height(root.left);
+  let rightHeight = height(root.right);
   if (leftHeight == -1) {
     return -1;
   }
 
-  let rightHeight = height(root.right);
   if (rightheight === -1) {
     return -1;
   }
@@ -65,4 +65,22 @@ const height = function(node) {
   }
 
   return Math.max(leftHeight, rightHeight) + 1;
+}
+
+
+const isBalanced = function(root) {
+  if (root === null) {
+    return true;
+  }
+
+  return Math.abs(height(root.left) - height(root.right) <= 1) &&
+    isBalanced(root.left) && isBalanced(root.right);
+}
+
+const height = function(root) {
+  if (root === null) {
+    return 0;
+  }
+
+  return Math.max(height(root.left), height(root.right)) + 1;
 }

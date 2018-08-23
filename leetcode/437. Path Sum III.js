@@ -35,6 +35,8 @@
  * @param {number} sum
  * @return {number}
  */
+
+// dfs
 var pathSum = function(root, sum) {
   if (root === null) {
     return 0;

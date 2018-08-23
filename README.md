@@ -91,6 +91,7 @@
 |120|[Triangle](https://leetcode.com/problems/triangle)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/120.%20Triangle.js)|Medium|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.js)|Easy|
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.js)|Easy|
+|124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/124.%20Binary%20Tree%20Maximum%20Path%20Sum.js)|Hard|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |126|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/126.%20Word%20Ladder%20II.js)|Hard|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/127.%20Word%20Ladder.js)|Medium|

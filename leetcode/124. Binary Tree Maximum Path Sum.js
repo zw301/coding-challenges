@@ -34,5 +34,25 @@
  * @return {number}
  */
 var maxPathSum = function(root) {
+  if (root === null) {
+    return null;
+  }
 
+  const maxPath = [-Infinity];
+  helper(root, maxPath);
+
+  return maxPath[0];
 };
+
+const helper = function(root, maxPath) {
+  if (root === null) {
+    return 0;
+  }
+
+  let left = Math.max(helper(root.left, maxPath), 0);
+  let right = Math.max(helper(root.right, maxPath), 0);
+
+  maxPath[0] = Math.max(maxPath[0], left + right + root.val);
+
+  return root.val + Math.max(left, right);
+}

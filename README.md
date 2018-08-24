@@ -95,6 +95,7 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/125.%20Valid%20Palindrome.js)|Easy|
 |126|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/126.%20Word%20Ladder%20II.js)|Hard|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/127.%20Word%20Ladder.js)|Medium|
+|129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/129.%20Sum%20Root%20to%20Leaf%20Numbers.js)|Medium|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/130.%20Surrounded%20Regions.js)|Medium|
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/131.%20Palindrome%20Partitioning.js)|Medium|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/133.%20Clone%20Graph.js)|Medium|

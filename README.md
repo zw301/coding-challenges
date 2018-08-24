@@ -146,6 +146,7 @@
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/215.%20Kth%20Largest%20Element%20in%20an%20Array.js)|Medium|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/217.%20Contains%20Duplicate.js)|Easy|
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/219.%20Contains%20Duplicate%20II.js)|Easy|
+|222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/222.%20Count%20Complete%20Tree%20Nodes.js)|Medium|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/225.%20Implement%20Stack%20using%20Queues.js)|Easy|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/226.%20Invert%20Binary%20Tree.js)|Easy|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/227.%20Basic%20Calculator%20II.js)|Medium|

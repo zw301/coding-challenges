@@ -43,6 +43,7 @@ var maxPathSum = function(root) {
 
   return maxPath[0];
 };
+
 const helper = function(root, maxPath) {
   if (root === null) {
     return 0;

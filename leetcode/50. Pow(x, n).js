@@ -32,21 +32,36 @@
 //   }
 // };
 
+// var myPow = function(x, n) {
+//   if (n === 0) return 1;
+//   let pow;
+//   if (n > 0) {
+//     pow = myPow(x, Math.floor(n / 2));
+//   } else {
+//     pow = myPow(x, Math.ceil(n / 2));
+//   }
+//
+//   if (n % 2 === 0) {
+//     return pow * pow;
+//   }
+//
+//   return n > 0 ? pow * pow * x : pow * pow * 1 / x;
+// }
+
+// 8.27
 var myPow = function(x, n) {
-  if (n === 0) return 1;
-  let pow;
-  if (n > 0) {
-    pow = myPow(x, Math.floor(n / 2));
-  } else {
-    pow = myPow(x, Math.ceil(n / 2));
-  }
+    if (n === 0) {
+        return 1;
+    }
 
-  if (n % 2 === 0) {
-    return pow * pow;
-  }
+    let pow = myPow(x, Math.trunc(n / 2));
 
-  return n > 0 ? pow * pow * x : pow * pow * 1 / x;
-}
+    if (n % 2 === 0) {
+        return pow * pow;
+    }
+
+    return n > 0 ? pow * pow * x : pow * pow / x;
+ };
 
 var myPow2 = function(x, n) {
   let res = 1;

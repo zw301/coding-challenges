@@ -22,9 +22,9 @@
  * @return {number}
  */
 var calculate = function(s) {
-  if (s === String(Math.pow(2, 31) -1)) {
-    return Math.pow(2, 31) - 1;
-  }
+  // if (s === String(Math.pow(2, 31) -1)) {
+  //   return Math.pow(2, 31) - 1;
+  // }
 
   let sign = 1;
   let result = 0;

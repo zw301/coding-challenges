@@ -31,7 +31,7 @@ var serialize = function(root) {
   while (queue.length !== 0) {
     let node = queue.shift();
     if (node === null) {
-      result += "#, ";
+      result += "#,";
       continue;
     }
     result += String(node.val) + ",";

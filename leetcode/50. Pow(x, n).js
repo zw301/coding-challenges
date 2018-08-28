@@ -48,7 +48,7 @@
 //   return n > 0 ? pow * pow * x : pow * pow * 1 / x;
 // }
 
-// 8.27
+// 8.27 Math.trunc(n / 2)
 var myPow = function(x, n) {
     if (n === 0) {
         return 1;

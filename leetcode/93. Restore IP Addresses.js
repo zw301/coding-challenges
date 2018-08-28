@@ -16,26 +16,32 @@ var restoreIpAddresses = function(s) {
 
     const result = [];
 
-    helper(s, 0, "", result);
+    helper();
 
     return result;
 };
 
-const helper = function(s, startIndex, str, result) {
-  if (startIndex === s.length) {
-    result.push(str);
+const helper = function(ip, startIndex, path, count, result) {
+  if (count > 4) {
+    return;
+  }
+  if (count === 4 && startIndex === ip.length) {
+    result.push(path);
     return;
   }
 
-  for (let i = startIndex; i < s.length; i++) {
-    let substr = s.slice(startIndex, i);
-    if (substr.length > 1 && substr[0] === '0' ) {
+  for (let i = 1; i < 4; i++) {
+    if (startIndex + i > ip.length) {
+      return;
+    }
+    let s = ip.slice(startIndex, startIndex + i);
+    if (s.length > 1 && s.startsWith("0") || (i === 3 && Number(s) > 255)) {
       continue;
     }
-    if (Number(substr) >= 0 && Number(substr) <= 255) {
-      helper(s, i + 1, str + "." + substr, result);
-    }
+    helper(ip, index + i, path + s + (count === 3 ? "" : "."), count + 1, result);
   }
 }
+
+
 
 console.log(restoreIpAddresses("25525511135"));

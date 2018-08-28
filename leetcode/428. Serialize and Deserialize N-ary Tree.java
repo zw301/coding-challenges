@@ -34,54 +34,54 @@ class Node {
 */
 
 // 只能看懂 serialize
-class Codec {
-
-    // Encodes a tree to a single string.
-    public String serialize(Node root) {
-        return serializeHelper(root, new StringBuilder());
-    }
-
-    public String serializeHelper(Node root, StringBuilder sb) {
-        if (root == null) {
-            return "";
-        }
-        sb.append(root.val + "[");
-        for (Node child : root.children) {
-            serializeHelper(child, sb);
-        }
-        sb.append("]");
-
-        System.out.println(sb.toString());
-        return sb.toString();
-    }
-
-    // Decodes your encoded data to tree.
-    public Node deserialize(String data) {
-        int i = 0;
-        int len = data.length();
-
-        Node root = null;
-        Stack<Node> stack = new Stack<>();
-        while (i < len) {
-            int start = i;
-            while (i < len && Character.isDigit(data.charAt(i))) {
-                i++;
-            }
-            if (start == i) {
-                Node child = stack.pop();
-                if (stack.isEmpty()) {
-                    root = child;
-                    break;
-                }
-                stack.peek().children.add(child);
-            } else {
-                stack.push(new Node(Integer.parseInt(data.substring(start, i)), new ArrayList<Node>()));
-            }
-            i++;
-        }
-        return root;
-    }
-}
+// class Codec {
+//
+//     // Encodes a tree to a single string.
+//     public String serialize(Node root) {
+//         return serializeHelper(root, new StringBuilder());
+//     }
+//
+//     public String serializeHelper(Node root, StringBuilder sb) {
+//         if (root == null) {
+//             return "";
+//         }
+//         sb.append(root.val + "[");
+//         for (Node child : root.children) {
+//             serializeHelper(child, sb);
+//         }
+//         sb.append("]");
+//
+//         System.out.println(sb.toString());
+//         return sb.toString();
+//     }
+//
+//     // Decodes your encoded data to tree.
+//     public Node deserialize(String data) {
+//         int i = 0;
+//         int len = data.length();
+//
+//         Node root = null;
+//         Stack<Node> stack = new Stack<>();
+//         while (i < len) {
+//             int start = i;
+//             while (i < len && Character.isDigit(data.charAt(i))) {
+//                 i++;
+//             }
+//             if (start == i) {
+//                 Node child = stack.pop();
+//                 if (stack.isEmpty()) {
+//                     root = child;
+//                     break;
+//                 }
+//                 stack.peek().children.add(child);
+//             } else {
+//                 stack.push(new Node(Integer.parseInt(data.substring(start, i)), new ArrayList<Node>()));
+//             }
+//             i++;
+//         }
+//         return root;
+//     }
+// }
 // System.out.println(sb.toString());
 // 1[3[5[]
 // 1[3[5[]6[]

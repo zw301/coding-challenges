@@ -66,7 +66,7 @@ var longestCommonPrefix = function(strs) {
   }
 
   return prefix;
-}
+};
 
 
 let strs1 = ["flower","flow","floight"];

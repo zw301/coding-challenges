@@ -31,6 +31,8 @@
      return;
    }
 
+   // from 'startIndex' find the first valid substring(startIndex - i) and
+   // recursive call to find the next valid substring(i - ii);
    for (let i = startIndex; i < s.length; i++) {
      let substr = s.slice(startIndex, i + 1);
      if (!isPalindrome(substr)) {

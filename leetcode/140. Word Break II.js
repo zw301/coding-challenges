@@ -38,6 +38,7 @@
  * @param {string[]} wordDict
  * @return {string[]}
  */
+// suffix
 var wordBreak = function(s, wordDict) {
     if (s === null || s.length === 0) {
         return [];

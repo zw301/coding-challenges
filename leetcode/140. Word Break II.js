@@ -67,3 +67,41 @@ const helper = (s, wordDict, map) => {
     map[s] = result;
     return result;
 };
+
+//// 8.28 prefix版本
+var wordBreak = function(s, wordDict) {
+    if (s === null || s.length === 0) {
+        return [];
+    }
+
+    const map = {};
+    helper(s, wordDict, map);
+
+    return map[s];
+};
+
+const helper = function(s, wordDict, map) {
+    const result = [];
+    if (map[s] !== undefined) {
+        return map[s];
+    }
+    if (wordDict.includes(s)) {
+        result.push(s);
+    }
+
+    for (let i = 1; i < s.length; i++) {
+        let prefix = s.substring(0, i);
+        if (wordDict.includes(prefix)) {
+            let list = helper(s.substring(i), wordDict, map);
+            for (let j = 0; j < list.length; j++) {
+                result.push(prefix + " " + list[j]);
+            }
+        }
+    }
+    map[s] = result;
+    return result;
+};
+
+let s = "pineapplepenapple";
+let wordDict = ["apple", "pen", "applepen", "pine", "pineapple"];
+console.log(wordBreak(s, wordDict));

@@ -32,6 +32,7 @@ const helper = function(k, target, startIndex, list, result) {
   }
   if (list.length === k && target === 0) {
     result.push(list.slice());
+    return;
   }
 
   for (let i = startIndex; i <= 9; i++) {

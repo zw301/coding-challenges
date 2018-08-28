@@ -182,6 +182,7 @@
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/278.%20First%20Bad%20Version.js)|Easy|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/279.%20Perfect%20Squares.js)|Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/280.%20Wiggle%20Sort.js)|Medium|
+|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/282.%20Expression%20Add%20Operators.js)|Hard|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/283.%20Move%20Zeroes.js)|Easy|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/285.%20Inorder%20Successor%20in%20BST.js)|Medium|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/287.%20Find%20the%20Duplicate%20Number.js)|Medium|

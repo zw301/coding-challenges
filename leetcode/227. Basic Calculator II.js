@@ -52,19 +52,13 @@ var calculate = function(s) {
         stack.push(stack.pop() * num);
       }
       if (sign === "/") {
-        let val = stack.pop();
-        if (val >= 0) {
-          stack.push(Math.floor(val / num))
-        } else {
-          stack.push(Math.ceil(val / num))
-        }
+        stack.push(Math.trunc(stack.pop() / num))
       }
       sign = c;
       num = 0;
     }
   }
 
-  // console.log(stack);
   let res = 0;
   for (let i = 0; i < stack.length; i++) {
     res += stack[i];

@@ -6,7 +6,7 @@
 // Each of the digits 1-9 must occur exactly once in each column.
 // Each of the the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
 // Empty cells are indicated by the character '.'.
-// 
+//
 // Note:
 //
 // The given board contain only digits 1-9 and the character '.'.
@@ -51,12 +51,82 @@ const isValid = function(board, i, j) {
             return false;
         }
     }
-    for (let row = (i / 3) * 3; row < (i / 3) * 3; row++) {
-        for(let col = (j / 3) * 3; col < (j / 3) * 3; col++) {
+    for (let row = Math.floor(i / 3) * 3; row < Math.floor(i / 3) * 3 + 3; row++) {
+        for(let col = Math.floor(j / 3) * 3; col < Math.floor(j / 3) * 3 + 3; col++) {
             if ((row !== i || col !== j) && board[i][j] === board[row][col]) {
                 return false;
             }
         }
+    }
+    return true;
+}
+
+
+////也过不了
+
+var solveSudoku = function(board) {
+    helper(board);
+};
+
+const helper = function(board) {
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            if (board[i][j] === '.') {
+                continue;
+            }
+            for(let num = 1; num <= 9; num++) {
+                board[i][j] = String(num);
+                if (isValid(board) && helper(board)) {
+                    return true;
+                }
+                board[i][j] = ".";
+            }
+            return false;
+        }
+    }
+    return true;
+}
+
+const isValid = function(board) {
+    let set = new Set();
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            if (board[i][j] === '.') {
+                continue;
+            }
+            if (set.has(board[i][j])) {
+                return false;
+            }
+            set.add(board[i][j]);
+        }
+        set.clear();
+    }
+
+    for (let j = 0; j < 9; j++) {
+        for (let i = 0; i < 9; i++) {
+            if (board[i][j] === '.') {
+                continue;
+            }
+            if (set.has(board[i][j])) {
+                return false;
+            }
+            set.add(board[i][j]);
+        }
+        set.clear();
+    }
+    for (let k = 0; k < 9; k++) {
+        for (let i = Math.floor(k / 3) * 3; i < Math.floor(k / 3) * 3 + 3; i++) {
+            for (let j = (k % 3) * 3; j < (k % 3) * 3 + 3; j++) {
+                if (board[i][j] === '.') {
+                    continue;
+                }
+                if (set.has(board[i][j])) {
+                    return false;
+                }
+                set.add(board[i][j]);
+            }
+        }
+        set.clear();
     }
     return true;
 }

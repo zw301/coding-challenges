@@ -30,6 +30,7 @@
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/33.%20Search%20in%20Rotated%20Sorted%20Array.js)|Medium|
 |34|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/search-for-a-range)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/34.%20Search%20for%20a%20Range.js)|Medium|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/35.%20Search%20Insert%20Position.js)|Easy|
+|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/37.%20Sudoku%20Solver.js)|Hard|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|

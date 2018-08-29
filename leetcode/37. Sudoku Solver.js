@@ -71,7 +71,7 @@ var solveSudoku = function(board) {
 const helper = function(board) {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
-            if (board[i][j] === '.') {
+            if (board[i][j] !== '.') {
                 continue;
             }
             for(let num = 1; num <= 9; num++) {

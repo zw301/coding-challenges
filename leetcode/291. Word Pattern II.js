@@ -57,8 +57,8 @@ const match = (pattern, str, map, set) => {
         if (match(pattern.substring(1), str.substring(i + 1), map, set)) {
             return true;
         }
-        set.delete(word);
         map.delete(c);
+        set.delete(word);
     }
     return false;
 };

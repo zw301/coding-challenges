@@ -94,3 +94,26 @@ var isValidSudoku = function(board) {
 
     return true;
 };
+
+var isValidSudoku = function(board) {
+    let hash = {};
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            let num = board[i][j];
+            if (num !== ".") {
+                let row = `${num} is in row ${i}`
+                let col = `${num} is in col ${j}`
+                let box = `${num} is in box ${Math.floor(i / 3)}-${Math.floor(j / 3)}`
+
+                if (hash[row] || hash[col] || hash[box]) {
+                    return false;
+                }
+                hash[row] = true;
+                hash[col] = true;
+                hash[box] = true;
+            }
+        }
+    }
+
+    return true;
+};

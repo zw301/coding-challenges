@@ -78,7 +78,7 @@
          let curr = queue.shift();
          let nextList = expand(curr, dict);
          nextList.forEach(nextWord => {
-             adj.get(nextWord).push(curr);
+             adj.get(nextWord).push(curr); // 从我可以找到谁
              if (!distance.has(nextWord)) {
                  distance.set(nextWord, distance.get(curr) + 1);
                  queue.push(nextWord);
@@ -114,6 +114,83 @@
      })
      path.pop();
  };
+
+
+///////8.30
+var findLadders = function(beginWord, endWord, wordList) {
+    const dict = new Set(wordList);
+    if (!dict.has(endWord)) {
+        return [];
+    }
+    dict.add(beginWord)
+
+    const distance = new Map();
+    const adj = new Map();
+
+    bfs(endWord, beginWord, dict, distance, adj);
+
+    const result = [];
+
+    dfs(beginWord, endWord, distance, adj, result, []);
+    return result;
+
+};
+
+const dfs = function(curr, end, distance, adj, result, path) {
+    path.push(curr);
+    if (curr === end) {
+        result.push(path.slice());
+    }
+
+    let nextList = adj.get(curr);
+    for (let i = 0; i < nextList.length; i++) {
+        let nextWord = nextList[i];
+        if (distance.has(nextWord) && distance.get(nextWord) === distance.get(curr) - 1) {
+            dfs(nextWord, end, distance, adj, result, path);
+        }
+    }
+    path.pop();
+}
+
+const bfs = function(beginWord, endWord, dict, distance, adj) {
+    const queue = [];
+    queue.push(beginWord);
+    distance.set(beginWord, 0);
+
+    dict.forEach(word => {
+        adj.set(word, []);
+    })
+
+    while (queue.length !== 0) {
+        let curr = queue.shift();
+        let nextList = expand(curr, dict);
+        for (let j = 0; j < nextList.length; j++) {
+            let nextWord = nextList[j];
+            adj.get(nextWord).push(curr);
+            if (!distance.has(nextWord)) {
+                distance.set(nextWord, distance.get(curr) + 1);
+                queue.push(nextWord);
+            }
+        }
+    }
+}
+
+const expand = function(word, dict) {
+    const expandList = [];
+
+    for (let i = 0; i < word.length; i++) {
+        for (let charCode = 'a'.charCodeAt(0); charCode <= 'z'.charCodeAt(0); charCode++) {
+            let nextWord = word.slice(0, i) + String.fromCharCode(charCode) + word.slice(i + 1);
+            if (word === nextWord) {
+                continue;
+            }
+            if (dict.has(nextWord)) {
+                expandList.push(nextWord);
+            }
+        }
+    }
+    return expandList;
+}
 
 let start = "hit";
 let end = "cog";

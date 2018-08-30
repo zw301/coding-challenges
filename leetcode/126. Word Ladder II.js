@@ -54,31 +54,31 @@
      wordList.push(beginWord);
 
      const dict = new Set(wordList);
-     const map = new Map();
+     const adj = new Map();
      const distance = new Map();
 
-     bfs(distance, map, endWord, beginWord, dict);
+     bfs(distance, adj, endWord, beginWord, dict);
 
      const ladders = [];
-     dfs(ladders, [], beginWord, endWord, distance, map);
+     dfs(ladders, [], beginWord, endWord, distance, adj);
 
      return ladders;
  };
 
- const bfs = (distance, map, start, end, dict) => {
+ const bfs = (distance, adj, start, end, dict) => {
      const queue = [];
      queue.push(start);
      distance.set(start, 0);
 
      dict.forEach(word => {
-         map.set(word, []);
+         adj.set(word, []);
      })
 
      while (queue.length !== 0) {
          let curr = queue.shift();
          let nextList = expand(curr, dict);
          nextList.forEach(nextWord => {
-             map.get(nextWord).push(curr);
+             adj.get(nextWord).push(curr);
              if (!distance.has(nextWord)) {
                  distance.set(nextWord, distance.get(curr) + 1);
                  queue.push(nextWord);
@@ -100,16 +100,16 @@
      return nextList;
  };
 
- const dfs = (ladders, path, curr, end, distance, map) => {
+ const dfs = (ladders, path, curr, end, distance, adj) => {
      path.push(curr);
      if (curr === end) {
          ladders.push(path.slice());
      }
 
-     let nextList = map.get(curr);
+     let nextList = adj.get(curr);
      nextList.forEach(nextWord => {
          if (distance.has(nextWord) && distance.get(nextWord) === distance.get(curr) - 1) {
-             dfs(ladders, path, nextWord, end, distance, map);
+             dfs(ladders, path, nextWord, end, distance, adj);
          }
      })
      path.pop();

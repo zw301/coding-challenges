@@ -71,7 +71,7 @@ const buildTrie = (words) => {
     let curr = root;
     for (let i = 0; i < word.length; i++) {
       let char = word[i];
-      let index = char.charCodeAt(0) - "a".charCodeAt(0);
+      let index = char.charCodeAt(0) - 'a'.charCodeAt(0);
       if (curr.link[index] === null) {
         curr.link[index] = new Trie();
       }

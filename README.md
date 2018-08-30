@@ -202,6 +202,7 @@
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/328.%20Odd%20Even%20Linked%20List.js)|Medium|
 |342|[Power of Four](https://leetcode.com/problems/power-of-four)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/342.%20Power%20of%20Four.js)|Easy|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/344.%20Reverse%20String.js)|Easy|
+|346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/346.%20Moving%20Average%20from%20Data%20Stream.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/349.%20Intersection%20of%20Two%20Arrays.js)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/350.%20Intersection%20of%20Two%20Arrays%20II.js)|Easy|
 |369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/369.%20Plus%20One%20Linked%20List.js)|Medium|

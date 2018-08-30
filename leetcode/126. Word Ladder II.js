@@ -59,10 +59,10 @@
 
      bfs(distance, adj, endWord, beginWord, dict);
 
-     const ladders = [];
+     const result = [];
      dfs(ladders, [], beginWord, endWord, distance, adj);
 
-     return ladders;
+     return result;
  };
 
  const bfs = (distance, adj, start, end, dict) => {

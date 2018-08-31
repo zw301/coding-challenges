@@ -54,6 +54,7 @@
 |61|[Rotate List](https://leetcode.com/problems/rotate-list)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/61.%20Rotate%20List.js)|Medium|
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/62.%20Unique%20Paths.js)|Medium|
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/63.%20Unique%20Paths%20II.js)|Medium|
+|65|[Valid Number](https://leetcode.com/problems/valid-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/65.%20Valid%20Number.js)|Hard|
 |66|[Plus One](https://leetcode.com/problems/plus-one)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/66.%20Plus%20One.js)|Easy|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/67.%20Add%20Binary.js)|Easy|
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/69.%20Sqrt(x).js)|Easy|

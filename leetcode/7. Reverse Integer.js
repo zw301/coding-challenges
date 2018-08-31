@@ -32,7 +32,10 @@ var reverse = function(x) {
       num = Math.floor(num / 10);
     }
 
-    if (result > Math.pow(2, 31)) {
+    // if (result > Math.pow(2, 31)) {
+    //   return 0;
+    // }
+    if (result >= Infinity) {
       return 0;
     }
     return result * sign;

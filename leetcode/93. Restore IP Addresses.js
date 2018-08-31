@@ -32,14 +32,13 @@ const helper = function(ip, startIndex, path, count, result) {
     if (startIndex + i > ip.length) {
       return;
     }
-    let s = ip.slice(startIndex, startIndex + i);
-    if (s.length > 1 && s.startsWith("0") || (i === 3 && Number(s) > 255)) {
+    let substr = ip.slice(startIndex, startIndex + i);
+    if (substr.length > 1 && substr.startsWith('0') || (i === 3 && Number(substr) > 255)) {
       continue;
     }
-    helper(ip, index + i, path + s + (count === 3 ? "" : "."), count + 1, result);
+    helper(ip, startIndex + i, path + substr + (count === 3 ? "" : "."), count + 1, result);
   }
 }
-
 
 
 console.log(restoreIpAddresses("25525511135"));

@@ -16,7 +16,7 @@ var restoreIpAddresses = function(s) {
 
     const result = [];
 
-    helper();
+    helper(s, 0, "", 0, result);
 
     return result;
 };

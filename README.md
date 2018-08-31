@@ -7,6 +7,7 @@
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/3.%20Longest%20Substring%20Without%20Repeating%20Characters.js)|Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/4.%20Median%20of%20Two%20Sorted%20Arrays.js)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/5.%20Longest%20Palindromic%20Substring.js)|Medium|
+|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/7.%20Reverse%20Integer.js)|Easy|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/9.%20Palindrome%20Number.js)|Easy|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/10.%20Regular%20Expression%20Matching.js)|Hard|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/12.%20Integer%20to%20Roman.js)|Medium|

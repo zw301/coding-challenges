@@ -36,6 +36,7 @@
 |38|[Count and Say](https://leetcode.com/problems/count-and-say)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/38.%20Count%20and%20Say.js)|Easy|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/39.%20Combination%20Sum.js)|Medium|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/40.%20Combination%20Sum%20II.js)|Medium|
+|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/43.%20Multiply%20Strings.js)|Medium|
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/44.%20Wildcard%20Matching.js)|Hard|
 |46|[Permutations](https://leetcode.com/problems/permutations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/46.%20Permutations.js)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/47.%20Permutations%20II.js)|Medium|

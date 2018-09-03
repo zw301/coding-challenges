@@ -22,3 +22,23 @@ var lengthOfLongestSubstring = function(s) {
   }
   return max;
 }
+
+// O(2n) 强化班模版
+var lengthOfLongestSubstring = function(s) {
+    const map = new Array(256).fill(0);
+
+    let j = 0;
+    let i = 0;
+
+    let ans = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        while (j < s.length && map[s.charCodeAt(j)] === 0) {
+            map[s.charCodeAt(j)] = 1;
+            ans = Math.max(ans, j - i + 1);
+            j++;
+        }
+        map[s.charCodeAt(i)] = 0;
+    }
+    return ans;
+};

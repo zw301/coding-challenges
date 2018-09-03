@@ -42,7 +42,9 @@ var pathSum = function(root, sum) {
     return 0;
   }
 
-  return helper(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
+  return helper(root, sum) +
+    pathSum(root.left, sum) +
+    pathSum(root.right, sum);
 };
 
 function helper(node, target) {
@@ -50,5 +52,7 @@ function helper(node, target) {
     return 0;
   }
 
-  return (node.val === target ? 1 : 0) + helper(node.left, target - node.val) + helper(node.right, target - node.val);
+  return (node.val === target ? 1 : 0) +
+    helper(node.left, target - node.val) +
+    helper(node.right, target - node.val);
 }

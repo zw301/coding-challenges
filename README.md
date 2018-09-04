@@ -64,6 +64,7 @@
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/73.%20Set%20Matrix%20Zeroes.js)|Medium|
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/74.%20Search%20a%202D%20Matrix.js)|Medium|
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/75.%20Sort%20Colors.js)|Medium|
+|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/76.%20Minimum%20Window%20Substring.js)|Hard|
 |77|[Combinations](https://leetcode.com/problems/combinations)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/77.%20Combinations.js)|Medium|
 |78|[Subsets](https://leetcode.com/problems/subsets)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/78.%20Subsets.js)|Medium|
 |79|[Word Search](https://leetcode.com/problems/word-search)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/79.%20Word%20Search.js)|Medium|

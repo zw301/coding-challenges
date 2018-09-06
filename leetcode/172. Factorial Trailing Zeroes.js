@@ -23,4 +23,14 @@ var trailingZeroes = function(n) {
   return result;
 };
 
+var trailingZeroes = function(n) {
+    let count = 0;
+    let i = 5;
+    while (i <= n) {
+        count += Math.floor(n / i);
+        i *= 5;
+    }
+    return count;
+};
+
 console.log(trailingZeroes(26));

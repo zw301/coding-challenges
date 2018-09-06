@@ -45,7 +45,7 @@ var isValid = function(s) {
       stack.push("]");
     } else if (char === "{") {
       stack.push("}");
-    } else if (stack.length !== 0 || stack.pop() !== char) {
+    } else if (stack.length === 0 || stack.pop() !== char) {
       return false;
     }
   }

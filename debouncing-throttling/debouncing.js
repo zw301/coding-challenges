@@ -1,3 +1,31 @@
+// ES6
+function debounced(delay, fn) {
+  let timerId;
+  return function (...args) {
+    if (timerId) {
+      clearTimeout(timerId);
+    }
+    timerId = setTimeout(() => {
+      fn(...args);
+      timerId = null;
+    }, delay);
+  }
+}
+
+
+// ES6 code
+function throttled(delay, fn) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = (new Date).getTime();
+    if (now - lastCall < delay) {
+      return;
+    }
+    lastCall = now;
+    return fn(...args);
+  }
+}
+
 // function debounce(func, wait = 20, immediate = true) {
 //   let timeout;
 //
@@ -65,33 +93,6 @@ document.querySelector("body").addEventListener("mousemove", throttle(function (
 }, 1000))
 
 
-// ES6
-function debounced(delay, fn) {
-  let timerId;
-  return function (...args) {
-    if (timerId) {
-      clearTimeout(timerId);
-    }
-    timerId = setTimeout(() => {
-      fn(...args);
-      timerId = null;
-    }, delay);
-  }
-}
-
-
-// ES6 code
-function throttled(delay, fn) {
-  let lastCall = 0;
-  return function (...args) {
-    const now = (new Date).getTime();
-    if (now - lastCall < delay) {
-      return;
-    }
-    lastCall = now;
-    return fn(...args);
-  }
-}
 
 //Q: We have a function called makeRequest that makes an API request. We also have a function called eventHandler that is hooked up to an event (a click, for example), and right now it's a dumb handler that simply calls makeRequest.
 
@@ -154,11 +155,11 @@ function simulateEvent(fn, payload, timeOfEvent) {
 // simulateEvent(eventHandlerWithThrottling, 'hello', 0);
 
 //  2. 'hello' (t = 0), 'goodbye' (t = 5)
-simulateEvent(eventHandlerWithThrottling, 'hello', 0);
-simulateEvent(eventHandlerWithThrottling, 'goodbye', 4000);
+// simulateEvent(eventHandlerWithThrottling, 'hello', 0);
+// simulateEvent(eventHandlerWithThrottling, 'goodbye', 4000);
 
 // 3. 'hello' (t = 0), 'goodbye again' (t = 5), 'final call' (t = 10)
-// simulateEvent(eventHandlerWithThrottling, 'hello', 0);
-// simulateEvent(eventHandlerWithThrottling, 'hello again', 2000); // ignored
-// simulateEvent(eventHandlerWithThrottling, 'goodbye again', 4000);
-// simulateEvent(eventHandlerWithThrottling, 'final call', 7000);
+simulateEvent(eventHandlerWithThrottling, 'hello', 0);
+simulateEvent(eventHandlerWithThrottling, 'hello again', 2000); // ignored
+simulateEvent(eventHandlerWithThrottling, 'goodbye again', 4000);
+simulateEvent(eventHandlerWithThrottling, 'final call', 7000);

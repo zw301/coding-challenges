@@ -69,7 +69,7 @@ function debounce(fn, delay, immediate=true) {
       }
     }
 
-    let callNow = immediate && !timer;
+		let callNow = immediate && !timer;
 
     if (timer) {
       clearTimeout(timer);

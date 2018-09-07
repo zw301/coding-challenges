@@ -58,7 +58,29 @@ function throttle(fn, delay) {
   }
 }
 
+function debounce(fn, delay, immediate=true) {
+  let timer;
+  return (...arg) => {
 
+    let later = function() {
+      if (!immediate) {
+        timer = null;
+        fn(...arg)
+      }
+    }
+
+    let callNow = immediate && !timer;
+
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(later, delay)
+
+    if (callNow) {
+      fn(...arg);
+    }
+  }
+}
 
 // function debounce(func, wait = 20, immediate = true) {
 //   let timeout;

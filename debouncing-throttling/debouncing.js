@@ -1,3 +1,14 @@
+function customSetInterval (callback, delay) {
+	return setTimeout(() => {
+		callback();
+		timerId = customSetInterval(callback, delay);
+	}, delay);
+}
+
+function hello() {console.log("hello")};
+let timerId = customSetInterval(hello, 2000);
+// clearTimeout(timerId);
+
 // ES6
 function debounced(delay, fn) {
   let timerId;
@@ -25,6 +36,29 @@ function throttled(delay, fn) {
     return fn(...args);
   }
 }
+
+function throttle(fn, delay) {
+  let last;
+  let timer;
+
+  return (...args) => {
+    const now = new Date().getTime();
+    if (last && now < last + delay) {
+      if (timer) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(() => {
+        last = new Date().getTime();
+        return fn(...args);
+      }, delay - (now - last));
+    } else {
+      last = now;
+      return fn(...args);
+    }
+  }
+}
+
+
 
 // function debounce(func, wait = 20, immediate = true) {
 //   let timeout;

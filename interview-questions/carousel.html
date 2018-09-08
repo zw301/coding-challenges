@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 18px;
+        border: 1px solid #ccc;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+      #numbers {
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="numbers">
+        <span class="carousel">1</span>
+        <span class="carousel">2</span>
+        <span class="carousel">3</span>
+      </div>
+
+      <div class="btnGroup">
+        <button type="button" name="button" onclick="numbers.prev();">Prev</button>
+        <button type="button" name="button" onclick="numbers.next();">Next</button>
+        <br>
+        <button type="button" name="button" onclick="numbers.next(1000);">Play</button>
+        <button type="button" name="button" onclick="numbers.stop();">Srop</button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      function Carousel(containerId) {
+        this.container = document.getElementById(containerId);
+        this.slides = this.container.querySelectorAll('.carousel');
+        this.total = this.slides.length - 1;
+        this.current = 0;
+
+        this.slide(this.current);
+      }
+
+      Carousel.prototype.next = function(interval) {
+        (this.current === this.total ) ? this.current = 0 : this.current++;
+
+        this.stop();
+        this.slide(this.current);
+
+        if (typeof interval === "number" && (interval % 1) === 0) {
+          let context = this;
+          this.run = setTimeout(function() {
+            context.next(interval);
+          }, interval);
+        }
+      };
+
+      Carousel.prototype.prev = function(interval) {
+        (this.current === 0 ) ? this.current = this.total : this.current--;
+
+        this.stop();
+        this.slide(this.current);
+
+        if (typeof interval === "number" && (interval % 1) === 0) {
+          let context = this;
+          this.run = setTimeout(function() {
+            context.next(interval);
+          }, interval);
+        }
+      };
+
+      Carousel.prototype.stop = function() {
+        clearTimeout(this.run);
+      }
+
+      Carousel.prototype.slide = function(index) {
+        if (index >= 0 || index <= this.total) {
+          this.stop();
+
+          for (let i = 0; i <= this.total; i++) {
+            if (i === index) {
+              this.slides[i].style.display = "block";
+            } else {
+              this.slides[i].style.display = "none";
+            }
+          }
+        }
+      }
+
+      let numbers = new Carousel("numbers");
+    </script>
+  </body>
+</html>

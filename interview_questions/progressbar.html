@@ -69,14 +69,13 @@
 
         update(pct) {
           this.fill.style.transform = `scaleX(${pct})`;
-          this.value.innerText = `${Math.round(pct * 100)}%`
+          this.value.innerText = `${Math.round(pct * 100)}%`;
         }
       }
 
       let pb1 = new ProgressBar("progressbar1");
       let pb2 = new ProgressBar("progressbar2");
       let pb3 = new ProgressBar("progressbar3");
-
 
       const grow = function(arr) {
         let pb = arr.shift();

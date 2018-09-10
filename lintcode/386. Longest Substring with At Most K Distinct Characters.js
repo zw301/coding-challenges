@@ -51,3 +51,37 @@ const lengthOfLongestSubstringKDistinct = function (s, k) {
 
   return maxLen;
 }
+
+// 09.10
+var lengthOfLongestSubstringKDistinct = function(s, k) {
+    const map = new Map();
+
+    let maxLen = 0;
+
+    let j = 0;
+    for (let i = 0; i < s.length; i++) {
+        while (j < s.length) {
+            let char = s[j];
+            if (map.has(char)) {
+                map.set(char, map.get(char) + 1);
+            } else {
+                if (map.size === k) {
+                    break;
+                }
+                map.set(char, 1);
+            }
+            j++;
+        }
+        if (map.size <= k) {
+            maxLen = Math.max(maxLen, j - i);
+        }
+
+        if (map.get(s[i]) > 1) {
+            map.set(s[i], map.get(s[i]) - 1);
+        } else {
+            map.delete(s[i]);
+        }
+    }
+
+    return maxLen;
+};

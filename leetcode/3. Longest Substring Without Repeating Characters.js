@@ -28,7 +28,6 @@ var lengthOfLongestSubstring = function(s) {
     const map = new Array(256).fill(0);
 
     let j = 0;
-    let i = 0;
 
     let ans = 0;
 
@@ -41,4 +40,24 @@ var lengthOfLongestSubstring = function(s) {
         map[s.charCodeAt(i)] = 0;
     }
     return ans;
+};
+
+//09.10
+
+var lengthOfLongestSubstring = function(s) {
+    const map = new Array(256).fill(0);
+
+    let maxLen = 0;
+    let j = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        while (j < s.length && map[s.charCodeAt(j)] === 0) {
+            map[s.charCodeAt(j)] = 1;
+            j++;
+        }
+
+        maxLen = Math.max(maxLen, j - i);
+        map[s.charCodeAt(i)] = 0;
+    }
+    return maxLen;
 };

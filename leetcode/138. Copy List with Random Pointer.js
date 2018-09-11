@@ -41,39 +41,6 @@ var copyRandomList = function(head) {
 };
 
 
-// No extra space
-var copyRandomList = function(head) {
-  let curr = head;
-  while (curr !== null) {
-    let copy = new RandomListNode(curr.label);
-    copy.next = curr.next;
-    curr.next = copy;
-    curr = copy.next;
-  }
-
-  curr = head;
-  while (curr !== null) {
-    let copy = new RandomListNode(curr.label);
-    if (curr.random !== null) {
-      copy.random = curr.random.next;
-    }
-    curr = copy.next;
-  }
-
-  curr = head;
-  const dummy = new RandomListNode(0);
-  let currCopy = dummy;
-  while (curr !== null) {
-    let copy = curr.next;
-    currCopy.next = copy;
-    currCopy = copy;
-    curr.next = copy.next;
-    curr = copy.next;
-  }
-
-  return dummy.next;
-}
-
 ///////////////////////
 // No extra space & step by step
 var copyRandomList = function(head) {
@@ -117,3 +84,43 @@ function splitList(head) {
     }
     return newHead;
 }
+
+
+
+//////09.11
+var copyRandomList = function(head) {
+    if (head === null) {
+        return head;
+    }
+    let curr = head;
+
+    // copy node
+    while (curr !== null) {
+        const newNode = new RandomListNode(curr.label);
+        newNode.next = curr.next;
+        curr.next = newNode;
+
+        curr = curr.next.next;
+    }
+
+    // copy random
+    curr = head;
+    while (curr !== null) {
+        if (curr.random !== null && curr.next !== null) {
+            curr.next.random = curr.random.next;
+        }
+        curr = curr.next.next;
+    }
+
+    //split list
+    const newHead = head.next;
+    while (head !== null) {
+        let tmp = head.next;
+        head.next = tmp.next;
+        if (tmp.next !== null) {
+            tmp.next = tmp.next.next;
+        }
+        head = head.next;
+    }
+    return newHead;
+};

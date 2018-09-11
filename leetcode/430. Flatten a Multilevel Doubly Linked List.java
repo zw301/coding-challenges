@@ -42,7 +42,6 @@ class Solution {
             /* CASE 1: if no child, proceed */
             if (curr.child == null) {
                 curr = curr.next;
-                continue;
             }
 
             /* CASE 2: got child, find the tail of the child and link it to curr.next */

@@ -49,3 +49,31 @@ var flatten = function(root) {
   }
   curr.right = right;
 };
+
+
+// 09.11 inorder traverse
+var flatten = function(root) {
+    if (root === null) {
+        return;
+    }
+    const stack = [];
+    stack.push(root);
+
+    let prev = null;
+
+    while (stack.length !== 0) {
+        let node = stack.pop();
+
+        if (prev !== null) {
+            prev.right = node;
+            prev.left = null;
+        }
+        if (node.right !== null) {
+            stack.push(node.right);
+        }
+        if (node.left !== null) {
+            stack.push(node.left);
+        }
+        prev = node;
+    }
+};

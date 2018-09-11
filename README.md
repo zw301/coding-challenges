@@ -221,6 +221,7 @@
 |383|[Ransom Note](https://leetcode.com/problems/ransom-note)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/383.%20Ransom%20Note.js)|Easy|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/387.%20First%20Unique%20Character%20in%20a%20String.js)|Easy|
 |395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/395.%20Longest%20Substring%20with%20At%20Least%20K%20Repeating%20Characters.js)|Medium|
+|402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/402.%20Remove%20K%20Digits.js)|Medium|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/404.%20Sum%20of%20Left%20Leaves.js)|Easy|
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/408.%20Valid%20Word%20Abbreviation.js)|Easy|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)|[JavaScript](https://github.com/zw301/coding-challenges/blob/master/leetcode/409.%20Longest%20Palindrome.js)|Easy|

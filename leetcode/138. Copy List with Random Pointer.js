@@ -41,7 +41,6 @@ var copyRandomList = function(head) {
 };
 
 
-///////////////////////
 // No extra space & step by step
 var copyRandomList = function(head) {
     if (head === null) {

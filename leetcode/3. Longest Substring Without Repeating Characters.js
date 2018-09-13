@@ -43,7 +43,6 @@ var lengthOfLongestSubstring = function(s) {
 };
 
 //09.10
-
 var lengthOfLongestSubstring = function(s) {
     const map = new Array(256).fill(0);
 

@@ -78,5 +78,4 @@ var myAtoi = function(str) {
         return Integer.MIN_VALUE;
     }
     return result * sign;
-
 };
